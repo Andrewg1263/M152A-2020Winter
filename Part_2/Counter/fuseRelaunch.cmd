@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Y:/BackUp/UCLA/152A-ee/Lab0/Part_2/Counter/Counter_TB_isim_beh.exe" -prj "Y:/BackUp/UCLA/152A-ee/Lab0/Part_2/Counter/Counter_TB_beh.prj" "work.Counter_TB" "work.glbl" 

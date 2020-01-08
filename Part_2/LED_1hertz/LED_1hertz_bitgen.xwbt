@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Y:\BackUp\UCLA\152A-ee\Lab0\Part_2\LED_1hertz\LED_1hertz.ncd
+OUTFILE=Y:\BackUp\UCLA\152A-ee\Lab0\Part_2\LED_1hertz\LED_1hertz.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=Y:\BackUp\UCLA\152A-ee\Lab0\Part_2\LED_1hertz
+LICENSE=WebPack
+USER_INFO=211814636_0_0_114

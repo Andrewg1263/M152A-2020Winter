@@ -1,0 +1,29 @@
+Command line:
+   ModernCounter_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49237
+
+Tue Jan 07 18:29:11 2020
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 667.005 Meg
+
+ Total Signals          : 16
+ Total Nets             : 19
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 13
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 105
+Total Line Count : 27
+
+ Total Simulation Time: 13.7281 sec
+
+ Current Memory Usage: 667.005 Meg
+
+Tue Jan 07 19:09:47 2020
+

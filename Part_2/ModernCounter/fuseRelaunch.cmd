@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Y:/BackUp/UCLA/152A-ee/Lab0/Part_2/ModernCounter/ModernCounter_TB_isim_beh.exe" -prj "Y:/BackUp/UCLA/152A-ee/Lab0/Part_2/ModernCounter/ModernCounter_TB_beh.prj" "work.ModernCounter_TB" "work.glbl" 
