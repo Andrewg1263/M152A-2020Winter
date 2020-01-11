@@ -2,7 +2,7 @@
 
 #### Priority Encoder
 
-![Screen Shot 2020-01-10 at 12.45.13 PM](/Users/andrew/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab1/Screen Shot 2020-01-10 at 12.45.13 PM.png)
+![CountZero_screenshot](/Users/andrew/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab1/CountZero_screenshot.png)
 
 The output counts how many zeros are there in the input
 $$
@@ -92,4 +92,4 @@ $$
 
 ### Test Bench
 
-![Screen Shot 2020-01-10 at 11.24.52 PM](/Users/andrew/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab1/Screen Shot 2020-01-10 at 11.24.52 PM.png)
+![TestBench_screenshot](/Users/andrew/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab1/TestBench_screenshot.png)
