@@ -9,3 +9,12 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off LED_1hertz_map.ncd LED_1hertz.ncd LED_1hertz.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LED_1hertz.twx LED_1hertz.ncd -o LED_1hertz.twr LED_1hertz.pcf -ucf LED_1hertz.ucf 
 bitgen -intstyle ise -f LED_1hertz.ut LED_1hertz.ncd 
+bitgen -intstyle ise -f LED_1hertz.ut LED_1hertz.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab0/Part_2/LED_1hertz/LED_1hertz.xst" -ofn "Y:/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab0/Part_2/LED_1hertz/LED_1hertz.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LED_1hertz.ucf -p xc6slx16-csg324-3 LED_1hertz.ngc LED_1hertz.ngd  
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab0/Part_2/LED_1hertz/LED_1hertz.xst" -ofn "Y:/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab0/Part_2/LED_1hertz/LED_1hertz.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LED_1hertz.ucf -p xc6slx16-csg324-3 LED_1hertz.ngc LED_1hertz.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LED_1hertz_map.ncd LED_1hertz.ngd LED_1hertz.pcf 
+par -w -intstyle ise -ol high -mt off LED_1hertz_map.ncd LED_1hertz.ncd LED_1hertz.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LED_1hertz.twx LED_1hertz.ncd -o LED_1hertz.twr LED_1hertz.pcf -ucf LED_1hertz.ucf 
+bitgen -intstyle ise -f LED_1hertz.ut LED_1hertz.ncd 

@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"\\mac\home\BackUp\UCLA\152A-ee\Lab0\Part_2\LED_1hertz\LED_1hertz.v" Line 40: Result of <arg fmt="%d" index="1">28</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">27</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab0\Part_2\LED_1hertz\LED_1hertz.v" Line 40: Result of <arg fmt="%d" index="1">28</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">27</arg>-bit target.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counter_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LED_1hertz</arg>&gt;. This FF/Latch will be trimmed during the optimization process.

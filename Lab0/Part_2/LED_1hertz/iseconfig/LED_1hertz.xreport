@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-01-07T19:11:13</DateModified>
+  <DateModified>2020-01-09T12:21:02</DateModified>
   <ModuleName>LED_1hertz</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>Y:/BackUp/UCLA/152A-ee/Lab0/Part_2/LED_1hertz/iseconfig/LED_1hertz.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>Y:/BackUp/UCLA/152A-ee/Lab0/Part_2/LED_1hertz</ImplementationReportsDirectory>
+  <SavedFilePath>Y:/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab0/Part_2/LED_1hertz/iseconfig/LED_1hertz.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>Y:/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab0/Part_2/LED_1hertz\</ImplementationReportsDirectory>
   <DateInitialized>2020-01-07T19:11:13</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

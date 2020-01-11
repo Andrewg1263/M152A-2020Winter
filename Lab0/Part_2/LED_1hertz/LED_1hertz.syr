@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.06 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: LED_1hertz.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\Lab0\Part_2\LED_1hertz\LED_1hertz.v" into library work
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab0\Part_2\LED_1hertz\LED_1hertz.v" into library work
 Parsing module <LED_1hertz>.
 
 =========================================================================
@@ -113,14 +113,14 @@ Parsing module <LED_1hertz>.
 =========================================================================
 
 Elaborating module <LED_1hertz>.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\Lab0\Part_2\LED_1hertz\LED_1hertz.v" Line 40: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab0\Part_2\LED_1hertz\LED_1hertz.v" Line 40: Result of 28-bit expression is truncated to fit in 27-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <LED_1hertz>.
-    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\Lab0\Part_2\LED_1hertz\LED_1hertz.v".
+    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab0\Part_2\LED_1hertz\LED_1hertz.v".
     Found 1-bit register for signal <led>.
     Found 27-bit register for signal <counter>.
     Found 27-bit adder for signal <counter[26]_GND_1_o_add_3_OUT> created at line 40.
@@ -367,11 +367,11 @@ clk            |    3.998|         |         |         |
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.81 secs
+Total CPU time to Xst completion: 3.76 secs
  
 --> 
 
-Total memory usage is 257256 kilobytes
+Total memory usage is 256552 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

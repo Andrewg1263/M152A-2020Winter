@@ -1,9 +1,9 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Jan 07 19:35:38 2020
+// Written by: Map P.20131013 on Thu Jan 09 12:26:24 2020
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "led" LOCATE = SITE "U16" LEVEL 1;
+COMP "led" LOCATE = SITE "V16" LEVEL 1;
 COMP "clk" LOCATE = SITE "V10" LEVEL 1;
 COMP "rst" LOCATE = SITE "T9" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "counter_0" BEL "led" BEL "counter_1" BEL
