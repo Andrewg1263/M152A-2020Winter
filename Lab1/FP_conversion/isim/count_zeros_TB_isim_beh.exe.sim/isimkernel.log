@@ -2,12 +2,12 @@ Command line:
    count_zeros_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49276
+     -socket  49326
 
-Fri Jan 10 23:17:51 2020
+Tue Jan 14 12:20:21 2020
 
 
- Elaboration Time: 0.0468 sec
+ Elaboration Time: 0.0312 sec
 
  Current Memory Usage: 667.017 Meg
 
@@ -21,9 +21,9 @@ Fri Jan 10 23:17:51 2020
  Total Scalar Nets and Variables : 140
 Total Line Count : 37
 
- Total Simulation Time: 0.0468 sec
+ Total Simulation Time: 0.0312 sec
 
- Current Memory Usage: 667.017 Meg
+ Current Memory Usage: 981.59 Meg
 
-Fri Jan 10 23:18:06 2020
+Tue Jan 14 12:21:08 2020
 

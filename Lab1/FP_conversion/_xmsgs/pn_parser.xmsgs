@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;Y:/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab1/FP_conversion/FP_conversion_TB.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;Y:/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab1/FP_conversion/sign_magnitude.v&quot; into library work</arg>
 </msg>
 
 </messages>

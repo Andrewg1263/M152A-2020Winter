@@ -1,0 +1,375 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: FP_conversion.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FP_conversion.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FP_conversion"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : FP_conversion
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\sign_magnitude.v" into library work
+Parsing module <sign_magnitude>.
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\rounding.v" into library work
+Parsing module <rounding>.
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\count_zeros.v" into library work
+Parsing module <count_zeros>.
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\FP_conversion.v" into library work
+Parsing module <FP_conversion>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <FP_conversion>.
+
+Elaborating module <sign_magnitude>.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\sign_magnitude.v" Line 28: Result of 32-bit expression is truncated to fit in 12-bit target.
+
+Elaborating module <count_zeros>.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\count_zeros.v" Line 39: Result of 32-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <rounding>.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\rounding.v" Line 52: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\rounding.v" Line 60: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FP_conversion>.
+    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\FP_conversion.v".
+    Summary:
+	no macro.
+Unit <FP_conversion> synthesized.
+
+Synthesizing Unit <sign_magnitude>.
+    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\sign_magnitude.v".
+    Found 32-bit adder for signal <GND_2_o_GND_2_o_add_2_OUT> created at line 28.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <sign_magnitude> synthesized.
+
+Synthesizing Unit <count_zeros>.
+    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\count_zeros.v".
+    Found 5-bit subtractor for signal <GND_3_o_GND_3_o_sub_3_OUT> created at line 39.
+    Found 4-bit 8-to-1 multiplexer for signal <significand> created at line 25.
+    Found 1-bit 8-to-1 multiplexer for signal <fifth_bit> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Multiplexer(s).
+Unit <count_zeros> synthesized.
+
+Synthesizing Unit <rounding>.
+    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\rounding.v".
+    Found 3-bit adder for signal <exponent[2]_GND_4_o_add_3_OUT> created at line 52.
+    Found 4-bit adder for signal <significand[3]_GND_4_o_add_6_OUT> created at line 60.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   6 Multiplexer(s).
+Unit <rounding> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+# Multiplexers                                         : 11
+ 1-bit 8-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 4
+ 4-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+# Multiplexers                                         : 11
+ 1-bit 8-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 4
+ 4-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <FP_conversion> ...
+
+Optimizing unit <sign_magnitude> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FP_conversion, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : FP_conversion.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 86
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 1
+#      LUT2                        : 1
+#      LUT3                        : 11
+#      LUT4                        : 2
+#      LUT5                        : 6
+#      LUT6                        : 25
+#      MUXCY                       : 11
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 12
+# IO Buffers                       : 20
+#      IBUF                        : 12
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   57  out of   9112     0%  
+    Number used as Logic:                57  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     57
+   Number with an unused Flip Flop:      57  out of     57   100%  
+   Number with an unused LUT:             0  out of     57     0%  
+   Number of fully used LUT-FF pairs:     0  out of     57     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    232     8%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.150ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1459 / 8
+-------------------------------------------------------------------------
+Delay:               10.150ns (Levels of Logic = 14)
+  Source:            D<0> (PAD)
+  Destination:       F<1> (PAD)
+
+  Data Path: D<0> to F<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.651  D_0_IBUF (D_0_IBUF)
+     LUT1:I0->O            1   0.205   0.000  s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<0>_rt (s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<0>_rt)
+     MUXCY:S->O            1   0.172   0.000  s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<0> (s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<1> (s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<2> (s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<3> (s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<4> (s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_cy<4>)
+     XORCY:CI->O           4   0.180   0.684  s_inst/Madd_GND_2_o_GND_2_o_add_2_OUT_xor<5> (s_inst/GND_2_o_GND_2_o_add_2_OUT<5>)
+     LUT3:I2->O           17   0.205   1.256  s_inst/Mmux_n000681 (outB_to_inC<5>)
+     LUT6:I3->O            1   0.205   0.924  F<1>4 (F<1>4)
+     LUT6:I1->O            1   0.203   0.000  F<1>7_F (N8)
+     MUXF7:I0->O           1   0.131   0.684  F<1>7 (F<1>7)
+     LUT5:I3->O            1   0.203   0.579  F<1>8 (F_1_OBUF)
+     OBUF:I->O                 2.571          F_1_OBUF (F<1>)
+    ----------------------------------------
+    Total                     10.150ns (5.373ns logic, 4.777ns route)
+                                       (52.9% logic, 47.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.68 secs
+ 
+--> 
+
+Total memory usage is 257896 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -22,9 +22,20 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="FP_conversion.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FP_conversion_TB_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="FP_conversion.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="FP_conversion.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="FP_conversion.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="FP_conversion.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FP_conversion.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="FP_conversion.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="FP_conversion.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="FP_conversion.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FP_conversion_TB_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FP_conversion_TB_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="FP_conversion_TB_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="FP_conversion_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="FP_conversion_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="count_zeros_TB_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="count_zeros_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
@@ -34,7 +45,9 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="rounding_TB_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="sign_magnitude_TB_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sign_magnitude_TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
@@ -42,9 +55,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1578985095" xil_pn:in_ck="-6959810915008839864" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1578985095">
+    <transform xil_pn:end_ts="1579033692" xil_pn:in_ck="-6959810915008839864" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1579033692">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FP_conversion.v"/>
       <outfile xil_pn:name="FP_conversion_TB.v"/>
       <outfile xil_pn:name="count_zeros.v"/>
@@ -54,11 +71,11 @@
       <outfile xil_pn:name="sign_magnitude.v"/>
       <outfile xil_pn:name="sign_magnitude_TB.v"/>
     </transform>
-    <transform xil_pn:end_ts="1578727267" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1057747882290553305" xil_pn:start_ts="1578727267">
+    <transform xil_pn:end_ts="1579033295" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1057747882290553305" xil_pn:start_ts="1579033295">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1578727267" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1038053083920065509" xil_pn:start_ts="1578727267">
+    <transform xil_pn:end_ts="1579033295" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1038053083920065509" xil_pn:start_ts="1579033295">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -66,9 +83,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1578985095" xil_pn:in_ck="-6959810915008839864" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1578985095">
+    <transform xil_pn:end_ts="1579033692" xil_pn:in_ck="-6959810915008839864" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1579033692">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FP_conversion.v"/>
       <outfile xil_pn:name="FP_conversion_TB.v"/>
       <outfile xil_pn:name="count_zeros.v"/>
@@ -78,10 +100,13 @@
       <outfile xil_pn:name="sign_magnitude.v"/>
       <outfile xil_pn:name="sign_magnitude_TB.v"/>
     </transform>
-    <transform xil_pn:end_ts="1578985098" xil_pn:in_ck="-6959810915008839864" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4779678429068421171" xil_pn:start_ts="1578985095">
+    <transform xil_pn:end_ts="1579033696" xil_pn:in_ck="-6959810915008839864" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4779678429068421171" xil_pn:start_ts="1579033692">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FP_conversion_TB_beh.prj"/>
       <outfile xil_pn:name="FP_conversion_TB_isim_beh.exe"/>
@@ -90,14 +115,62 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1578985098" xil_pn:in_ck="6214066303738005348" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3105049454108303664" xil_pn:start_ts="1578985098">
+    <transform xil_pn:end_ts="1579033696" xil_pn:in_ck="6214066303738005348" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3105049454108303664" xil_pn:start_ts="1579033696">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FP_conversion_TB_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1579034903" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1579034903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1579034903" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3212643320942888784" xil_pn:start_ts="1579034903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1579034903" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8125206329153347137" xil_pn:start_ts="1579034903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1579034903" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1579034903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1579034903" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-2518467548425127278" xil_pn:start_ts="1579034903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1579034903" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1579034903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1579034903" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5965462802427611895" xil_pn:start_ts="1579034903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1579034910" xil_pn:in_ck="-3234185245532467846" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="7406737897945907374" xil_pn:start_ts="1579034903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="FP_conversion.lso"/>
+      <outfile xil_pn:name="FP_conversion.ngc"/>
+      <outfile xil_pn:name="FP_conversion.ngr"/>
+      <outfile xil_pn:name="FP_conversion.prj"/>
+      <outfile xil_pn:name="FP_conversion.stx"/>
+      <outfile xil_pn:name="FP_conversion.syr"/>
+      <outfile xil_pn:name="FP_conversion.xst"/>
+      <outfile xil_pn:name="FP_conversion_TB_beh.prj"/>
+      <outfile xil_pn:name="FP_conversion_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
   </transforms>
 

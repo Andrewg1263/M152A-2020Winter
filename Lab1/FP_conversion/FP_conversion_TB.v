@@ -48,21 +48,7 @@ module FP_conversion_TB;
 		#100;
         
 		// Add stimulus here
-		D = 12'b100000000000;
-		#100;
-		D = 12'b000000000010;
-		#100
-		D = -40;
-		#100;
-		D = 125;
-		#100;
-		D = 44;
-		#100;
-		D = 422;
-		#100;
-		D = 57;
-		#100;
-		D = -1;
+		forever #100 D = D + 1;
 		end
       
 endmodule

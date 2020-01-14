@@ -1,0 +1,4 @@
+verilog work "sign_magnitude.v"
+verilog work "rounding.v"
+verilog work "count_zeros.v"
+verilog work "FP_conversion.v"

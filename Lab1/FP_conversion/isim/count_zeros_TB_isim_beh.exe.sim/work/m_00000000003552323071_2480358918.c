@@ -3192,7 +3192,7 @@ LAB46:    t346 = *((unsigned int *)t334);
 
 }
 
-static void Cont_41_4(char *t0)
+static void Cont_39_4(char *t0)
 {
     char t3[8];
     char t4[8];
@@ -3261,7 +3261,7 @@ LAB0:    t1 = (t0 + 4160U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(41, ng0);
+LAB2:    xsi_set_current_line(39, ng0);
     t2 = (t0 + 1048U);
     t5 = *((char **)t2);
     t2 = (t0 + 1008U);
@@ -3382,7 +3382,7 @@ LAB18:    memcpy(t3, t41, 8);
 
 }
 
-static void Cont_48_5(char *t0)
+static void Cont_45_5(char *t0)
 {
     char t3[8];
     char t4[8];
@@ -3773,7 +3773,7 @@ LAB0:    t1 = (t0 + 4408U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(48, ng0);
+LAB2:    xsi_set_current_line(45, ng0);
     t2 = (t0 + 1848U);
     t5 = *((char **)t2);
     t2 = ((char*)((ng5)));
@@ -4578,10 +4578,10 @@ LAB133:    t359 = (t0 + 1048U);
     t359 = (t358 + 4);
     t361 = (t360 + 4);
     t362 = *((unsigned int *)t360);
-    t363 = (t362 >> 7);
+    t363 = (t362 >> 0);
     *((unsigned int *)t358) = t363;
     t364 = *((unsigned int *)t361);
-    t365 = (t364 >> 7);
+    t365 = (t364 >> 0);
     *((unsigned int *)t359) = t365;
     t366 = *((unsigned int *)t358);
     *((unsigned int *)t358) = (t366 & 15U);
@@ -4597,7 +4597,7 @@ LAB137:    memcpy(t317, t353, 8);
 
 }
 
-static void Cont_59_6(char *t0)
+static void Cont_58_6(char *t0)
 {
     char t3[8];
     char t4[8];
@@ -4938,7 +4938,7 @@ LAB0:    t1 = (t0 + 4656U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(59, ng0);
+LAB2:    xsi_set_current_line(58, ng0);
     t2 = (t0 + 1848U);
     t5 = *((char **)t2);
     t2 = ((char*)((ng5)));
@@ -5647,7 +5647,7 @@ LAB120:    memcpy(t272, t305, 8);
 
 extern void work_m_00000000003552323071_2480358918_init()
 {
-	static char *pe[] = {(void *)Cont_32_0,(void *)Cont_33_1,(void *)Cont_34_2,(void *)Cont_35_3,(void *)Cont_41_4,(void *)Cont_48_5,(void *)Cont_59_6};
+	static char *pe[] = {(void *)Cont_32_0,(void *)Cont_33_1,(void *)Cont_34_2,(void *)Cont_35_3,(void *)Cont_39_4,(void *)Cont_45_5,(void *)Cont_58_6};
 	xsi_register_didat("work_m_00000000003552323071_2480358918", "isim/count_zeros_TB_isim_beh.exe.sim/work/m_00000000003552323071_2480358918.didat");
 	xsi_register_executes(pe);
 }
