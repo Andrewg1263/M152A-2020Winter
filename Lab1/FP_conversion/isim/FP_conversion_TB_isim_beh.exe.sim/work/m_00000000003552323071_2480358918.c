@@ -3416,6 +3416,7 @@ static void Cont_45_5(char *t0)
     char t318[8];
     char t321[8];
     char t326[8];
+    char t358[8];
     char *t1;
     char *t2;
     char *t5;
@@ -3741,21 +3742,29 @@ static void Cont_45_5(char *t0)
     unsigned int t355;
     unsigned int t356;
     unsigned int t357;
-    char *t358;
     char *t359;
     char *t360;
     char *t361;
-    char *t362;
-    char *t363;
+    unsigned int t362;
+    unsigned int t363;
     unsigned int t364;
     unsigned int t365;
-    char *t366;
+    unsigned int t366;
     unsigned int t367;
-    unsigned int t368;
+    char *t368;
     char *t369;
-    unsigned int t370;
-    unsigned int t371;
+    char *t370;
+    char *t371;
     char *t372;
+    unsigned int t373;
+    unsigned int t374;
+    char *t375;
+    unsigned int t376;
+    unsigned int t377;
+    char *t378;
+    unsigned int t379;
+    unsigned int t380;
+    char *t381;
 
 LAB0:    t1 = (t0 + 4408U);
     t2 = *((char **)t1);
@@ -3826,27 +3835,27 @@ LAB17:    if (*((unsigned int *)t4) > 0)
 
 LAB19:    memcpy(t3, t47, 8);
 
-LAB20:    t359 = (t0 + 5472);
-    t360 = (t359 + 56U);
-    t361 = *((char **)t360);
-    t362 = (t361 + 56U);
-    t363 = *((char **)t362);
-    memset(t363, 0, 8);
-    t364 = 15U;
-    t365 = t364;
-    t366 = (t3 + 4);
-    t367 = *((unsigned int *)t3);
-    t364 = (t364 & t367);
-    t368 = *((unsigned int *)t366);
-    t365 = (t365 & t368);
-    t369 = (t363 + 4);
-    t370 = *((unsigned int *)t363);
-    *((unsigned int *)t363) = (t370 | t364);
-    t371 = *((unsigned int *)t369);
-    *((unsigned int *)t369) = (t371 | t365);
-    xsi_driver_vfirst_trans(t359, 0, 3);
-    t372 = (t0 + 5056);
-    *((int *)t372) = 1;
+LAB20:    t368 = (t0 + 5472);
+    t369 = (t368 + 56U);
+    t370 = *((char **)t369);
+    t371 = (t370 + 56U);
+    t372 = *((char **)t371);
+    memset(t372, 0, 8);
+    t373 = 15U;
+    t374 = t373;
+    t375 = (t3 + 4);
+    t376 = *((unsigned int *)t3);
+    t373 = (t373 & t376);
+    t377 = *((unsigned int *)t375);
+    t374 = (t374 & t377);
+    t378 = (t372 + 4);
+    t379 = *((unsigned int *)t372);
+    *((unsigned int *)t372) = (t379 | t373);
+    t380 = *((unsigned int *)t378);
+    *((unsigned int *)t378) = (t380 | t374);
+    xsi_driver_vfirst_trans(t368, 0, 3);
+    t381 = (t0 + 5056);
+    *((int *)t381) = 1;
 
 LAB1:    return;
 LAB6:    t21 = (t6 + 4);
@@ -4563,7 +4572,21 @@ LAB129:    t348 = (t318 + 4);
 LAB131:    t353 = ((char*)((ng13)));
     goto LAB132;
 
-LAB133:    t358 = ((char*)((ng14)));
+LAB133:    t359 = (t0 + 1048U);
+    t360 = *((char **)t359);
+    memset(t358, 0, 8);
+    t359 = (t358 + 4);
+    t361 = (t360 + 4);
+    t362 = *((unsigned int *)t360);
+    t363 = (t362 >> 0);
+    *((unsigned int *)t358) = t363;
+    t364 = *((unsigned int *)t361);
+    t365 = (t364 >> 0);
+    *((unsigned int *)t359) = t365;
+    t366 = *((unsigned int *)t358);
+    *((unsigned int *)t358) = (t366 & 15U);
+    t367 = *((unsigned int *)t359);
+    *((unsigned int *)t359) = (t367 & 15U);
     goto LAB134;
 
 LAB135:    xsi_vlog_unsigned_bit_combine(t317, 4, t353, 4, t358, 4);
@@ -4574,7 +4597,7 @@ LAB137:    memcpy(t317, t353, 8);
 
 }
 
-static void Cont_56_6(char *t0)
+static void Cont_58_6(char *t0)
 {
     char t3[8];
     char t4[8];
@@ -4915,7 +4938,7 @@ LAB0:    t1 = (t0 + 4656U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(56, ng0);
+LAB2:    xsi_set_current_line(58, ng0);
     t2 = (t0 + 1848U);
     t5 = *((char **)t2);
     t2 = ((char*)((ng5)));
@@ -5624,7 +5647,7 @@ LAB120:    memcpy(t272, t305, 8);
 
 extern void work_m_00000000003552323071_2480358918_init()
 {
-	static char *pe[] = {(void *)Cont_32_0,(void *)Cont_33_1,(void *)Cont_34_2,(void *)Cont_35_3,(void *)Cont_39_4,(void *)Cont_45_5,(void *)Cont_56_6};
+	static char *pe[] = {(void *)Cont_32_0,(void *)Cont_33_1,(void *)Cont_34_2,(void *)Cont_35_3,(void *)Cont_39_4,(void *)Cont_45_5,(void *)Cont_58_6};
 	xsi_register_didat("work_m_00000000003552323071_2480358918", "isim/FP_conversion_TB_isim_beh.exe.sim/work/m_00000000003552323071_2480358918.didat");
 	xsi_register_executes(pe);
 }

@@ -2,9 +2,9 @@ Command line:
    FP_conversion_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49283
+     -socket  49310
 
-Fri Jan 10 23:24:29 2020
+Mon Jan 13 22:58:19 2020
 
 
  Elaboration Time: 0.0468 sec
@@ -19,11 +19,11 @@ Fri Jan 10 23:24:29 2020
  Total Processes        : 20
  Total Traceable Variables  : 21
  Total Scalar Nets and Variables : 167
-Total Line Count : 58
+Total Line Count : 60
 
- Total Simulation Time: 0.0624 sec
+ Total Simulation Time: 0.0936 sec
 
  Current Memory Usage: 667.017 Meg
 
-Fri Jan 10 23:24:58 2020
+Mon Jan 13 23:00:37 2020
 

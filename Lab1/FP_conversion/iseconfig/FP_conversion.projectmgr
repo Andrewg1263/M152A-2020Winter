@@ -92,17 +92,15 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/FP_conversion Y:|BackUp|UCLA|152A-ee|Lab0|M152A-2020Winter|Lab1|FP_conversion|FP_conversion.v</ClosedNode>
-         <ClosedNode>/FP_conversion_TB Y:|BackUp|UCLA|152A-ee|Lab0|M152A-2020Winter|Lab1|FP_conversion|FP_conversion_TB.v</ClosedNode>
-         <ClosedNode>/count_zeros_TB Y:|BackUp|UCLA|152A-ee|Lab0|M152A-2020Winter|Lab1|FP_conversion|count_zeros_TB.v</ClosedNode>
+         <ClosedNode>/FP_conversion_TB Y:|BackUp|UCLA|152A-ee|Lab0|M152A-2020Winter|Lab1|FP_conversion|FP_conversion_TB.v/uut - FP_conversion</ClosedNode>
          <ClosedNode>/rounding_TB Y:|BackUp|UCLA|152A-ee|Lab0|M152A-2020Winter|Lab1|FP_conversion|rounding_TB.v</ClosedNode>
-         <ClosedNode>/sign_magnitude_TB Y:|BackUp|UCLA|152A-ee|Lab0|M152A-2020Winter|Lab1|FP_conversion|sign_magnitude_TB.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>FP_conversion_TB (Y:/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab1/FP_conversion/FP_conversion_TB.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002ae000000020000000000000000000000000200000064ffffffff000000810000000300000002000002ae0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b9000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b90000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>FP_conversion_TB (Y:/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab1/FP_conversion/FP_conversion_TB.v)</CurrentItem>
    </ItemView>

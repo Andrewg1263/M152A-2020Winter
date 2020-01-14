@@ -49,8 +49,10 @@ module count_zeros( D_abs,
 									(Q == 3'b101) ? D_abs[6:3] :
 									(Q == 3'b110) ? D_abs[5:2] :
 									(Q == 3'b111) ? D_abs[4:1] :
+									// After two's complement, if the sign bit is still one, it could only be 12'b1000 0000 0000
+									// Else save the last four bits to sig
 									(D_abs[11] == 1 )? 4'b1111:
-									 4'b0000;
+									 D_abs[3:0];
 									
 	// fifth_bit
 	assign fifth_bit = 		(Q == 3'b001) ? D_abs[6] :
