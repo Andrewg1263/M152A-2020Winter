@@ -2,12 +2,12 @@ Command line:
    rounding_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49249
+     -socket  49552
 
-Fri Jan 10 21:40:06 2020
+Sun Jan 26 14:35:32 2020
 
 
- Elaboration Time: 0.0312 sec
+ Elaboration Time: 0.0468 sec
 
  Current Memory Usage: 667.005 Meg
 
@@ -25,5 +25,5 @@ Total Line Count : 53
 
  Current Memory Usage: 981.578 Meg
 
-Fri Jan 10 21:41:23 2020
+Sun Jan 26 14:36:26 2020
 

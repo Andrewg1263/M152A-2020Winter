@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: FP_conversion.prj
 
@@ -105,13 +105,13 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\sign_magnitude.v" into library work
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\sign_magnitude.v" into library work
 Parsing module <sign_magnitude>.
-Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\rounding.v" into library work
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\rounding.v" into library work
 Parsing module <rounding>.
-Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\count_zeros.v" into library work
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\count_zeros.v" into library work
 Parsing module <count_zeros>.
-Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\FP_conversion.v" into library work
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\FP_conversion.v" into library work
 Parsing module <FP_conversion>.
 
 =========================================================================
@@ -121,27 +121,27 @@ Parsing module <FP_conversion>.
 Elaborating module <FP_conversion>.
 
 Elaborating module <sign_magnitude>.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\sign_magnitude.v" Line 28: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\sign_magnitude.v" Line 28: Result of 32-bit expression is truncated to fit in 12-bit target.
 
 Elaborating module <count_zeros>.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\count_zeros.v" Line 39: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\count_zeros.v" Line 39: Result of 32-bit expression is truncated to fit in 3-bit target.
 
 Elaborating module <rounding>.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\rounding.v" Line 52: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\rounding.v" Line 60: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\rounding.v" Line 52: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\rounding.v" Line 60: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <FP_conversion>.
-    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\FP_conversion.v".
+    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\FP_conversion.v".
     Summary:
 	no macro.
 Unit <FP_conversion> synthesized.
 
 Synthesizing Unit <sign_magnitude>.
-    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\sign_magnitude.v".
+    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\sign_magnitude.v".
     Found 32-bit adder for signal <GND_2_o_GND_2_o_add_2_OUT> created at line 28.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -149,7 +149,7 @@ Synthesizing Unit <sign_magnitude>.
 Unit <sign_magnitude> synthesized.
 
 Synthesizing Unit <count_zeros>.
-    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\count_zeros.v".
+    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\count_zeros.v".
     Found 5-bit subtractor for signal <GND_3_o_GND_3_o_sub_3_OUT> created at line 39.
     Found 4-bit 8-to-1 multiplexer for signal <significand> created at line 25.
     Found 1-bit 8-to-1 multiplexer for signal <fifth_bit> created at line 26.
@@ -159,7 +159,7 @@ Synthesizing Unit <count_zeros>.
 Unit <count_zeros> synthesized.
 
 Synthesizing Unit <rounding>.
-    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\rounding.v".
+    Related source file is "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\rounding.v".
     Found 3-bit adder for signal <exponent[2]_GND_4_o_add_3_OUT> created at line 52.
     Found 4-bit adder for signal <significand[3]_GND_4_o_add_6_OUT> created at line 60.
     Summary:
@@ -363,11 +363,11 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.68 secs
+Total CPU time to Xst completion: 5.23 secs
  
 --> 
 
-Total memory usage is 257896 kilobytes
+Total memory usage is 257192 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    4 (   0 filtered)

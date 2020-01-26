@@ -1,5 +1,5 @@
 ISim log file
-Running: Y:\BackUp\UCLA\152A-ee\Lab0\M152A-2020Winter\Lab1\FP_conversion\FP_conversion_TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Y:/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab1/FP_conversion/FP_conversion_TB_isim_beh.wdb 
+Running: Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab1\FP_conversion\rounding_TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab1/FP_conversion/rounding_TB_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -12,14 +12,5 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
-Stopped at time : 34067194600 ns : File "//Mac/Home/BackUp/UCLA/152A-ee/Lab0/M152A-2020Winter/Lab1/FP_conversion/count_zeros.v" Line 45
-# restart
-# run 1.00us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 100us
-# run 100us
-# run 100us
-# run 100us
-# run 100us
-# run 100us
+# run all
+# run all

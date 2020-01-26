@@ -22,12 +22,12 @@ int main(int argc, char **argv)
     xsi_register_info(&xsi_info);
 
     xsi_register_min_prec_unit(-12);
-    work_m_00000000002664030217_3865691683_init();
-    work_m_00000000003455057158_0734193163_init();
+    work_m_00000000003642010556_3865691683_init();
+    work_m_00000000003323756921_0734193163_init();
     work_m_00000000004134447467_2073120511_init();
 
 
-    xsi_register_tops("work_m_00000000003455057158_0734193163");
+    xsi_register_tops("work_m_00000000003323756921_0734193163");
     xsi_register_tops("work_m_00000000004134447467_2073120511");
 
 

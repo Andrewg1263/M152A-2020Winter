@@ -2,9 +2,9 @@ Command line:
    sign_magnitude_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49251
+     -socket  49542
 
-Fri Jan 10 22:09:34 2020
+Sun Jan 26 14:32:38 2020
 
 
  Elaboration Time: 0.0468 sec
@@ -21,9 +21,9 @@ Fri Jan 10 22:09:34 2020
  Total Scalar Nets and Variables : 130
 Total Line Count : 22
 
- Total Simulation Time: 0.0624 sec
+ Total Simulation Time: 0.0468 sec
 
- Current Memory Usage: 667.005 Meg
+ Current Memory Usage: 981.578 Meg
 
-Fri Jan 10 22:09:41 2020
+Sun Jan 26 14:34:09 2020
 

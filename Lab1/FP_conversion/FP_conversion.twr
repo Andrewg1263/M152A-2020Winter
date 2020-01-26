@@ -1,0 +1,137 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml FP_conversion.twx FP_conversion.ncd -o FP_conversion.twr
+FP_conversion.pcf
+
+Design file:              FP_conversion.ncd
+Physical constraint file: FP_conversion.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+D<0>           |E<0>           |   10.771|
+D<0>           |E<1>           |   10.536|
+D<0>           |E<2>           |   10.247|
+D<0>           |F<0>           |   10.781|
+D<0>           |F<1>           |   10.891|
+D<0>           |F<2>           |   11.568|
+D<0>           |F<3>           |    9.757|
+D<1>           |E<0>           |   10.496|
+D<1>           |E<1>           |   10.268|
+D<1>           |E<2>           |    9.979|
+D<1>           |F<0>           |   10.507|
+D<1>           |F<1>           |   10.616|
+D<1>           |F<2>           |   11.293|
+D<1>           |F<3>           |    9.482|
+D<2>           |E<0>           |   10.389|
+D<2>           |E<1>           |   10.115|
+D<2>           |E<2>           |    9.826|
+D<2>           |F<0>           |   10.358|
+D<2>           |F<1>           |   10.509|
+D<2>           |F<2>           |   11.186|
+D<2>           |F<3>           |    9.375|
+D<3>           |E<0>           |   10.338|
+D<3>           |E<1>           |   10.062|
+D<3>           |E<2>           |    9.773|
+D<3>           |F<0>           |   10.158|
+D<3>           |F<1>           |   10.458|
+D<3>           |F<2>           |   11.135|
+D<3>           |F<3>           |    9.324|
+D<4>           |E<0>           |   10.532|
+D<4>           |E<1>           |    9.891|
+D<4>           |E<2>           |    9.337|
+D<4>           |F<0>           |   10.205|
+D<4>           |F<1>           |   10.652|
+D<4>           |F<2>           |   11.329|
+D<4>           |F<3>           |    9.420|
+D<5>           |E<0>           |   10.734|
+D<5>           |E<1>           |   10.094|
+D<5>           |E<2>           |    9.495|
+D<5>           |F<0>           |   10.363|
+D<5>           |F<1>           |   10.854|
+D<5>           |F<2>           |   11.531|
+D<5>           |F<3>           |    9.622|
+D<6>           |E<0>           |   10.387|
+D<6>           |E<1>           |    9.705|
+D<6>           |E<2>           |    8.873|
+D<6>           |F<0>           |    9.484|
+D<6>           |F<1>           |   10.507|
+D<6>           |F<2>           |   11.184|
+D<6>           |F<3>           |    9.275|
+D<7>           |E<0>           |   10.607|
+D<7>           |E<1>           |    9.383|
+D<7>           |E<2>           |    9.049|
+D<7>           |F<0>           |    9.704|
+D<7>           |F<1>           |   10.727|
+D<7>           |F<2>           |   11.404|
+D<7>           |F<3>           |    9.495|
+D<8>           |E<0>           |   10.487|
+D<8>           |E<1>           |    9.263|
+D<8>           |E<2>           |    8.974|
+D<8>           |F<0>           |    9.584|
+D<8>           |F<1>           |   10.607|
+D<8>           |F<2>           |   11.284|
+D<8>           |F<3>           |    9.375|
+D<9>           |E<0>           |    8.852|
+D<9>           |E<1>           |    8.937|
+D<9>           |E<2>           |    8.786|
+D<9>           |F<0>           |    9.353|
+D<9>           |F<1>           |    9.051|
+D<9>           |F<2>           |    8.707|
+D<9>           |F<3>           |    9.096|
+D<10>          |E<0>           |    8.855|
+D<10>          |E<1>           |    8.940|
+D<10>          |E<2>           |    8.789|
+D<10>          |F<0>           |    9.356|
+D<10>          |F<1>           |    9.050|
+D<10>          |F<2>           |    8.706|
+D<10>          |F<3>           |    9.095|
+D<11>          |E<0>           |    9.876|
+D<11>          |E<1>           |    9.699|
+D<11>          |E<2>           |    9.410|
+D<11>          |F<0>           |    9.955|
+D<11>          |F<1>           |   10.317|
+D<11>          |F<2>           |   10.182|
+D<11>          |F<3>           |    9.525|
+D<11>          |S              |    5.446|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Jan 26 14:25:51 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 218 MB
+
+
+
