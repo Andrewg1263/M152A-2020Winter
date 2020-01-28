@@ -4,3 +4,8 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 FP_convers
 map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FP_conversion_map.ncd FP_conversion.ngd FP_conversion.pcf 
 par -w -intstyle ise -ol high -mt off FP_conversion_map.ncd FP_conversion.ncd FP_conversion.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FP_conversion.twx FP_conversion.ncd -o FP_conversion.twr FP_conversion.pcf 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab1/FP_conversion/FP_conversion.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab1/FP_conversion/FP_conversion.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 FP_conversion.ngc FP_conversion.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FP_conversion_map.ncd FP_conversion.ngd FP_conversion.pcf 
+par -w -intstyle ise -ol high -mt off FP_conversion_map.ncd FP_conversion.ncd FP_conversion.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FP_conversion.twx FP_conversion.ncd -o FP_conversion.twr FP_conversion.pcf 

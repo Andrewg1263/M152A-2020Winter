@@ -6,6 +6,7 @@ module tb;
    reg       clk;
    reg       btnS;
    reg       btnR;
+	reg 		 btnSend;
    
    integer   i;
    
@@ -15,8 +16,7 @@ module tb;
    wire                 RsTx;                   // From uut_ of nexys3.v
    wire [7:0]           led;                    // From uut_ of nexys3.v
    // End of automatics
-	reg [7:0] in_ram [1023:0];
-	
+	reg [7:0]in_ram [1023:0];
    initial
      begin
         //$shm_open  ("dump", , ,1);
@@ -28,12 +28,12 @@ module tb;
         #1000 btnR = 0;
         #1500000;
         
-		  
 		  $readmemb("seq.code", in_ram);
 		  for (i=1; i <= in_ram[0]; i = i + 1) begin
 				tskRunInst(in_ram[i]);
 			end
-/*        tskRunPUSH(0,4);
+		  
+        /*tskRunPUSH(0,4);
         tskRunPUSH(0,0);
         tskRunPUSH(1,3);
         tskRunMULT(0,1,2);
@@ -68,7 +68,9 @@ module tb;
                 .sw                     (sw[7:0]),
                 .btnS                   (btnS),
                 .btnR                   (btnR),
-                .clk                    (clk));
+                .clk                    (clk),
+					 .btnSend					 (btnSend)
+					 );
 
    task tskRunInst;
       input [7:0] inst;
@@ -77,6 +79,9 @@ module tb;
          sw = inst;
          #1500000 btnS = 1;
          #3000000 btnS = 0;
+			
+			#3000000 btnSend = 1;
+         #3000000 btnSend = 0;
       end
    endtask //
 

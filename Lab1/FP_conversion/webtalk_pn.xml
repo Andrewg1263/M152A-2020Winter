@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sun Jan 26 14:25:42 2020">
+<application name="pn" timeStamp="Tue Jan 28 11:45:37 2020">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="E9B5E73ABCE54E248108E690442B1D6C" type="project"/>
-<property name="ProjectIteration" value="1" type="project"/>
+<property name="ProjectIteration" value="2" type="project"/>
 <property name="ProjectFile" value="Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab1/FP_conversion/FP_conversion.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2020-01-09T13:10:03" type="project"/>
 </section>
@@ -25,7 +25,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2020-01-09T13:10:03" type="design"/>
 <property name="PROP_intWbtProjectID" value="E9B5E73ABCE54E248108E690442B1D6C" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="1" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="2" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.FP_conversion_TB" type="process"/>

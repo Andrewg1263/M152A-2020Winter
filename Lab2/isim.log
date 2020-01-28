@@ -5,7 +5,7 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: File "//Mac/Home/BackUp/UCLA/152A-ee/M152A-2020Winter/1/src/rtl/nexys3.v" Line 44.  For instance uut_/uart_top_/, width 1 of formal port i_inst_register is not equal to width 2 of actual variable inst_register. 
+WARNING: File "//Mac/Home/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/src/rtl/nexys3.v" Line 44.  For instance uut_/uart_top_/, width 1 of formal port i_inst_register is not equal to width 2 of actual variable inst_register. 
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -16,58 +16,190 @@ Finished circuit initialization process.
    1501000 ... Running instruction        11000000
    5243925 ... instruction        11000000 executed
    5243925 ... led output changed to        00000001
-   6001000 ... Running instruction        00000001
-   9176085 ... instruction        00000001 executed
-   9176085 ... led output changed to        00000010
-  10501000 ... Running instruction        11000000
-  14418965 ... instruction        11000000 executed
-  14418965 ... led output changed to        00000011
-  15001000 ... Running instruction        00010001
-  18351125 ... instruction        00010001 executed
-  18351125 ... led output changed to        00000100
-  19501000 ... Running instruction        11010000
-  23594005 ... instruction        11010000 executed
-  23594005 ... led output changed to        00000101
-  24001000 ... Running instruction        01000110
-  27526165 ... instruction        01000110 executed
-  27526165 ... led output changed to        00000110
-  28501000 ... Running instruction        11100000
-  31458325 ... instruction        11100000 executed
-  31458325 ... led output changed to        00000111
-  33001000 ... Running instruction        01011000
-  36701205 ... instruction        01011000 executed
-  36701205 ... led output changed to        00001000
-  37501000 ... Running instruction        11000000
-  40633365 ... instruction        11000000 executed
-  40633365 ... led output changed to        00001001
-  42001000 ... Running instruction        01100001
-  45876245 ... instruction        01100001 executed
-  45876245 ... led output changed to        00001010
-  46501000 ... Running instruction        11010000
-  49808405 ... instruction        11010000 executed
-  49808405 ... led output changed to        00001011
-  51001000 ... Running instruction        01000110
-  55051285 ... instruction        01000110 executed
-  55051285 ... led output changed to        00001100
-  55501000 ... Running instruction        11100000
-  58983445 ... instruction        11100000 executed
-  58983445 ... led output changed to        00001101
-  60001000 ... Running instruction        01011000
-  62915605 ... instruction        01011000 executed
-  62915605 ... led output changed to        00001110
-  64501000 ... Running instruction        11000000
-  68158485 ... instruction        11000000 executed
-  68158485 ... led output changed to        00001111
-  69001000 ... Running instruction        01100001
-  72090645 ... instruction        01100001 executed
-  72090645 ... led output changed to        00010000
-  73501000 ... Running instruction        11010000
-  77333525 ... instruction        11010000 executed
-  77333525 ... led output changed to        00010001
-  78001000 ... Running instruction        01000110
-  81265685 ... instruction        01000110 executed
-  81265685 ... led output changed to        00010010
-  82501000 ... Running instruction        11100000
-  86508565 ... instruction        11100000 executed
-  86508565 ... led output changed to        00010011
-Stopped at time : 87002 us : File "//Mac/Home/BackUp/UCLA/152A-ee/M152A-2020Winter/1/src/tb/tb.v" Line 47
+  12001000 ... Running instruction        11000000
+  15729685 ... instruction        11000000 executed
+  15729685 ... led output changed to        00000010
+  20972565 ... led output changed to        00000011
+  20981095 UART0 Received byte 52 (R)
+  20992115 UART0 Received byte 30 (0)
+  21003135 UART0 Received byte 3a (:)
+  21014155 UART0 Received byte 30 (0)
+  21025175 UART0 Received byte 30 (0)
+  21036195 UART0 Received byte 30 (0)
+  21047215 UART0 Received byte 30 (0)
+  21058235 UART0 Received byte 0a (
+)
+  21069255 UART0 Received byte 0d (
+)
+  22501000 ... Running instruction        00000001
+  26215445 ... instruction        00000001 executed
+  26215445 ... led output changed to        00000100
+  31458325 ... led output changed to        00000101
+  33001000 ... Running instruction        11000000
+  36701205 ... instruction        11000000 executed
+  36701205 ... led output changed to        00000110
+  41944085 ... led output changed to        00000111
+  41952615 UART0 Received byte 52 (R)
+  41963635 UART0 Received byte 30 (0)
+  41974655 UART0 Received byte 3a (:)
+  41985675 UART0 Received byte 30 (0)
+  41996695 UART0 Received byte 30 (0)
+  42007715 UART0 Received byte 30 (0)
+  42018735 UART0 Received byte 31 (1)
+  42029755 UART0 Received byte 0a (
+)
+  42040775 UART0 Received byte 0d (
+)
+  43501000 ... Running instruction        00010001
+  47186965 ... instruction        00010001 executed
+  47186965 ... led output changed to        00001000
+  52429845 ... led output changed to        00001001
+  54001000 ... Running instruction        11010000
+  57672725 ... instruction        11010000 executed
+  57672725 ... led output changed to        00001010
+  62915605 ... led output changed to        00001011
+  62924135 UART0 Received byte 52 (R)
+  62935155 UART0 Received byte 31 (1)
+  62946175 UART0 Received byte 3a (:)
+  62957195 UART0 Received byte 30 (0)
+  62968215 UART0 Received byte 30 (0)
+  62979235 UART0 Received byte 30 (0)
+  62990255 UART0 Received byte 31 (1)
+  63001275 UART0 Received byte 0a (
+)
+  63012295 UART0 Received byte 0d (
+)
+  64501000 ... Running instruction        01000110
+  68158485 ... instruction        01000110 executed
+  68158485 ... led output changed to        00001100
+  73401365 ... led output changed to        00001101
+  75001000 ... Running instruction        11100000
+  78644245 ... instruction        11100000 executed
+  78644245 ... led output changed to        00001110
+  83887125 ... led output changed to        00001111
+  83895655 UART0 Received byte 52 (R)
+  83906675 UART0 Received byte 30 (0)
+  83917695 UART0 Received byte 3a (:)
+  83928715 UART0 Received byte 30 (0)
+  83939735 UART0 Received byte 30 (0)
+  83950755 UART0 Received byte 30 (0)
+  83961775 UART0 Received byte 32 (2)
+  83972795 UART0 Received byte 0a (
+)
+  83983815 UART0 Received byte 0d (
+)
+  85501000 ... Running instruction        01011000
+  89130005 ... instruction        01011000 executed
+  89130005 ... led output changed to        00010000
+  94372885 ... led output changed to        00010001
+  96001000 ... Running instruction        11000000
+  99615765 ... instruction        11000000 executed
+  99615765 ... led output changed to        00010010
+ 104858645 ... led output changed to        00010011
+ 104867175 UART0 Received byte 52 (R)
+ 104878195 UART0 Received byte 30 (0)
+ 104889215 UART0 Received byte 3a (:)
+ 104900235 UART0 Received byte 30 (0)
+ 104911255 UART0 Received byte 30 (0)
+ 104922275 UART0 Received byte 30 (0)
+ 104933295 UART0 Received byte 33 (3)
+ 104944315 UART0 Received byte 0a (
+)
+ 104955335 UART0 Received byte 0d (
+)
+ 106501000 ... Running instruction        01100001
+ 110101525 ... instruction        01100001 executed
+ 110101525 ... led output changed to        00010100
+ 115344405 ... led output changed to        00010101
+ 117001000 ... Running instruction        11010000
+ 120587285 ... instruction        11010000 executed
+ 120587285 ... led output changed to        00010110
+ 125830165 ... led output changed to        00010111
+ 125838695 UART0 Received byte 52 (R)
+ 125849715 UART0 Received byte 31 (1)
+ 125860735 UART0 Received byte 3a (:)
+ 125871755 UART0 Received byte 30 (0)
+ 125882775 UART0 Received byte 30 (0)
+ 125893795 UART0 Received byte 30 (0)
+ 125904815 UART0 Received byte 35 (5)
+ 125915835 UART0 Received byte 0a (
+)
+ 125926855 UART0 Received byte 0d (
+)
+ 127501000 ... Running instruction        01000110
+ 131073045 ... instruction        01000110 executed
+ 131073045 ... led output changed to        00011000
+ 136315925 ... led output changed to        00011001
+ 138001000 ... Running instruction        11100000
+ 141558805 ... instruction        11100000 executed
+ 141558805 ... led output changed to        00011010
+ 148112405 ... led output changed to        00011011
+ 148120935 UART0 Received byte 52 (R)
+ 148131955 UART0 Received byte 30 (0)
+ 148142975 UART0 Received byte 3a (:)
+ 148153995 UART0 Received byte 30 (0)
+ 148165015 UART0 Received byte 30 (0)
+ 148176035 UART0 Received byte 30 (0)
+ 148187055 UART0 Received byte 38 (8)
+ 148198075 UART0 Received byte 0a (
+)
+ 148209095 UART0 Received byte 0d (
+)
+ 148501000 ... Running instruction        01011000
+ 152044565 ... instruction        01011000 executed
+ 152044565 ... led output changed to        00011100
+ 158598165 ... led output changed to        00011101
+ 159001000 ... Running instruction        11000000
+ 162530325 ... instruction        11000000 executed
+ 162530325 ... led output changed to        00011110
+ 169083925 ... led output changed to        00011111
+ 169092455 UART0 Received byte 52 (R)
+ 169103475 UART0 Received byte 30 (0)
+ 169114495 UART0 Received byte 3a (:)
+ 169125515 UART0 Received byte 30 (0)
+ 169136535 UART0 Received byte 30 (0)
+ 169147555 UART0 Received byte 30 (0)
+ 169158575 UART0 Received byte 44 (D)
+ 169169595 UART0 Received byte 0a (
+)
+ 169180615 UART0 Received byte 0d (
+)
+ 169501000 ... Running instruction        01100001
+ 173016085 ... instruction        01100001 executed
+ 173016085 ... led output changed to        00100000
+ 179569685 ... led output changed to        00100001
+ 180001000 ... Running instruction        11010000
+ 183501845 ... instruction        11010000 executed
+ 183501845 ... led output changed to        00100010
+ 190055445 ... led output changed to        00100011
+ 190063975 UART0 Received byte 52 (R)
+ 190074995 UART0 Received byte 31 (1)
+ 190086015 UART0 Received byte 3a (:)
+ 190097035 UART0 Received byte 30 (0)
+ 190108055 UART0 Received byte 30 (0)
+ 190119075 UART0 Received byte 31 (1)
+ 190130095 UART0 Received byte 35 (5)
+ 190141115 UART0 Received byte 0a (
+)
+ 190152135 UART0 Received byte 0d (
+)
+ 190501000 ... Running instruction        01000110
+ 193987605 ... instruction        01000110 executed
+ 193987605 ... led output changed to        00100100
+ 200541205 ... led output changed to        00100101
+ 201001000 ... Running instruction        11100000
+ 204473365 ... instruction        11100000 executed
+ 204473365 ... led output changed to        00100110
+ 211026965 ... led output changed to        00100111
+ 211035495 UART0 Received byte 52 (R)
+ 211046515 UART0 Received byte 30 (0)
+ 211057535 UART0 Received byte 3a (:)
+ 211068555 UART0 Received byte 30 (0)
+ 211079575 UART0 Received byte 30 (0)
+ 211090595 UART0 Received byte 32 (2)
+ 211101615 UART0 Received byte 32 (2)
+ 211112635 UART0 Received byte 0a (
+)
+ 211123655 UART0 Received byte 0d (
+)
+Stopped at time : 211502 us : File "//Mac/Home/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/src/tb/tb.v" Line 47

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "//Mac/Home/BackUp/UCLA/152A-ee/M152A-2020Winter/1/src/rtl/seq-mul.v";
+static const char *ng0 = "//Mac/Home/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/src/rtl/seq-mul.v";
 
 
 

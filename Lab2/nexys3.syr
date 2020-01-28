@@ -152,11 +152,8 @@ Elaborating module <seq_mul>.
 WARNING:HDLCompiler:327 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 106: Concatenation with unsized literal; will interpret as 32 bits
 
 Elaborating module <uart_top>.
-WARNING:HDLCompiler:295 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 67: case condition never applies
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 72: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 72: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 73: Result of 20-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:295 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 103: case condition never applies
-WARNING:HDLCompiler:295 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 104: case condition never applies
 
 Elaborating module <uart_fifo>.
 WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_fifo.v" Line 55: Result of 11-bit expression is truncated to fit in 10-bit target.
@@ -350,16 +347,15 @@ INFO:Xst:3210 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_
 INFO:Xst:3210 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" line 135: Output port <recv_error> of the instance <uart_> is unconnected or connected to loadless signal.
     Found 16-bit register for signal <tx_data>.
     Found 1-bit register for signal <tfifo_rd_z>.
-    Found 3-bit register for signal <state>.
-    Found 3-bit adder for signal <state[2]_GND_8_o_add_5_OUT> created at line 72.
-    Found 16x8-bit Read Only RAM for signal <tx_data[15]_GND_8_o_wide_mux_20_OUT>
-    Found 3-bit 4-to-1 multiplexer for signal <_n0069> created at line 54.
-    Found 8-bit 4-to-1 multiplexer for signal <_n0085> created at line 41.
+    Found 4-bit register for signal <state>.
+    Found 4-bit adder for signal <state[3]_GND_8_o_add_6_OUT> created at line 72.
+    Found 16x8-bit Read Only RAM for signal <tx_data[15]_GND_8_o_wide_mux_22_OUT>
+    Found 4-bit 7-to-1 multiplexer for signal <_n0088> created at line 54.
     Summary:
 	inferred   1 RAM(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred  20 D-type flip-flop(s).
-	inferred   7 Multiplexer(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
 Unit <uart_top> synthesized.
 
 Synthesizing Unit <uart_fifo>.
@@ -439,7 +435,7 @@ Macro Statistics
  11-bit subtractor                                     : 2
  16-bit adder                                          : 1
  18-bit adder                                          : 1
- 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
  4-bit subtractor                                      : 2
  6-bit subtractor                                      : 2
  8-bit adder                                           : 1
@@ -450,28 +446,27 @@ Macro Statistics
  16-bit register                                       : 1
  18-bit register                                       : 1
  2-bit register                                        : 3
- 3-bit register                                        : 4
- 4-bit register                                        : 2
+ 3-bit register                                        : 3
+ 4-bit register                                        : 3
  6-bit register                                        : 2
  64-bit register                                       : 1
  8-bit register                                        : 5
-# Multiplexers                                         : 47
+# Multiplexers                                         : 49
  1-bit 2-to-1 multiplexer                              : 2
  1-bit 4-to-1 multiplexer                              : 1
  11-bit 2-to-1 multiplexer                             : 6
- 16-bit 2-to-1 multiplexer                             : 5
+ 16-bit 2-to-1 multiplexer                             : 6
  16-bit 4-to-1 multiplexer                             : 3
  2-bit 2-to-1 multiplexer                              : 4
  2-bit 4-to-1 multiplexer                              : 1
- 3-bit 2-to-1 multiplexer                              : 8
- 3-bit 4-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 5
  3-bit 8-to-1 multiplexer                              : 1
- 4-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 7
+ 4-bit 7-to-1 multiplexer                              : 1
  6-bit 2-to-1 multiplexer                              : 8
  6-bit 3-to-1 multiplexer                              : 1
  6-bit 7-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 2
- 8-bit 4-to-1 multiplexer                              : 1
 
 =========================================================================
 
@@ -518,8 +513,7 @@ INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing
 Unit <uart_fifo> synthesized (advanced).
 
 Synthesizing (advanced) Unit <uart_top>.
-The following registers are absorbed into counter <state>: 1 register on signal <state>.
-INFO:Xst:3231 - The small RAM <Mram_tx_data[15]_GND_8_o_wide_mux_20_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram_tx_data[15]_GND_8_o_wide_mux_22_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -542,39 +536,38 @@ Macro Statistics
  16x8-bit single-port distributed Read Only RAM        : 1
 # Multipliers                                          : 1
  16x16-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 9
+# Adders/Subtractors                                   : 10
  10-bit adder                                          : 1
  10-bit subtractor                                     : 1
  11-bit subtractor                                     : 2
  16-bit adder                                          : 1
  18-bit adder                                          : 1
+ 4-bit adder                                           : 1
  4-bit subtractor                                      : 1
  6-bit subtractor                                      : 2
-# Counters                                             : 3
- 3-bit up counter                                      : 1
+# Counters                                             : 2
  4-bit down counter                                    : 1
  8-bit up counter                                      : 1
 # Accumulators                                         : 2
  10-bit up accumulator                                 : 2
-# Registers                                            : 191
- Flip-Flops                                            : 191
-# Multiplexers                                         : 55
+# Registers                                            : 195
+ Flip-Flops                                            : 195
+# Multiplexers                                         : 58
  1-bit 2-to-1 multiplexer                              : 14
  1-bit 4-to-1 multiplexer                              : 1
  11-bit 2-to-1 multiplexer                             : 6
- 16-bit 2-to-1 multiplexer                             : 5
+ 16-bit 2-to-1 multiplexer                             : 6
  16-bit 4-to-1 multiplexer                             : 3
  2-bit 2-to-1 multiplexer                              : 4
  2-bit 4-to-1 multiplexer                              : 1
- 3-bit 2-to-1 multiplexer                              : 7
- 3-bit 4-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 5
  3-bit 8-to-1 multiplexer                              : 1
- 4-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 6
+ 4-bit 7-to-1 multiplexer                              : 1
  6-bit 2-to-1 multiplexer                              : 6
  6-bit 3-to-1 multiplexer                              : 1
  6-bit 7-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 2
- 8-bit 4-to-1 multiplexer                              : 1
 
 =========================================================================
 
@@ -642,8 +635,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 188
- Flip-Flops                                            : 188
+# Registers                                            : 189
+ Flip-Flops                                            : 189
 
 =========================================================================
 
@@ -666,25 +659,24 @@ Top Level Output File Name         : nexys3.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 376
+# BELS                             : 379
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 23
-#      LUT2                        : 30
-#      LUT3                        : 20
-#      LUT4                        : 28
-#      LUT5                        : 48
-#      LUT6                        : 142
+#      LUT2                        : 26
+#      LUT3                        : 12
+#      LUT4                        : 43
+#      LUT5                        : 51
+#      LUT6                        : 140
 #      MUXCY                       : 39
-#      MUXF7                       : 1
 #      VCC                         : 1
 #      XORCY                       : 41
-# FlipFlops/Latches                : 188
+# FlipFlops/Latches                : 189
 #      FD                          : 15
 #      FDE                         : 28
 #      FDP                         : 2
 #      FDR                         : 53
-#      FDRE                        : 89
+#      FDRE                        : 90
 #      FDS                         : 1
 # RAMS                             : 1
 #      RAMB8BWER                   : 1
@@ -703,15 +695,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             188  out of  18224     1%  
- Number of Slice LUTs:                  293  out of   9112     3%  
-    Number used as Logic:               293  out of   9112     3%  
+ Number of Slice Registers:             189  out of  18224     1%  
+ Number of Slice LUTs:                  297  out of   9112     3%  
+    Number used as Logic:               297  out of   9112     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    306
-   Number with an unused Flip Flop:     118  out of    306    38%  
-   Number with an unused LUT:            13  out of    306     4%  
-   Number of fully used LUT-FF pairs:   175  out of    306    57%  
+ Number of LUT Flip Flop pairs used:    310
+   Number with an unused Flip Flop:     121  out of    310    39%  
+   Number with an unused LUT:            13  out of    310     4%  
+   Number of fully used LUT-FF pairs:   176  out of    310    56%  
    Number of unique control sets:        10
 
 IO Utilization: 
@@ -745,7 +737,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 189   |
+clk                                | BUFGP                  | 190   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -768,7 +760,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 6.909ns (frequency: 144.739MHz)
-  Total number of paths / destination ports: 35283 / 466
+  Total number of paths / destination ports: 35363 / 469
 -------------------------------------------------------------------------
 Delay:               6.909ns (Levels of Logic = 3)
   Source:            inst_wd_5 (FF)
@@ -843,14 +835,14 @@ clk            |    6.909|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.48 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.23 secs
  
 --> 
 
-Total memory usage is 262056 kilobytes
+Total memory usage is 262824 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   68 (   0 filtered)
+Number of warnings :   65 (   0 filtered)
 Number of infos    :    7 (   0 filtered)
 

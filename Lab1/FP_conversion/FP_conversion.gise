@@ -173,13 +173,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580077531" xil_pn:in_ck="-3234185245532467846" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="7406737897945907374" xil_pn:start_ts="1580077524">
+    <transform xil_pn:end_ts="1580240726" xil_pn:in_ck="-3234185245532467846" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="7406737897945907374" xil_pn:start_ts="1580240719">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="FP_conversion.lso"/>
       <outfile xil_pn:name="FP_conversion.ngc"/>
       <outfile xil_pn:name="FP_conversion.ngr"/>
@@ -196,20 +195,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580077536" xil_pn:in_ck="-35452774868856319" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="505000308216705472" xil_pn:start_ts="1580077531">
+    <transform xil_pn:end_ts="1580240731" xil_pn:in_ck="-35452774868856319" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="505000308216705472" xil_pn:start_ts="1580240726">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FP_conversion.bld"/>
       <outfile xil_pn:name="FP_conversion.ngd"/>
       <outfile xil_pn:name="FP_conversion_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1580077542" xil_pn:in_ck="-35452774868856318" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1580077536">
+    <transform xil_pn:end_ts="1580240737" xil_pn:in_ck="-35452774868856318" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1580240731">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FP_conversion.pcf"/>
       <outfile xil_pn:name="FP_conversion_map.map"/>
       <outfile xil_pn:name="FP_conversion_map.mrp"/>
@@ -220,10 +217,9 @@
       <outfile xil_pn:name="FP_conversion_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1580077552" xil_pn:in_ck="-4060479178091933157" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1580077542">
+    <transform xil_pn:end_ts="1580240747" xil_pn:in_ck="-4060479178091933157" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1580240737">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FP_conversion.ncd"/>
       <outfile xil_pn:name="FP_conversion.pad"/>
       <outfile xil_pn:name="FP_conversion.par"/>
@@ -235,10 +231,9 @@
       <outfile xil_pn:name="FP_conversion_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1580077552" xil_pn:in_ck="-35452774868856450" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1580077548">
+    <transform xil_pn:end_ts="1580240747" xil_pn:in_ck="-35452774868856450" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1580240743">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FP_conversion.twr"/>
       <outfile xil_pn:name="FP_conversion.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

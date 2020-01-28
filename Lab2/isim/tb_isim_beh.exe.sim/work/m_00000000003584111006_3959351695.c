@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "//Mac/Home/BackUp/UCLA/152A-ee/M152A-2020Winter/1/src/rtl/uart_top.v";
+static const char *ng0 = "//Mac/Home/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/src/rtl/uart_top.v";
 static unsigned int ng1[] = {0U, 0U};
 static int ng2[] = {48, 0};
 static unsigned int ng3[] = {1U, 0U};
@@ -440,31 +440,31 @@ LAB6:    xsi_set_current_line(54, ng0);
 
 LAB8:    t5 = (t0 + 2240);
     t11 = *((char **)t5);
-    t13 = xsi_vlog_unsigned_case_compare(t4, 3, t11, 32);
+    t13 = xsi_vlog_unsigned_case_compare(t4, 4, t11, 32);
     if (t13 == 1)
         goto LAB9;
 
 LAB10:    t2 = (t0 + 2376);
     t3 = *((char **)t2);
-    t13 = xsi_vlog_unsigned_case_compare(t4, 3, t3, 32);
+    t13 = xsi_vlog_unsigned_case_compare(t4, 4, t3, 32);
     if (t13 == 1)
         goto LAB11;
 
 LAB12:    t2 = (t0 + 2512);
     t3 = *((char **)t2);
-    t13 = xsi_vlog_unsigned_case_compare(t4, 3, t3, 32);
+    t13 = xsi_vlog_unsigned_case_compare(t4, 4, t3, 32);
     if (t13 == 1)
         goto LAB13;
 
 LAB14:    t2 = (t0 + 2648);
     t3 = *((char **)t2);
-    t13 = xsi_vlog_unsigned_case_compare(t4, 3, t3, 32);
+    t13 = xsi_vlog_unsigned_case_compare(t4, 4, t3, 32);
     if (t13 == 1)
         goto LAB15;
 
 LAB16:    t2 = (t0 + 3056);
     t3 = *((char **)t2);
-    t13 = xsi_vlog_unsigned_case_compare(t4, 3, t3, 32);
+    t13 = xsi_vlog_unsigned_case_compare(t4, 4, t3, 32);
     if (t13 == 1)
         goto LAB17;
 
@@ -521,7 +521,7 @@ LAB5:    xsi_set_current_line(52, ng0);
     t11 = (t0 + 2240);
     t12 = *((char **)t11);
     t11 = (t0 + 7480);
-    xsi_vlogvar_wait_assign_value(t11, t12, 0, 0, 3, 0LL);
+    xsi_vlogvar_wait_assign_value(t11, t12, 0, 0, 4, 0LL);
     goto LAB7;
 
 LAB9:    xsi_set_current_line(56, ng0);
@@ -543,14 +543,14 @@ LAB11:    xsi_set_current_line(58, ng0);
     t2 = (t0 + 2512);
     t5 = *((char **)t2);
     t2 = (t0 + 7480);
-    xsi_vlogvar_wait_assign_value(t2, t5, 0, 0, 3, 0LL);
+    xsi_vlogvar_wait_assign_value(t2, t5, 0, 0, 4, 0LL);
     goto LAB21;
 
 LAB13:    xsi_set_current_line(60, ng0);
     t2 = (t0 + 2648);
     t5 = *((char **)t2);
     t2 = (t0 + 7480);
-    xsi_vlogvar_wait_assign_value(t2, t5, 0, 0, 3, 0LL);
+    xsi_vlogvar_wait_assign_value(t2, t5, 0, 0, 4, 0LL);
     goto LAB21;
 
 LAB15:    xsi_set_current_line(62, ng0);
@@ -647,7 +647,7 @@ LAB22:    xsi_set_current_line(56, ng0);
     t14 = (t0 + 2376);
     t15 = *((char **)t14);
     t14 = (t0 + 7480);
-    xsi_vlogvar_wait_assign_value(t14, t15, 0, 0, 3, 0LL);
+    xsi_vlogvar_wait_assign_value(t14, t15, 0, 0, 4, 0LL);
     goto LAB24;
 
 LAB25:    *((unsigned int *)t16) = 1;
@@ -667,7 +667,7 @@ LAB34:    xsi_set_current_line(64, ng0);
     t30 = (t0 + 2784);
     t31 = *((char **)t30);
     t30 = (t0 + 7480);
-    xsi_vlogvar_wait_assign_value(t30, t31, 0, 0, 3, 0LL);
+    xsi_vlogvar_wait_assign_value(t30, t31, 0, 0, 4, 0LL);
     xsi_set_current_line(65, ng0);
     t2 = (t0 + 5000U);
     t3 = *((char **)t2);
@@ -690,7 +690,7 @@ LAB41:    xsi_set_current_line(68, ng0);
     t30 = (t0 + 2240);
     t31 = *((char **)t30);
     t30 = (t0 + 7480);
-    xsi_vlogvar_wait_assign_value(t30, t31, 0, 0, 3, 0LL);
+    xsi_vlogvar_wait_assign_value(t30, t31, 0, 0, 4, 0LL);
     goto LAB43;
 
 LAB44:    *((unsigned int *)t16) = 1;
@@ -712,9 +712,9 @@ LAB53:    xsi_set_current_line(72, ng0);
     t31 = *((char **)t30);
     t32 = ((char*)((ng33)));
     memset(t33, 0, 8);
-    xsi_vlog_unsigned_add(t33, 32, t31, 3, t32, 32);
+    xsi_vlog_unsigned_add(t33, 32, t31, 4, t32, 32);
     t34 = (t0 + 7480);
-    xsi_vlogvar_wait_assign_value(t34, t33, 0, 0, 3, 0LL);
+    xsi_vlogvar_wait_assign_value(t34, t33, 0, 0, 4, 0LL);
     xsi_set_current_line(73, ng0);
     t2 = ((char*)((ng1)));
     t3 = (t0 + 7320);
@@ -789,31 +789,31 @@ LAB4:    xsi_set_current_line(102, ng0);
 
 LAB5:    t7 = (t0 + 2920);
     t8 = *((char **)t7);
-    t9 = xsi_vlog_unsigned_case_compare(t6, 3, t8, 32);
+    t9 = xsi_vlog_unsigned_case_compare(t6, 4, t8, 32);
     if (t9 == 1)
         goto LAB6;
 
 LAB7:    t2 = (t0 + 3056);
     t3 = *((char **)t2);
-    t9 = xsi_vlog_unsigned_case_compare(t6, 3, t3, 32);
+    t9 = xsi_vlog_unsigned_case_compare(t6, 4, t3, 32);
     if (t9 == 1)
         goto LAB8;
 
 LAB9:    t2 = (t0 + 2376);
     t3 = *((char **)t2);
-    t9 = xsi_vlog_unsigned_case_compare(t6, 3, t3, 32);
+    t9 = xsi_vlog_unsigned_case_compare(t6, 4, t3, 32);
     if (t9 == 1)
         goto LAB10;
 
 LAB11:    t2 = (t0 + 2512);
     t3 = *((char **)t2);
-    t9 = xsi_vlog_unsigned_case_compare(t6, 3, t3, 32);
+    t9 = xsi_vlog_unsigned_case_compare(t6, 4, t3, 32);
     if (t9 == 1)
         goto LAB12;
 
 LAB13:    t2 = (t0 + 2648);
     t3 = *((char **)t2);
-    t9 = xsi_vlog_unsigned_case_compare(t6, 3, t3, 32);
+    t9 = xsi_vlog_unsigned_case_compare(t6, 4, t3, 32);
     if (t9 == 1)
         goto LAB14;
 

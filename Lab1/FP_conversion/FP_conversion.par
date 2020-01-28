@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ANDREWGAOA26E::  Sun Jan 26 14:25:43 2020
+ANDREWGAOA26E::  Tue Jan 28 11:45:38 2020
 
 par -w -intstyle ise -ol high -mt off FP_conversion_map.ncd FP_conversion.ncd
 FP_conversion.pcf 
@@ -98,19 +98,19 @@ Phase  4  : 131 unrouted; (Par is working to improve performance)     REAL time:
 
 Updating file: FP_conversion.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
-Total REAL time to Router completion: 2 secs 
-Total CPU time to Router completion: 2 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Total REAL time to Router completion: 3 secs 
+Total CPU time to Router completion: 3 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -129,10 +129,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 3 secs 
+Total REAL time to PAR completion: 4 secs 
 Total CPU time to PAR completion: 3 secs 
 
-Peak Memory Usage:  312 MB
+Peak Memory Usage:  305 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

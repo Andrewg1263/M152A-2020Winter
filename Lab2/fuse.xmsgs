@@ -5,16 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/../1/src/rtl/uart_top.v" Line 106: Concatenation with unsized literal; will interpret as 32 bits
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/src/rtl/uart_top.v" Line 106: Concatenation with unsized literal; will interpret as 32 bits
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/../1/src/tb/tb.v" Line 62: Port <arg fmt="%s" index="1">btnSend</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/src/rtl/uart_top.v" Line 106: Concatenation with unsized literal; will interpret as 32 bits
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/../1/src/rtl/uart_top.v" Line 106: Concatenation with unsized literal; will interpret as 32 bits
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/../1/src/rtl/nexys3.v" Line 172: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">i_inst_register</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/src/rtl/nexys3.v" Line 172: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">i_inst_register</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
 </msg>
 
 </messages>

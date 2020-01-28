@@ -17,19 +17,10 @@
 <msg type="warning" file="HDLCompiler" num="327" delta="old" >"\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 106: Concatenation with unsized literal; will interpret as 32 bits
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="295" delta="old" >"\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 67: case condition never applies
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 72: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 72: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 73: Result of <arg fmt="%d" index="1">20</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="295" delta="old" >"\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 103: case condition never applies
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="295" delta="old" >"\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_top.v" Line 104: case condition never applies
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\1\src\rtl\uart_fifo.v" Line 55: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
@@ -109,7 +100,7 @@
 
 <msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_tx_data[15]_GND_8_o_wide_mux_20_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_tx_data[15]_GND_8_o_wide_mux_22_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst_register_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">nexys3</arg>&gt;.
