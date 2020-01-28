@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+nexys3 instance_name (
+    .RsTx(RsTx), 
+    .led(led), 
+    .RsRx(RsRx), 
+    .sw(sw), 
+    .btnS(btnS), 
+    .btnSend(btnSend), 
+    .btnR(btnR), 
+    .clk(clk)
+    );
+
+

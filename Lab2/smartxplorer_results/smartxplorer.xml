@@ -1,0 +1,202 @@
+
+<smartXplorerReport>
+    <command>"C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\smartxplorer.exe" -p xc6slx16-csg324-3 -b -wd smartxplorer_results nexys3.ngd -to "-v 3 -s 3 -n 3 -fastpaths -xml nexys3.twx " -host_list hostlistfile.txt -max_runs 7
+    </command>
+    <programStatus>Done
+    </programStatus>
+    <programPID>2588
+    </programPID>
+    
+    <strategy name="MapRunTime">
+        <strategyData>map  -ol high -w ; par  -ol high 
+        </strategyData>
+        <xdsFile>mapruntime.xds
+        </xdsFile>
+        <host name="ANDREWGAOA26E">
+            <hostData>Windows_NT, Intel64 Family 6 Model 158 Stepping 10, GenuineIntel, 6-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run1
+        </runIndex>
+        <status>Done
+        </status>
+        <logFile>nexys3_sx.log
+        </logFile>
+        <timingScore>0
+        </timingScore>
+        <WorstCaseSlack>1.302ns
+        </WorstCaseSlack>
+        <Luts>254 (2%)
+	</Luts>
+	<SliceRegisters>189 (1%)
+	</SliceRegisters>
+	<runTime>0h 1m 15s
+        </runTime>
+    </strategy>
+    <strategy name="MapLogicOpt">
+        <strategyData>map  -ol high -xe n -logic_opt on -t 2 -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>maplogicopt.xds
+        </xdsFile>
+        <host name="ANDREWGAOA26E">
+            <hostData>Windows_NT, Intel64 Family 6 Model 158 Stepping 10, GenuineIntel, 6-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run2
+        </runIndex>
+        <status>Done
+        </status>
+        <logFile>nexys3_sx.log
+        </logFile>
+        <timingScore>0
+        </timingScore>
+        <WorstCaseSlack>1.302ns
+        </WorstCaseSlack>
+        <Luts>254 (2%)
+	</Luts>
+	<SliceRegisters>189 (1%)
+	</SliceRegisters>
+	<runTime>0h 1m 23s
+        </runTime>
+    </strategy>
+    <strategy name="MapGlobOptIOReg">
+        <strategyData>map  -ol high -global_opt speed -pr b -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>mapgloboptioreg.xds
+        </xdsFile>
+        <host name="ANDREWGAOA26E">
+            <hostData>Windows_NT, Intel64 Family 6 Model 158 Stepping 10, GenuineIntel, 6-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run3
+        </runIndex>
+        <status>Done
+        </status>
+        <logFile>nexys3_sx.log
+        </logFile>
+        <timingScore>0
+        </timingScore>
+        <WorstCaseSlack>0.686ns
+        </WorstCaseSlack>
+        <Luts>278 (3%)
+	</Luts>
+	<SliceRegisters>179 (1%)
+	</SliceRegisters>
+	<runTime>0h 1m 29s
+        </runTime>
+    </strategy>
+    <strategy name="MapRegDup">
+        <strategyData>map  -ol high -xe n -register_duplication on -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>mapregdup.xds
+        </xdsFile>
+        <host name="ANDREWGAOA26E">
+            <hostData>Windows_NT, Intel64 Family 6 Model 158 Stepping 10, GenuineIntel, 6-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run4
+        </runIndex>
+        <status>Done
+        </status>
+        <logFile>nexys3_sx.log
+        </logFile>
+        <timingScore>0
+        </timingScore>
+        <WorstCaseSlack>1.302ns
+        </WorstCaseSlack>
+        <Luts>254 (2%)
+	</Luts>
+	<SliceRegisters>189 (1%)
+	</SliceRegisters>
+	<runTime>0h 1m 35s
+        </runTime>
+    </strategy>
+    <strategy name="MapExtraEffortIOReg">
+        <strategyData>map  -ol high -xe n -pr b -t 7 -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>mapextraeffortioreg.xds
+        </xdsFile>
+        <host name="ANDREWGAOA26E">
+            <hostData>Windows_NT, Intel64 Family 6 Model 158 Stepping 10, GenuineIntel, 6-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run5
+        </runIndex>
+        <status>Done
+        </status>
+        <logFile>nexys3_sx.log
+        </logFile>
+        <timingScore>0
+        </timingScore>
+        <WorstCaseSlack>0.529ns
+        </WorstCaseSlack>
+        <Luts>254 (2%)
+	</Luts>
+	<SliceRegisters>179 (1%)
+	</SliceRegisters>
+	<runTime>0h 0m 39s
+        </runTime>
+    </strategy>
+    <strategy name="MapLogOptRegDup">
+        <strategyData>map  -ol high -xe n -logic_opt on -register_duplication on -t 2 -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>maplogoptregdup.xds
+        </xdsFile>
+        <host name="ANDREWGAOA26E">
+            <hostData>Windows_NT, Intel64 Family 6 Model 158 Stepping 10, GenuineIntel, 6-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run6
+        </runIndex>
+        <status>Done
+        </status>
+        <logFile>nexys3_sx.log
+        </logFile>
+        <timingScore>0
+        </timingScore>
+        <WorstCaseSlack>1.302ns
+        </WorstCaseSlack>
+        <Luts>254 (2%)
+	</Luts>
+	<SliceRegisters>189 (1%)
+	</SliceRegisters>
+	<runTime>0h 1m 47s
+        </runTime>
+    </strategy>
+    <strategy name="MapExtraEffort2">
+        <strategyData>map  -ol high -xe n -t 3 -w ; par  -ol high 
+        </strategyData>
+        <xdsFile>mapextraeffort2.xds
+        </xdsFile>
+        <host name="None">
+            <hostData>None
+            </hostData>
+        </host>
+        <runIndex>None
+        </runIndex>
+        <status>None
+        </status>
+        <logFile>nexys3_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>None
+	</Luts>
+	<SliceRegisters>None
+	</SliceRegisters>
+	<runTime>None
+        </runTime>
+    </strategy>
+    <bestStrategy>MapExtraEffortIOReg
+    </bestStrategy>
+    <envVariables>
+        <env name="XILINX_DSP"  value="C:\Xilinx\14.7\ISE_DS\ISE"/>
+        <env name="XILINX_PLANAHEAD"  value="C:\Xilinx\14.7\ISE_DS\PlanAhead"/>
+        <env name="XILINX_EDK"  value="C:\Xilinx\14.7\ISE_DS\EDK"/>
+        <env name="PATH"  value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\"/>
+        <env name="XILINX"  value="C:\Xilinx\14.7\ISE_DS\ISE\"/>
+        
+    </envVariables>
+</smartXplorerReport>

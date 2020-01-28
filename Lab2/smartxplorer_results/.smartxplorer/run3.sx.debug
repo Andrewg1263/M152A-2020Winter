@@ -1,0 +1,45 @@
+strategySpecString = ':oc:sqmap:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsglobal_opt:spspeed:sp:dspr:spb:sp:dsw:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:spY:clcl:clbslBackUp:clbslUCLA:clbsl152A:cldsee:clbslM152A:clds2020Winter:clbslLab2:sp:dsp:spxc6slx16:dscsg324:ds3:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp3:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:spnexys3.twx:sp:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp3:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapGlobOptIOReg:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.7:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sqY:cl:bsl:bslBackUp:bsl:bslUCLA:bsl:bsl152A:dsee:bsl:bslM152A:ds2020Winter:bsl:bslLab2:sq:cc'
+Xilinx Environment Variables:
+
+{'XILINX': 'C:\\Xilinx\\14.7\\ISE_DS\\ISE\\'
+'PATH': 'C:\\Xilinx\\14.7\\ISE_DS\\ISE\\\\lib\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\lib\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\..\\..\\..\\DocNav;C:\\Xilinx\\14.7\\ISE_DS\\PlanAhead\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\lib\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\nt\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\powerpc-eabi\\nt\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnuwin\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\arm\\nt\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\linux_toolchain\\nt64_be\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\linux_toolchain\\nt64_le\\bin;C:\\Xilinx\\14.7\\ISE_DS\\common\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\common\\lib\\nt64;C:\\Program Files (x86)\\Parallels\\Parallels Tools\\Applications;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+'XILINX_PLANAHEAD': 'C:\\Xilinx\\14.7\\ISE_DS\\PlanAhead'
+'XILINX_DSP': 'C:\\Xilinx\\14.7\\ISE_DS\\ISE'
+'XILINX_EDK': 'C:\\Xilinx\\14.7\\ISE_DS\\EDK'}
+envDict = {}
+ANDREWGAOA26E_2.stat:Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab2\smartxplorer_results\.smartxplorer\.sx.keepAlive.ANDREWGAOA26E_2
+INFO: total number of threads running this host None
+...searching for file: mapgloboptioreg.xds
+Creating XDS file ... mapgloboptioreg.xds
+###################################
+
+      <property name = "Map:Placer Effort Level"
+               value = "High" />
+      <property name = "Map:Global Optimization"
+               value = "Speed" />
+      <property name = "Map:Pack I/O Registers/Latches into IOBs"
+               value = "For Inputs and Outputs" />
+      <property name = "Place &amp; Route:Place &amp; Route Effort Level (Overall)"
+               value = "High" />
+      <property name = "Place &amp; Route:Extra Effort (Highest PAR level only)"
+               value = "Normal" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Number of Paths in Error/Verbose Report"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Type"
+               value = "Verbose Report" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Change Device Speed To"
+               value = "-3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Paths by Endpoint"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Fastest Path(s) in Each Constraint"
+               value = "true" />
+###################################
+launching map with options  -ol high -global_opt speed -pr b -w  -p xc6slx16-csg324-3 -o nexys3_map.ncd  Y:cl:bslBackUp:bslUCLA:bsl152A:dsee:bslM152A:ds2020Winter:bslLab2:bslsmartxplorer_results:bslrun3:bslnexys3.pcf...
+runTask: map nexys3.ngd -ol high -global_opt speed -pr b -w -p xc6slx16-csg324-3 -o nexys3_map.ncd Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab2\smartxplorer_results\run3\nexys3.pcf
+args = ['map', 'nexys3.ngd', '-ol', 'high', '-global_opt', 'speed', '-pr', 'b', '-w', '-p', 'xc6slx16-csg324-3', '-o', 'nexys3_map.ncd', 'Y:\\BackUp\\UCLA\\152A-ee\\M152A-2020Winter\\Lab2\\smartxplorer_results\\run3\\nexys3.pcf']
+launching par with options  -ol high -xe n  -w nexys3.ncd  Y:cl:bslBackUp:bslUCLA:bsl152A:dsee:bslM152A:ds2020Winter:bslLab2:bslsmartxplorer_results:bslrun3:bslnexys3.pcf...
+runTask: par nexys3_map.ncd -ol high -xe n -w nexys3.ncd Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab2\smartxplorer_results\run3\nexys3.pcf
+args = ['par', 'nexys3_map.ncd', '-ol', 'high', '-xe', 'n', '-w', 'nexys3.ncd', 'Y:\\BackUp\\UCLA\\152A-ee\\M152A-2020Winter\\Lab2\\smartxplorer_results\\run3\\nexys3.pcf']
+launching trce...
+runTask: trce Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab2\smartxplorer_results\run3\nexys3.ncd Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab2\smartxplorer_results\run3\nexys3.pcf -xml Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab2\smartxplorer_results\run3\nexys3.twx -v 3 -s 3 -n 3 -fastpaths -o Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab2\smartxplorer_results\run3\nexys3.twr
+args = ['trce', 'Y:\\BackUp\\UCLA\\152A-ee\\M152A-2020Winter\\Lab2\\smartxplorer_results\\run3\\nexys3.ncd', 'Y:\\BackUp\\UCLA\\152A-ee\\M152A-2020Winter\\Lab2\\smartxplorer_results\\run3\\nexys3.pcf', '-xml', 'Y:\\BackUp\\UCLA\\152A-ee\\M152A-2020Winter\\Lab2\\smartxplorer_results\\run3\\nexys3.twx', '-v', '3', '-s', '3', '-n', '3', '-fastpaths', '-o', 'Y:\\BackUp\\UCLA\\152A-ee\\M152A-2020Winter\\Lab2\\smartxplorer_results\\run3\\nexys3.twr']

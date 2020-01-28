@@ -1,0 +1,33 @@
+----------------------------------------------------------------------
+FPGA SmartXplorer (tm) Version 14.7
+
+----------------------------------------------------------------------
+ Strategy : MapExtraEffortIOReg
+----------------------------------------------------------------------
+ Run index                           : run5
+ Map options                         : -ol high -xe n -pr b -t 7 -w 
+ Par options                         : -ol high -xe n 
+ Number of Luts                      : 254 (2%)
+ Number of Slice Registers           : 179 (1%)
+ Status                              : Done
+ Achieved Timing Score               : 0
+ Worst Case Slack                : 0.529ns
+
+ Current Best (Lowest) Timing Score  : 0
+ Current Best Strategy               : MapExtraEffortIOReg
+----------------------------------------------------------------------
+######################################################################
+ BestStrategy : MapExtraEffortIOReg
+######################################################################
+ Run index                           : run5
+ Map options                         : -ol high -xe n -pr b -t 7 -w 
+ Par options                         : -ol high -xe n 
+ Number of Luts                      : 254 (2%)
+ Number of Slice Registers           : 179 (1%)
+ Achieved Timing Score               : 0
+ Worst Case Slack                : 0.529ns
+
+######################################################################
+
+Total Real Time:122.9(secs)
+SmartXplorer Done

@@ -1,0 +1,50 @@
+
+Release 14.7 SmartXplorer
+Copyright(c) 1995-2010 Xilinx, Inc. All rights reserved.
+"C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\smartxplorer.exe" -p xc6slx16-csg324-3 -b -wd smartxplorer_results nexys3.ngd -to "-v 3 -s 3 -n 3 -fastpaths -xml nexys3.twx " -host_list hostlistfile.txt -max_runs 7
+
+SmartXplorer Settings: 
+
+designName=Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab2\nexys3.ngd 
+write_dir=Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab2\smartxplorer_results 
+host_list=Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab2\hostlistfile.txt 
+part=xc6slx16-csg324-3 
+strategy_file=None 
+notify=None 
+source_dir=Y:\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab2 
+batch_mode=True 
+run_all_strategies=False 
+list_all_strategies=False 
+remote_command=rsh
+area_report="lut;slice_reg"
+power_options=off
+trce_options="-v 3 -s 3 -n 3 -fastpaths -xml nexys3.twx "
+max_runs=7
+
+Starting SmartXplorer...
+See file 'smartxplorer.html' for real-time report.
+
+
+Running SmartXplorer strategies...
+
+
+
+INFO: Timing Met... Stopping remaining jobs
+######################################################################
+ BestStrategy : MapExtraEffortIOReg
+######################################################################
+ Run index                           : run5
+ Map options                         : -ol high -xe n -pr b -t 7 -w 
+ Par options                         : -ol high -xe n 
+ Number of Luts                      : 254 (2%)
+ Number of Slice Registers           : 179 (1%)
+ Achieved Timing Score               : 0
+ Worst Case Slack                : 0.529ns
+
+######################################################################
+
+Total Real Time:122.9(secs)
+SmartXplorer Done
+
+
+SmartXplorer Done. See file 'smartxplorer.txt' for detailed report.

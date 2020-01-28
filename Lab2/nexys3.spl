@@ -1,0 +1,14 @@
+[Inputs]
+RsRx
+btnS
+btnSend
+btnR
+clk
+=sw[7:0]=
+[Outputs]
+RsTx
+=led[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel nexys3
+
