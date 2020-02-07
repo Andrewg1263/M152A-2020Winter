@@ -1,0 +1,30 @@
+Command line:
+   hz_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49249
+
+Tue Feb 04 13:12:14 2020
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 667.025 Meg
+
+ Total Signals          : 16
+ Total Nets             : 16
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 126
+Total Line Count : 37
+Total Line Count : 37
+
+ Total Simulation Time: 5.55363 sec
+
+ Current Memory Usage: 981.598 Meg
+
+Tue Feb 04 13:13:10 2020
+

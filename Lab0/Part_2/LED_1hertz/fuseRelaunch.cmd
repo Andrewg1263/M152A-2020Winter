@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab0/Part_2/LED_1hertz/hz_tb_isim_beh.exe" -prj "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab0/Part_2/LED_1hertz/hz_tb_beh.prj" "work.hz_tb" "work.glbl" 

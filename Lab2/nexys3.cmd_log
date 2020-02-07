@@ -69,3 +69,4 @@ spl2sym -intstyle ise -family spartan6 nexys3.spl Y:/BackUp/UCLA/152A-ee/M152A-2
 vhdtdtfi -lang verilog -prj Lab2 -o Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/nexys3.tfi -lib work Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/src/rtl//nexys3.v -module nexys3 -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
 vhdtdtfi -lib work Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/src/rtl/nexys3.v -lang verilog -prj Lab2 -o nexys3.spl -module nexys3 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan6 nexys3.spl Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/nexys3.sym 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/nexys3.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab2/nexys3.syr" 

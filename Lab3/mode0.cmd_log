@@ -42,3 +42,88 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
 bitgen -intstyle ise -f mode0.ut mode0.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SRC/nexys3.ucf -p xc6slx16-csg324-3 mode0.ngc mode0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mode0_map.ncd mode0.ngd mode0.pcf 
+par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
+bitgen -intstyle ise -f mode0.ut mode0.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SRC/nexys3.ucf -p xc6slx16-csg324-3 mode0.ngc mode0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mode0_map.ncd mode0.ngd mode0.pcf 
+par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
+bitgen -intstyle ise -f mode0.ut mode0.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SRC/nexys3.ucf -p xc6slx16-csg324-3 mode0.ngc mode0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mode0_map.ncd mode0.ngd mode0.pcf 
+par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
+bitgen -intstyle ise -f mode0.ut mode0.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SRC/nexys3.ucf -p xc6slx16-csg324-3 mode0.ngc mode0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mode0_map.ncd mode0.ngd mode0.pcf 
+par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
+bitgen -intstyle ise -f mode0.ut mode0.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SRC/nexys3.ucf -p xc6slx16-csg324-3 mode0.ngc mode0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mode0_map.ncd mode0.ngd mode0.pcf 
+par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
+bitgen -intstyle ise -f mode0.ut mode0.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SRC/nexys3.ucf -p xc6slx16-csg324-3 mode0.ngc mode0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mode0_map.ncd mode0.ngd mode0.pcf 
+par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
+bitgen -intstyle ise -f mode0.ut mode0.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SRC/nexys3.ucf -p xc6slx16-csg324-3 mode0.ngc mode0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mode0_map.ncd mode0.ngd mode0.pcf 
+par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
+bitgen -intstyle ise -f mode0.ut mode0.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SRC/nexys3.ucf -p xc6slx16-csg324-3 mode0.ngc mode0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mode0_map.ncd mode0.ngd mode0.pcf 
+par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
+bitgen -intstyle ise -f mode0.ut mode0.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SRC/nexys3.ucf -p xc6slx16-csg324-3 mode0.ngc mode0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mode0_map.ncd mode0.ngd mode0.pcf 
+par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
+bitgen -intstyle ise -f mode0.ut mode0.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SRC/nexys3.ucf -p xc6slx16-csg324-3 mode0.ngc mode0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mode0_map.ncd mode0.ngd mode0.pcf 
+par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
+bitgen -intstyle ise -f mode0.ut mode0.ncd 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+xst -intstyle ise -ifn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.xst" -ofn "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/mode0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SRC/nexys3.ucf -p xc6slx16-csg324-3 mode0.ngc mode0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mode0_map.ncd mode0.ngd mode0.pcf 
+par -w -intstyle ise -ol high -mt off mode0_map.ncd mode0.ncd mode0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mode0.twx mode0.ncd -o mode0.twr mode0.pcf 
+bitgen -intstyle ise -f mode0.ut mode0.ncd 

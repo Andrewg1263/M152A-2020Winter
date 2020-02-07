@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: mode0.prj
 
@@ -105,6 +105,14 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\SRC\Counter.v" into library work
+Parsing module <Counter>.
+WARNING:HDLCompiler:751 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\SRC\Counter.v" Line 32: Redeclaration of ansi port minutes_seconds is not allowed
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\FourLedControl.v" into library work
+Parsing module <FourLedControl>.
+Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\clock.v" into library work
+Parsing module <clock>.
+WARNING:HDLCompiler:370 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\clock.v" Line 24: Empty port in module declaration
 Analyzing Verilog file "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" into library work
 Parsing module <mode0>.
 
@@ -114,42 +122,161 @@ Parsing module <mode0>.
 
 Elaborating module <mode0>.
 
+Elaborating module <clock>.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\clock.v" Line 66: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\clock.v" Line 67: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\clock.v" Line 68: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:1127 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" Line 38: Assignment to clk_4 ignored, since the identifier is never used
+
+Elaborating module <FourLedControl>.
+WARNING:HDLCompiler:1499 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\FourLedControl.v" Line 21: Empty module <FourLedControl> remains a black box.
+
+Elaborating module <Counter>.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\SRC\Counter.v" Line 48: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\SRC\Counter.v" Line 54: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\SRC\Counter.v" Line 60: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\SRC\Counter.v" Line 72: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:189 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" Line 45: Size mismatch in connection of port <minutes_seconds>. Formal port size is 16-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:1127 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" Line 45: Assignment to minutes_seconds ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" Line 56: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" Line 91: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:634 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" Line 29: Net <clk_2> does not have a driver.
+WARNING:Xst:2972 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" line 37. All outputs of instance <_clock> of block <clock> are unconnected in block <mode0>. Underlying logic will be removed.
+WARNING:Xst:2972 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" line 44. All outputs of instance <_counter> of block <Counter> are unconnected in block <mode0>. Underlying logic will be removed.
+
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <mode0>.
     Related source file is "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v".
-WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    WARNING:Xst:2404 -  FFs/Latches <seg_data<1:2>> (without init value) have a constant value of 0 in block <mode0>.
-    WARNING:Xst:2404 -  FFs/Latches <seg_data<2:2>> (without init value) have a constant value of 1 in block <mode0>.
-    WARNING:Xst:2404 -  FFs/Latches <seg_data<2:3>> (without init value) have a constant value of 0 in block <mode0>.
-    WARNING:Xst:2404 -  FFs/Latches <seg_data<3:3>> (without init value) have a constant value of 1 in block <mode0>.
-    WARNING:Xst:2404 -  FFs/Latches <seg_data<3:3>> (without init value) have a constant value of 0 in block <mode0>.
+WARNING:Xst:2898 - Port 'p1', unconnected in block instance '_clock', is tied to GND.
+INFO:Xst:3210 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" line 37: Output port <clk_4> of the instance <_clock> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" line 37: Output port <clk_400> of the instance <_clock> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\Lab3\mode0.v" line 44: Output port <minutes_seconds> of the instance <_counter> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <clk_2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 2-bit register for signal <AN_determine>.
+    Found 4-bit register for signal <AN>.
+    Found 7-bit register for signal <led>.
+    Found 4-bit register for signal <number>.
+    Found 4-bit adder for signal <number[3]_GND_1_o_add_3_OUT> created at line 56.
+    Found 2-bit adder for signal <AN_determine[1]_GND_1_o_add_25_OUT> created at line 91.
+    Found 4x4-bit Read Only RAM for signal <AN_determine[1]_GND_1_o_wide_mux_24_OUT>
+    Found 16x8-bit Read Only RAM for signal <_n0057>
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4-bit comparator greater for signal <number[3]_PWR_1_o_LessThan_3_o> created at line 56
     Summary:
-	no macro.
+	inferred   2 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   7 Latch(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
 Unit <mode0> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# RAMs                                                 : 2
+ 16x8-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 2
+ 2-bit adder                                           : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 4
+ 2-bit register                                        : 1
+ 4-bit register                                        : 2
+ 7-bit register                                        : 1
+# Latches                                              : 7
+ 1-bit latch                                           : 7
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+
 =========================================================================
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1710 - FF/Latch <number_0> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <number_1> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <number_2> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <number_3> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <mode0>.
+The following registers are absorbed into counter <number>: 1 register on signal <number>.
+The following registers are absorbed into counter <AN_determine>: 1 register on signal <AN_determine>.
+INFO:Xst:3231 - The small RAM <Mram_AN_determine[1]_GND_1_o_wide_mux_24_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <AN_determine>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0057> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <number>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <mode0> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# RAMs                                                 : 2
+ 16x8-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <seg_data_6> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <seg_data_5> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <seg_data_4> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <seg_data_3> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <seg_data_2> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <seg_data_1> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <seg_data_0> (without init value) has a constant value of 1 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <number_3> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <number_2> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <number_1> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <number_0> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_6> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_5> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_4> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_3> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_2> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_1> (without init value) has a constant value of 0 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_0> (without init value) has a constant value of 1 in block <mode0>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <mode0> ...
 
@@ -162,7 +289,10 @@ Final Macro Processing ...
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
 =========================================================================
 
 =========================================================================
@@ -184,11 +314,19 @@ Top Level Output File Name         : mode0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2
+# BELS                             : 8
 #      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 5
 #      VCC                         : 1
+# FlipFlops/Latches                : 6
+#      FD                          : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
 # IO Buffers                       : 11
 #      OBUF                        : 11
+# Others                           : 1
+#      FourLedControl              : 1
 
 Device utilization summary:
 ---------------------------
@@ -197,19 +335,23 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
+ Number of Slice Registers:               6  out of  18224     0%  
+ Number of Slice LUTs:                    6  out of   9112     0%  
+    Number used as Logic:                 6  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      0
-   Number with an unused Flip Flop:       0  out of      0         
-   Number with an unused LUT:             0  out of      0         
-   Number of fully used LUT-FF pairs:     0  out of      0         
-   Number of unique control sets:         0
+ Number of LUT Flip Flop pairs used:     12
+   Number with an unused Flip Flop:       6  out of     12    50%  
+   Number with an unused LUT:             6  out of     12    50%  
+   Number of fully used LUT-FF pairs:     0  out of     12     0%  
+   Number of unique control sets:         1
 
 IO Utilization: 
  Number of IOs:                          13
- Number of bonded IOBs:                  11  out of    232     4%  
+ Number of bonded IOBs:                  12  out of    232     5%  
 
 Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -229,7 +371,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 6     |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -239,9 +385,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: No path found
+   Minimum period: 2.078ns (Maximum Frequency: 481.325MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
+   Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -249,21 +395,70 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.078ns (frequency: 481.325MHz)
+  Total number of paths / destination ports: 11 / 6
+-------------------------------------------------------------------------
+Delay:               2.078ns (Levels of Logic = 1)
+  Source:            AN_determine_0 (FF)
+  Destination:       AN_determine_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: AN_determine_0 to AN_determine_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.447   0.744  AN_determine_0 (AN_determine_0)
+     INV:I->O              1   0.206   0.579  Mcount_AN_determine_xor<0>11_INV_0 (Result<0>)
+     FD:D                      0.102          AN_determine_0
+    ----------------------------------------
+    Total                      2.078ns (0.755ns logic, 1.323ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            AN_3 (FF)
+  Destination:       AN<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: AN_3 to AN<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  AN_3 (AN_3)
+     OBUF:I->O                 2.571          AN_3_OBUF (AN<3>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.078|         |         |         |
+---------------+---------+---------+---------+---------+
+
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.29 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.88 secs
  
 --> 
 
-Total memory usage is 257256 kilobytes
+Total memory usage is 257660 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    6 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :   49 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

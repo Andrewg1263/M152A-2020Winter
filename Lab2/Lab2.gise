@@ -64,6 +64,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="nexys3.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="nexys3_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="nexys3_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="nexys3_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="nexys3_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="nexys3_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="nexys3_map.ncd" xil_pn:subbranch="Map"/>
@@ -96,9 +97,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580250702" xil_pn:in_ck="-8942621762188256423" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1580250702">
+    <transform xil_pn:end_ts="1580969011" xil_pn:in_ck="-8942621762188256423" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1580969011">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="src/rtl/nexys3.v"/>
       <outfile xil_pn:name="src/rtl/seq-mul.v"/>
       <outfile xil_pn:name="src/rtl/seq.v"/>
@@ -112,11 +117,11 @@
       <outfile xil_pn:name="src/tb/model_uart.v"/>
       <outfile xil_pn:name="src/tb/tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1580246727" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7128511773193751507" xil_pn:start_ts="1580246727">
+    <transform xil_pn:end_ts="1580968775" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7128511773193751507" xil_pn:start_ts="1580968775">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580246727" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2964187670512171541" xil_pn:start_ts="1580246727">
+    <transform xil_pn:end_ts="1580968775" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2964187670512171541" xil_pn:start_ts="1580968775">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -124,9 +129,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580250702" xil_pn:in_ck="-8942621762188256423" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1580250702">
+    <transform xil_pn:end_ts="1580969011" xil_pn:in_ck="-8942621762188256423" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1580969011">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="src/rtl/nexys3.v"/>
       <outfile xil_pn:name="src/rtl/seq-mul.v"/>
       <outfile xil_pn:name="src/rtl/seq.v"/>
@@ -140,10 +150,14 @@
       <outfile xil_pn:name="src/tb/model_uart.v"/>
       <outfile xil_pn:name="src/tb/tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1580250724" xil_pn:in_ck="-8942621762188256423" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6159587342810039271" xil_pn:start_ts="1580250702">
+    <transform xil_pn:end_ts="1580969013" xil_pn:in_ck="-8942621762188256423" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6159587342810039271" xil_pn:start_ts="1580969011">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -152,9 +166,11 @@
       <outfile xil_pn:name="tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1580250725" xil_pn:in_ck="8488716338247556317" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="35585455678721893" xil_pn:start_ts="1580250724">
+    <transform xil_pn:end_ts="1580969014" xil_pn:in_ck="-662199717047980778" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="35585455678721893" xil_pn:start_ts="1580969013">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -189,12 +205,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580251602" xil_pn:in_ck="7297145900355163351" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5481981211943015619" xil_pn:start_ts="1580251594">
+    <transform xil_pn:end_ts="1581019644" xil_pn:in_ck="7297145900355163351" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5481981211943015619" xil_pn:start_ts="1581019636">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="nexys3.lso"/>
       <outfile xil_pn:name="nexys3.ngc"/>
@@ -214,6 +228,8 @@
     <transform xil_pn:end_ts="1580251607" xil_pn:in_ck="-6704588714802116067" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2020738018788762353" xil_pn:start_ts="1580251602">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="nexys3.bld"/>
@@ -223,6 +239,7 @@
     <transform xil_pn:end_ts="1580251614" xil_pn:in_ck="1846173845462448094" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1580251607">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -239,6 +256,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="nexys3.ncd"/>
       <outfile xil_pn:name="nexys3.pad"/>
@@ -254,6 +272,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="nexys3.bgn"/>
       <outfile xil_pn:name="nexys3.bit"/>
@@ -267,15 +288,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1580251642" xil_pn:in_ck="5252585598254231" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="-2020738018788762353" xil_pn:start_ts="1580251642">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1580251625" xil_pn:in_ck="-1603095613177372582" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1580251621">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="nexys3.twr"/>
       <outfile xil_pn:name="nexys3.twx"/>
@@ -283,6 +307,7 @@
     <transform xil_pn:end_ts="1580251889" xil_pn:in_ck="5252585598267217" xil_pn:name="TRAN_SmartXplorer" xil_pn:prop_ck="5792495949222021172" xil_pn:start_ts="1580251888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="smartxplorer_results"/>
       <outfile xil_pn:name="smartxplorer_setup"/>
     </transform>
