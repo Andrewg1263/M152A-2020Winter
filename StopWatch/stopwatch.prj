@@ -1,0 +1,4 @@
+verilog work "led_diaplay.v"
+verilog work "counter_0.v"
+verilog work "clock_divider.v"
+verilog work "stopwatch.v"
