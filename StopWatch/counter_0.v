@@ -20,7 +20,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 module counter_0(
 	input clk_1hz,
-	input clk_400hz,
 	input rst,
 	input pause,
 	output [3:0] led_0,
@@ -32,24 +31,17 @@ module counter_0(
 	reg [3:0] sec_l;
 	reg [3:0] sec_h;
 	reg [3:0] min_l;
-	reg [3:0] min_h;	
+	reg [3:0] min_h;
 	
-	always @ (posedge clk_1hz)
+	always @ (posedge clk_1hz or posedge rst)
 	begin
-	if(rst)
-	begin
-		sec_l <= 4'b0000;
-		sec_h <= 4'b0000;
-		min_l <= 4'b0000;
-		min_h <= 4'b0000;
-	end
-	else if(pause)
-	begin
-		sec_l <= sec_l;
-		sec_h <= sec_h;
-		min_l <= min_l;
-		min_h <= min_h;
-	end
+	if (rst)
+		begin
+			sec_l <= 4'b0000;
+			sec_h <= 4'b0000;
+			min_l <= 4'b0000;
+			min_h <= 4'b0000;
+		end
 	else
 	begin
 		// 59:59
@@ -60,7 +52,7 @@ module counter_0(
 			min_l <= min_l;
 			min_h <= min_h;
 		end
-		
+			
 		else
 		begin
 			if(sec_l==9)
@@ -83,7 +75,7 @@ module counter_0(
 			else
 				sec_l <= sec_l + 1;
 		end
-	end
+		end
 	end
 	
 	assign led_0 = sec_l;

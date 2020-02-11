@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Feb 11 12:07:28 2020
+// Written by: Map P.20131013 on Tue Feb 11 13:53:17 2020
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -7,46 +7,65 @@ COMP "led_seg<3>" LOCATE = SITE "U18" LEVEL 1;
 COMP "led_seg<4>" LOCATE = SITE "U17" LEVEL 1;
 COMP "led_seg<5>" LOCATE = SITE "T18" LEVEL 1;
 COMP "led_seg<6>" LOCATE = SITE "T17" LEVEL 1;
-COMP "sclk" LOCATE = SITE "V10" LEVEL 1;
-COMP "pause" LOCATE = SITE "D9" LEVEL 1;
-COMP "AN<0>" LOCATE = SITE "N16" LEVEL 1;
-COMP "AN<1>" LOCATE = SITE "N15" LEVEL 1;
-COMP "AN<2>" LOCATE = SITE "P18" LEVEL 1;
-COMP "AN<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "led" LOCATE = SITE "T11" LEVEL 1;
+COMP "pause" LOCATE = SITE "C4" LEVEL 1;
+COMP "AN<0>" LOCATE = SITE "P17" LEVEL 1;
+COMP "AN<1>" LOCATE = SITE "P18" LEVEL 1;
+COMP "AN<2>" LOCATE = SITE "N15" LEVEL 1;
+COMP "AN<3>" LOCATE = SITE "N16" LEVEL 1;
+COMP "rst" LOCATE = SITE "B8" LEVEL 1;
 COMP "led_seg<0>" LOCATE = SITE "L14" LEVEL 1;
 COMP "led_seg<1>" LOCATE = SITE "N14" LEVEL 1;
 COMP "led_seg<2>" LOCATE = SITE "M14" LEVEL 1;
-TIMEGRP sys_clk_pin = BEL "_clock_divider/counter_400hz_17" BEL
-        "_clock_divider/counter_400hz_16" BEL
-        "_clock_divider/counter_400hz_15" BEL
-        "_clock_divider/counter_400hz_14" BEL
+TIMEGRP sys_clk_pin = BEL "_clock_divider/clk_1hz" BEL
+        "_clock_divider/clk_400hz" BEL "_clock_divider/counter_400hz_11" BEL
+        "_clock_divider/counter_400hz_9" BEL "_clock_divider/counter_400hz_8"
+        BEL "_clock_divider/counter_400hz_10" BEL
+        "_clock_divider/counter_400hz_6" BEL "_clock_divider/counter_400hz_5"
+        BEL "_clock_divider/counter_400hz_7" BEL
+        "_clock_divider/counter_400hz_3" BEL "_clock_divider/counter_400hz_2"
+        BEL "_clock_divider/counter_400hz_4" BEL
+        "_clock_divider/counter_400hz_0" BEL "_clock_divider/counter_400hz_1"
+        BEL "_clock_divider/counter_400hz_12" BEL
         "_clock_divider/counter_400hz_13" BEL
-        "_clock_divider/counter_400hz_12" BEL
-        "_clock_divider/counter_400hz_11" BEL
-        "_clock_divider/counter_400hz_10" BEL "_clock_divider/counter_400hz_9"
-        BEL "_clock_divider/counter_400hz_8" BEL
-        "_clock_divider/counter_400hz_7" BEL "_clock_divider/counter_400hz_6"
-        BEL "_clock_divider/counter_400hz_5" BEL
-        "_clock_divider/counter_400hz_4" BEL "_clock_divider/counter_400hz_3"
-        BEL "_clock_divider/counter_400hz_2" BEL
-        "_clock_divider/counter_400hz_1" BEL "_clock_divider/counter_400hz_0"
+        "_clock_divider/counter_400hz_14" BEL
+        "_clock_divider/counter_400hz_15" BEL
+        "_clock_divider/counter_400hz_16" BEL
+        "_clock_divider/counter_400hz_17" BEL
+        "_clock_divider/counter_400hz_18" BEL
+        "_clock_divider/counter_400hz_19" BEL
+        "_clock_divider/counter_400hz_20" BEL
+        "_clock_divider/counter_400hz_21" BEL
+        "_clock_divider/counter_400hz_22" BEL
+        "_clock_divider/counter_400hz_23" BEL "_clock_divider/counter_1hz_0"
+        BEL "_clock_divider/counter_1hz_31" BEL
+        "_clock_divider/counter_1hz_29" BEL "_clock_divider/counter_1hz_28"
+        BEL "_clock_divider/counter_1hz_30" BEL
+        "_clock_divider/counter_1hz_27" BEL "_clock_divider/counter_1hz_26"
         BEL "_clock_divider/counter_1hz_25" BEL
-        "_clock_divider/counter_1hz_24" BEL "_clock_divider/counter_1hz_23"
-        BEL "_clock_divider/counter_1hz_22" BEL
-        "_clock_divider/counter_1hz_21" BEL "_clock_divider/counter_1hz_20"
-        BEL "_clock_divider/counter_1hz_19" BEL
-        "_clock_divider/counter_1hz_18" BEL "_clock_divider/counter_1hz_17"
-        BEL "_clock_divider/counter_1hz_16" BEL
-        "_clock_divider/counter_1hz_15" BEL "_clock_divider/counter_1hz_14"
-        BEL "_clock_divider/counter_1hz_13" BEL
-        "_clock_divider/counter_1hz_12" BEL "_clock_divider/counter_1hz_11"
-        BEL "_clock_divider/counter_1hz_10" BEL "_clock_divider/counter_1hz_9"
-        BEL "_clock_divider/counter_1hz_8" BEL "_clock_divider/counter_1hz_7"
-        BEL "_clock_divider/counter_1hz_6" BEL "_clock_divider/counter_1hz_5"
-        BEL "_clock_divider/counter_1hz_4" BEL "_clock_divider/counter_1hz_3"
+        "_clock_divider/counter_1hz_24" BEL "_clock_divider/counter_1hz_22"
+        BEL "_clock_divider/counter_1hz_21" BEL
+        "_clock_divider/counter_1hz_23" BEL "_clock_divider/counter_1hz_19"
+        BEL "_clock_divider/counter_1hz_18" BEL
+        "_clock_divider/counter_1hz_20" BEL "_clock_divider/counter_1hz_16"
+        BEL "_clock_divider/counter_1hz_15" BEL
+        "_clock_divider/counter_1hz_17" BEL "_clock_divider/counter_1hz_13"
+        BEL "_clock_divider/counter_1hz_12" BEL
+        "_clock_divider/counter_1hz_14" BEL "_clock_divider/counter_1hz_10"
+        BEL "_clock_divider/counter_1hz_9" BEL "_clock_divider/counter_1hz_11"
+        BEL "_clock_divider/counter_1hz_7" BEL "_clock_divider/counter_1hz_6"
+        BEL "_clock_divider/counter_1hz_8" BEL "_clock_divider/counter_1hz_4"
+        BEL "_clock_divider/counter_1hz_3" BEL "_clock_divider/counter_1hz_5"
         BEL "_clock_divider/counter_1hz_2" BEL "_clock_divider/counter_1hz_1"
-        BEL "_clock_divider/counter_1hz_0" BEL "_clock_divider/clk_1hz" BEL
-        "_clock_divider/clk_400hz" BEL "sclk_BUFGP/BUFG";
+        BEL "_clock_divider/counter_400hz_30" BEL
+        "_clock_divider/counter_400hz_29" BEL
+        "_clock_divider/counter_400hz_31" BEL
+        "_clock_divider/counter_400hz_27" BEL
+        "_clock_divider/counter_400hz_26" BEL
+        "_clock_divider/counter_400hz_28" BEL
+        "_clock_divider/counter_400hz_24" BEL
+        "_clock_divider/counter_400hz_25" BEL "clk_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 

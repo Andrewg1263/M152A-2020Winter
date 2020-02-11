@@ -19,11 +19,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module stopwatch(
-    input sclk,
-    input reset,
+    input clk,
+    input rst,
 	 input pause,
     output [6:0] led_seg,
-    output [3:0] AN
+    output [3:0] AN,
+	 output led
     );
 	
 /*	parameter counter_1s = 12'h1;
@@ -40,11 +41,10 @@ module stopwatch(
 	wire	clk_2hz;
 	wire	clk_400hz;
 	
-	reg pause_ff;
-	reg start_pause;
-	reg rst_ff;
-	reg rst;
-	// button debounce for pause
+	wire btn_reset;
+	//reg btn_pause
+	button_debounce _reset(rst, clk_400hz, btn_reset);
+/*	// button debounce for pause
 	always@(posedge clk_400hz)
 	begin
 		pause_ff <= pause;
@@ -54,21 +54,21 @@ module stopwatch(
 	//button debounce for reset
 	always@(posedge clk_400hz)
 	begin
-		rst_ff <= reset;
-		if(rst_ff && !reset)
-			rst <= 1;
+		rst_ff <= rst;
+		if(rst_ff && !rst)
+			reset <= 1;
 		else
-			rst <= 0;
-	end
+			reset <= 0;
+	end*/
 	
-	clock_divider _clock_divider(sclk, rst, clk_1hz, clk_2hz, clk_400hz);
-	
+	clock_divider _clock_divider(.sclk(clk), .rst(btn_reset), .clk_1hz(clk_1hz), .clk_2hz(clk_2hz), .clk_400hz(clk_400hz));
 /*	Counter	Count_1s(clk_1hz, rst, counter_1s, 4'h9, led_0);
 	Counter	Count_10s(clk_1hz, rst, counter_10s, 4'h5, led_1);
 	Counter	Count_1m(clk_1hz, rst, counter_1m, 4'h9, led_2);
 	Counter	Count_10m(clk_1hz, rst, counter_10m, 4'h5, led_3);*/
-	counter_0 _counter_0(clk_1hz, clk_400hz, rst, start_pause, led_0, led_1, led_2, led_3);
+	counter_0 _counter_0(clk_1hz, btn_reset, start_pause, led_0, led_1, led_2, led_3);
 	
-	led_diaplay	_led_display(sclk,clk_400hz,rst,led_0,led_1,led_2,led_3, led_seg,AN);
-
+	led_diaplay	_led_display(clk_400hz,btn_reset,led_0, led_1,led_2,led_3, led_seg,AN);
+	
+	assign led = clk_1hz;
 endmodule

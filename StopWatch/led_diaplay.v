@@ -19,7 +19,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module led_diaplay(
-    input clk,
 	 input clk_400hz,
     input rst,
     input [3:0] led_0,
@@ -35,26 +34,13 @@ module led_diaplay(
 	
 	reg [3:0] led_data_hex;
 	reg [1:0] led_select;
-	
-/*	always@(posedge clk)
-	begin
-		if(rst)
-			led_select <= 0;
-		else
-			led_select <= led_select;
-	end*/
 
 	always@ (posedge clk_400hz)
 	begin
 		if(rst)
 			led_select <= 0;
 		else
-		begin
-			if(led_select == 3)
-				led_select <= 0;
-			else
-				led_select <= led_select + 1;
-		end
+			led_select <= led_select + 1;
 	end
 	
 	always@ (led_select)
@@ -67,8 +53,8 @@ module led_diaplay(
 		default: AN = 4'b0000;
 		endcase
 	end
-	
-	always@(led_select or led_0 or led_1 or led_2 or led_3)
+
+	always@(led_select)
 	begin
 		case(led_select)
 		2'b00:	led_data_hex = led_0;
