@@ -22,15 +22,12 @@ module stopwatch(
     input clk,
     input rst,
 	 input pause,
+		// [3:0] sw [ sel, adj, adj_b, cnt_dn ]
+	 input [3:0] sw,
+	 output [3:0] Led,
     output [6:0] led_seg,
-    output [3:0] AN,
-	 output led
+    output [3:0] AN
     );
-	
-/*	parameter counter_1s = 12'h1;
-	parameter counter_10s = 12'hA;
-	parameter counter_1m = 12'h3C;
-	parameter counter_10m = 12'h258;*/
 	
 	wire[3:0] led_0;
 	wire[3:0] led_1;
@@ -42,33 +39,24 @@ module stopwatch(
 	wire	clk_400hz;
 	
 	wire btn_reset;
-	//reg btn_pause
-	button_debounce _reset(rst, clk_400hz, btn_reset);
-/*	// button debounce for pause
-	always@(posedge clk_400hz)
+	wire btn_pause;
+	reg pause_flag;
+	
+	//button_debounce( btn, clk,  btn_state);
+	button_debounce _reset( .btn(rst), .clk(clk), .btn_out(btn_reset) );
+	button_debounce _pause( .btn(pause), .clk(clk), .btn_out(btn_pause) );
+	always@(posedge btn_pause)
 	begin
-		pause_ff <= pause;
-		if(pause_ff && !pause)
-			start_pause <= ~start_pause;
+		pause_flag <= ~pause_flag;
 	end
-	//button debounce for reset
-	always@(posedge clk_400hz)
-	begin
-		rst_ff <= rst;
-		if(rst_ff && !rst)
-			reset <= 1;
-		else
-			reset <= 0;
-	end*/
 	
 	clock_divider _clock_divider(.sclk(clk), .rst(btn_reset), .clk_1hz(clk_1hz), .clk_2hz(clk_2hz), .clk_400hz(clk_400hz));
-/*	Counter	Count_1s(clk_1hz, rst, counter_1s, 4'h9, led_0);
-	Counter	Count_10s(clk_1hz, rst, counter_10s, 4'h5, led_1);
-	Counter	Count_1m(clk_1hz, rst, counter_1m, 4'h9, led_2);
-	Counter	Count_10m(clk_1hz, rst, counter_10m, 4'h5, led_3);*/
-	counter_0 _counter_0(clk_1hz, btn_reset, start_pause, led_0, led_1, led_2, led_3);
+	counter_0 _counter_0(.clk(clk_1hz), .rst(btn_reset), .pause(pause_flag),/* .adj(sw[2]),*/ .led_0(led_0), .led_1(led_1), .led_2(led_2), .led_3(led_3));
 	
-	led_diaplay	_led_display(clk_400hz,btn_reset,led_0, led_1,led_2,led_3, led_seg,AN);
+	led_diaplay	_led_display(clk_400hz, btn_reset, led_0,led_1,led_2,led_3, led_seg,AN);
+	// for clock test
 	
-	assign led = clk_1hz;
+	assign Led[0] = (pause_flag)?1:0;
+	assign Led[3:1] = sw[3:1];
+		
 endmodule
