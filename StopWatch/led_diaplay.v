@@ -19,8 +19,11 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module led_diaplay(
+	 input clk,
 	 input clk_400hz,
     input rst,
+	 input adj, // turns in to adjustment mode
+	 input sel, // sec or min freeze
     input [3:0] led_0,
     input [3:0] led_1,
     input [3:0] led_2,
@@ -34,8 +37,37 @@ module led_diaplay(
 	
 	reg [3:0] led_data_hex;
 	reg [1:0] led_select;
+	
+	// turn on led segements at frequency at 2hz, but the rotation among LEDs are still 400 hz. 
+	// ie, each led turns on and off 100 times per second
+	reg clk_2hz = 0;
+	reg[31:0] counter_2hz = 32'd0;
+	always@(posedge clk)
+	 begin
+		if(rst)
+			counter_2hz <=0;
+		else
+		begin
+			if(counter_2hz == 25000000-1) //100, 000, 000 / 4 = 25, 000, 000
+			begin
+				clk_2hz <= ~clk_2hz;
+				counter_2hz <= 0;
+			end
+			else
+				counter_2hz <= counter_2hz + 1;
+		end
+	 end
+	
+	wire clk_sel;
+	
+	//assign clk_sel = (adj)?clk_2hz:clk_400hz;
+	
+	assign clk_sel = (adj==0)? clk_400hz: 
+						  (sel == 1 && (led_select == 2'b00 || led_select == 2'b01))?clk_2hz:
+						  (sel == 0 && (led_select == 2'b10 || led_select == 2'b11))?clk_2hz:
+						  clk_400hz;
 
-	always@ (posedge clk_400hz)
+	always@ (posedge clk_400hz or posedge rst)
 	begin
 		if(rst)
 			led_select <= 0;
@@ -68,16 +100,16 @@ module led_diaplay(
 	always@(led_data_hex)
 	begin
 		case(led_data_hex)
-			4'b0000:seg_data=7'b0000001; // 0
-			4'b0001:seg_data=7'b1001111; // 1
-			4'b0010:seg_data=7'b0010010; // 2
-			4'b0011:seg_data=7'b0000110; // 3
-			4'b0100:seg_data=7'b1001100; // 4
-			4'b0101:seg_data=7'b0100100; // 5
-			4'b0110:seg_data=7'b0100000; // 6
-			4'b0111:seg_data=7'b0001111; // 7
-			4'b1000:seg_data=7'b0000000; // 8
-			4'b1001:seg_data=7'b0000100; // 9
+			4'b0000:seg_data=(clk_sel)? 7'b1111111:7'b0000001; // 0
+			4'b0001:seg_data=(clk_sel)? 7'b1111111:7'b1001111; // 1
+			4'b0010:seg_data=(clk_sel)? 7'b1111111:7'b0010010; // 2
+			4'b0011:seg_data=(clk_sel)? 7'b1111111:7'b0000110; // 3
+			4'b0100:seg_data=(clk_sel)? 7'b1111111:7'b1001100; // 4
+			4'b0101:seg_data=(clk_sel)? 7'b1111111:7'b0100100; // 5
+			4'b0110:seg_data=(clk_sel)? 7'b1111111:7'b0100000; // 6
+			4'b0111:seg_data=(clk_sel)? 7'b1111111:7'b0001111; // 7
+			4'b1000:seg_data=(clk_sel)? 7'b1111111:7'b0000000; // 8
+			4'b1001:seg_data=(clk_sel)? 7'b1111111:7'b0000100; // 9
 		endcase
 	end
 

@@ -24,9 +24,12 @@ module stopwatch(
 	 input pause,
 		// [3:0] sw [ sel, adj, adj_b, cnt_dn ]
 	 input [3:0] sw,
+	 input increase,
+	 input decrease,
 	 output [3:0] Led,
     output [6:0] led_seg,
-    output [3:0] AN
+    output [3:0] AN,
+	 output led
     );
 	
 	wire[3:0] led_0;
@@ -40,23 +43,39 @@ module stopwatch(
 	
 	wire btn_reset;
 	wire btn_pause;
+	wire btn_increase;
+	wire btn_decrease;
 	reg pause_flag;
 	
 	//button_debounce( btn, clk,  btn_state);
 	button_debounce _reset( .btn(rst), .clk(clk), .btn_out(btn_reset) );
 	button_debounce _pause( .btn(pause), .clk(clk), .btn_out(btn_pause) );
+	button_debounce _increase( .btn(increase), .clk(clk), .btn_out(btn_increase) );
+	button_debounce _decrease( .btn(decrease), .clk(clk), .btn_out(btn_decrease) );
 	always@(posedge btn_pause)
 	begin
 		pause_flag <= ~pause_flag;
 	end
 	
+	// create 3 clock frequencies, 1hz, 2hz, and 400hz.
 	clock_divider _clock_divider(.sclk(clk), .rst(btn_reset), .clk_1hz(clk_1hz), .clk_2hz(clk_2hz), .clk_400hz(clk_400hz));
-	counter_0 _counter_0(.clk(clk_1hz), .rst(btn_reset), .pause(pause_flag),/* .adj(sw[2]),*/ .led_0(led_0), .led_1(led_1), .led_2(led_2), .led_3(led_3));
 	
-	led_diaplay	_led_display(clk_400hz, btn_reset, led_0,led_1,led_2,led_3, led_seg,AN);
-	// for clock test
+	// Count up and down module
+	counter_0 _counter_0( .clk(clk), .clk_1hz(clk_1hz), .rst(btn_reset), .clk_2hz(clk_2hz), //clocks
+								.pause(pause_flag), .increase(btn_increase), .decrease(btn_decrease), // buttons
+								.adj(sw[2]), .sel(sw[3]), .adj_b(sw[1]), .cnt_dn(sw[0]),		 // switches
+								.led_0(led_0), .led_1(led_1), .led_2(led_2), .led_3(led_3)); //outputs
 	
-	assign Led[0] = (pause_flag)?1:0;
-	assign Led[3:1] = sw[3:1];
-		
+	// Control 7-segment led module
+	led_diaplay _led_display(
+	 .clk(clk),.clk_400hz(clk_400hz), // clocks
+	 .rst(btn_reset),.adj(sw[2]), .sel(sw[3]), // button & switchs
+	 .led_0(led_0),.led_1(led_1),.led_2(led_2),.led_3(led_3),  // inputs
+	 .seg_data(led_seg), .AN(AN) // outputs
+    );
+	 
+	 
+	// for switch test
+	assign Led = sw;
+	assign led = pause_flag;
 endmodule

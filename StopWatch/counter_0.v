@@ -20,9 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 module counter_0(
 	input clk,
+	input clk_1hz,
+	input clk_2hz,
 	input rst,
 	input pause,
-	//input adj,
+	input increase,
+	input decrease,
+	input adj,
+	input sel,
+	input adj_b,
+	input cnt_dn,
 	output [3:0] led_0,
 	output [3:0] led_1,
 	output [3:0] led_2,
@@ -34,17 +41,114 @@ module counter_0(
 	reg [3:0] min_l = 4'd0;
 	reg [3:0] min_h = 4'd0;
 	
-	reg adj;
+	wire clk_sel;
 	
-	always @ (posedge clk or posedge rst /*or posedge adj*/)
+	// when in adjusting mode, the clk is 2hz "Stop Watch Increments by 2 at the rate of 2Hz"
+	assign clk_sel = (adj==1 && adj_b == 0)? clk_2hz: clk;
+	//always @ (posedge clk_sel or posedge rst or posedge adj or posedge adj_b or posedge increase or posedge decrease
+ 	
+always @ (posedge clk)
 	begin
-	/*if (adj)
+		if (adj)
 		begin
+					if(adj_b)
+					begin
+							///////////////////////////////// increase button begin
+							if(increase)
+							begin
+										if(sel)
+										begin
+											if(sec_l>=9)
+											begin
+												sec_l <= 4'b0000;
+												if(sec_h == 5)
+													sec_h <= 4'b0000;
+												else
+													sec_h <= sec_h + 1;
+											end
+											else
+												sec_l <= sec_l + 1;
+										end
+										else
+										begin
+											if(min_l>=9)
+											begin
+												min_l <= 4'b0000;
+												if(min_h == 5)
+													min_h <= 4'b0000;
+												else
+													min_h <= min_h + 1;
+											end
+											else
+												min_l <= min_l + 1;
+										end
+											
+							end
+							/////////////////////////// increase button ends
+							
+										///////////////////////////////// decrease button begin
+							else if(decrease)
+							begin
+										if(sel)
+										begin
+											if(sec_l<=0)
+											begin
+												sec_l <= 4'b1001;
+												if(sec_h == 0)
+													sec_h <= 4'b0101;
+												else
+													sec_h <= sec_h - 1;
+											end
+											else
+												sec_l <= sec_l - 1;
+										end
+										else
+										begin
+											if(min_l<=0)
+											begin
+												min_l <= 4'b1001;
+												if(min_h == 5)
+													min_h <= 4'b0101;
+												else
+													min_h <= min_h - 1;
+											end
+											else
+												min_l <= min_l - 1;
+										end
+											
+							end
+							/////////////////////////// decrease button ends
+					end
+					// else if adj_b == 0 update 2hz
+					else
+					begin
+						//update 2 by 2hz
+									if (clk_1hz)
+									begin
+										if(sec_l>=9)
+										begin
+											sec_l <= 4'b0000;
+											if(sec_h == 5)
+											begin
+												sec_h <= 4'b0000;
+												if(min_l == 9)
+												begin
+													min_l <= 4'b0000;
+													min_h <= min_h + 1;
+												end
+												else
+													min_l <= min_l + 1;
+											end
+											else
+												sec_h <= sec_h + 1;
+										end
+										else
+											sec_l <= sec_l + 2;
+									end // if(ckl_1hz)
+						
+					end
 		end
-	else 
-		begin */
-		// reset
-		if (rst)
+		else if (rst)
 		begin
 			sec_l <= 4'b0000;
 			sec_h <= 4'b0000;
@@ -60,6 +164,47 @@ module counter_0(
 			min_h <= min_h;
 		end
 		// normal count up
+		else if (cnt_dn)
+		begin
+					// 00:00
+					
+					if( min_h==4'b0000 && min_l==4'b0000 && sec_h==4'b0000 && sec_l==4'b0000 )
+					begin
+						sec_l <= 4'b0000;
+						sec_h <= 4'b0000;
+						min_l <= 4'b0000;
+						min_h <= 4'b0000;
+					end
+						
+					// count down
+					else
+					begin
+					if (clk_1hz)
+					begin
+					
+						if(sec_l==0)
+						begin
+							sec_l <= 4'b1001;
+							if(sec_h == 0)
+							begin
+								sec_h <= 4'b0101;
+								if(min_l == 0)
+								begin
+									min_l <= 4'b1001;
+									min_h <= min_h - 1;
+								end
+								else
+									min_l <= min_l - 1;
+							end
+							else
+								sec_h <= sec_h - 1;
+						end
+						else
+							sec_l <= sec_l - 1;
+					end
+					end
+					// count down end
+		end
 		else
 		begin
 			// 59:59
@@ -72,6 +217,8 @@ module counter_0(
 			end
 				
 			else
+			begin
+			if (clk_1hz)
 			begin
 				if(sec_l==9)
 				begin
@@ -92,9 +239,11 @@ module counter_0(
 				end
 				else
 					sec_l <= sec_l + 1;
+			end // if(ckl_1hz)
 			end
+			
 			end
-		//end //if (adh) else
+		//end //if (!adj)
 	end
 	
 	assign led_0 = sec_l;

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ANDREWGAOA26E::  Fri Feb 14 14:09:15 2020
+ANDREWGAOA26E::  Tue Feb 18 13:56:00 2020
 
 par -w -intstyle ise -ol high -mt off stopwatch_map.ncd stopwatch.ncd
 stopwatch.pcf 
@@ -22,30 +22,30 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                    79 out of  18,224    1%
-    Number used as Flip Flops:                  79
+  Number of Slice Registers:                   105 out of  18,224    1%
+    Number used as Flip Flops:                 105
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        152 out of   9,112    1%
-    Number used as logic:                      149 out of   9,112    1%
-      Number using O6 output only:              76
-      Number using O5 output only:              55
-      Number using O5 and O6:                   18
+  Number of Slice LUTs:                        219 out of   9,112    2%
+    Number used as logic:                      215 out of   9,112    2%
+      Number using O6 output only:             108
+      Number using O5 output only:              79
+      Number using O5 and O6:                   28
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:      3
+    Number used exclusively as route-thrus:      4
       Number with same-slice register load:      0
-      Number with same-slice carry load:         3
+      Number with same-slice carry load:         4
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    54 out of   2,278    2%
-  Number of MUXCYs used:                        76 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          157
-    Number with an unused Flip Flop:            83 out of     157   52%
-    Number with an unused LUT:                   5 out of     157    3%
-    Number of fully used LUT-FF pairs:          69 out of     157   43%
+  Number of occupied Slices:                    88 out of   2,278    3%
+  Number of MUXCYs used:                       112 out of   4,556    2%
+  Number of LUT Flip Flop pairs used:          226
+    Number with an unused Flip Flop:           123 out of     226   54%
+    Number with an unused LUT:                   7 out of     226    3%
+    Number of fully used LUT-FF pairs:          96 out of     226   42%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -56,8 +56,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        22 out of     232    9%
-    Number of LOCed IOBs:                       22 out of      22  100%
+  Number of bonded IOBs:                        25 out of     232   10%
+    Number of LOCed IOBs:                       25 out of      25  100%
     IOB Latches:                                 7
 
 Specific Feature Utilization:
@@ -94,33 +94,32 @@ Router effort level (-rl):    High
 Starting initial Timing Analysis.  REAL time: 2 secs 
 Finished initial Timing Analysis.  REAL time: 2 secs 
 
-WARNING:Par:288 - The signal sw<0>_IBUF has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 647 unrouted;      REAL time: 2 secs 
+Phase  1  : 995 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 545 unrouted;      REAL time: 2 secs 
+Phase  2  : 841 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 189 unrouted;      REAL time: 2 secs 
+Phase  3  : 345 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 189 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  4  : 345 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
 
 Updating file: stopwatch.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
-Total REAL time to Router completion: 2 secs 
-Total CPU time to Router completion: 2 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Total REAL time to Router completion: 3 secs 
+Total CPU time to Router completion: 3 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -138,18 +137,16 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP | BUFGMUX_X3Y13| No   |   21 |  0.015     |  0.867      |
+|           clk_BUFGP | BUFGMUX_X3Y13| No   |   39 |  0.051     |  0.901      |
 +---------------------+--------------+------+------+------------+-------------+
-|_led_display/_n0052< |              |      |      |            |             |
-|                  1> |         Local|      |    7 |  0.245     |  1.415      |
-+---------------------+--------------+------+------+------------+-------------+
-|           btn_pause |         Local|      |    1 |  0.000     |  0.887      |
-+---------------------+--------------+------+------+------------+-------------+
-|_clock_divider/clk_1 |              |      |      |            |             |
-|                  hz |         Local|      |    5 |  0.629     |  2.173      |
+|_led_display/led_dat |              |      |      |            |             |
+|a_hex[3]_GND_8_o_Mux |              |      |      |            |             |
+|               _29_o |         Local|      |    7 |  0.559     |  1.854      |
 +---------------------+--------------+------+------+------------+-------------+
 |_clock_divider/clk_4 |              |      |      |            |             |
-|                00hz |         Local|      |    2 |  0.000     |  1.808      |
+|                00hz |         Local|      |    3 |  0.000     |  1.393      |
++---------------------+--------------+------+------+------------+-------------+
+|           btn_pause |         Local|      |    1 |  0.000     |  0.710      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -169,8 +166,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |     5.003ns|     4.997ns|       0|           0
-  pin" 100 MHz HIGH 50%                     | HOLD        |     0.458ns|            |       0|           0
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |     3.495ns|     6.505ns|       0|           0
+  pin" 100 MHz HIGH 50%                     | HOLD        |     0.439ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -181,19 +178,17 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
-
 Total REAL time to PAR completion: 4 secs 
-Total CPU time to PAR completion: 3 secs 
+Total CPU time to PAR completion: 4 secs 
 
-Peak Memory Usage:  316 MB
+Peak Memory Usage:  323 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 Timing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 3
+Number of warning messages: 0
 Number of info messages: 0
 
 Writing design to file stopwatch.ncd

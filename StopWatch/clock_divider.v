@@ -26,31 +26,40 @@ module clock_divider(
     output clk_400hz
     );
 	 
-	 reg clk_1hz = 0;
-    reg clk_2hz = 0;
+	 wire clk_1hz = 0;
+    wire clk_2hz = 0;
     reg clk_400hz = 0;
 	 
 	 reg[31:0] counter_1hz = 32'd0;
 	 reg[31:0] counter_2hz = 32'd0;
 	 reg[31:0] counter_400hz = 32'd0;
 	 
-	 always@(posedge sclk)
+/*	 always@(posedge sclk)
 	 begin
 		if(rst)
 			counter_1hz <=0;
 		else
 		begin
-			if(counter_1hz == 50000000-1) //100, 000, 000 / 2 = 50, 000, 000
+			if(counter_1hz == 100000000-1) //100, 000, 000 / 2 = 50, 000, 000
 			begin
-				clk_1hz <= ~clk_1hz;
+				clk_1hz <= 1;
 				counter_1hz <= 0;
 			end
 			else
 				counter_1hz <= counter_1hz + 1;
 		end
-	 end
+	 end*/
 	 
-	 always@(posedge sclk)
+	 always @(posedge sclk)
+    begin
+		if(counter_1hz >= 100000000-1)
+			counter_1hz <= 0;
+		else
+			counter_1hz <= counter_1hz + 1;
+    end
+	 assign clk_1hz = (counter_1hz == 99999999)?1'b1:1'b0;
+	 
+/*	 always@(posedge sclk)
 	 begin
 		if(rst)
 			counter_2hz <=0;
@@ -64,7 +73,17 @@ module clock_divider(
 			else
 				counter_2hz <= counter_2hz + 1;
 		end
-	 end
+	 end*/
+	 
+	 always @(posedge sclk)
+    begin
+		if(counter_2hz <= 50000000-1)
+			counter_2hz <= 0;
+		else
+			counter_2hz <= counter_2hz + 1;
+    end
+	 assign clk_2hz = (counter_2hz == 49999999)?1'b1:1'b0;
+	 //
 	 
 	 always@(posedge sclk)
 	 begin
