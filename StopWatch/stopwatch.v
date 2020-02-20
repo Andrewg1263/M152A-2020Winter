@@ -52,17 +52,17 @@ module stopwatch(
 	button_debounce _pause( .btn(pause), .clk(clk), .btn_out(btn_pause) );
 	button_debounce _increase( .btn(increase), .clk(clk), .btn_out(btn_increase) );
 	button_debounce _decrease( .btn(decrease), .clk(clk), .btn_out(btn_decrease) );
-	always@(posedge btn_pause)
+	always@(posedge clk)
 	begin
-		pause_flag <= ~pause_flag;
+			pause_flag <= (btn_pause)? ~pause_flag:pause_flag ;
 	end
 	
 	// create 3 clock frequencies, 1hz, 2hz, and 400hz.
 	clock_divider _clock_divider(.sclk(clk), .rst(btn_reset), .clk_1hz(clk_1hz), .clk_2hz(clk_2hz), .clk_400hz(clk_400hz));
 	
 	// Count up and down module
-	counter_0 _counter_0( .clk(clk), .clk_1hz(clk_1hz), .rst(btn_reset), .clk_2hz(clk_2hz), //clocks
-								.pause(pause_flag), .increase(btn_increase), .decrease(btn_decrease), // buttons
+	counter_0 _counter_0( .clk(clk), .clk_1hz(clk_1hz), .clk_2hz(clk_2hz), //clocks
+								.rst(btn_reset), .btn_pause(btn_pause), .increase(btn_increase), .decrease(btn_decrease), // buttons
 								.adj(sw[2]), .sel(sw[3]), .adj_b(sw[1]), .cnt_dn(sw[0]),		 // switches
 								.led_0(led_0), .led_1(led_1), .led_2(led_2), .led_3(led_3)); //outputs
 	

@@ -23,7 +23,7 @@ module counter_0(
 	input clk_1hz,
 	input clk_2hz,
 	input rst,
-	input pause,
+	input btn_pause,
 	input increase,
 	input decrease,
 	input adj,
@@ -41,14 +41,15 @@ module counter_0(
 	reg [3:0] min_l = 4'd0;
 	reg [3:0] min_h = 4'd0;
 	
-	wire clk_sel;
-	
-	// when in adjusting mode, the clk is 2hz "Stop Watch Increments by 2 at the rate of 2Hz"
-	assign clk_sel = (adj==1 && adj_b == 0)? clk_2hz: clk;
-	//always @ (posedge clk_sel or posedge rst or posedge adj or posedge adj_b or posedge increase or posedge decrease
+	reg pause;
+/*	always@(posedge clk)
+	begin
+			pause <= (btn_pause)? ~pause:pause ;
+	end*/
  	
 always @ (posedge clk)
 	begin
+		pause <= (btn_pause)? ~pause:pause ;
 		if (adj)
 		begin
 					if(adj_b)
@@ -56,7 +57,7 @@ always @ (posedge clk)
 							///////////////////////////////// increase button begin
 							if(increase)
 							begin
-										if(sel)
+										if(sel) // adjust seconds
 										begin
 											if(sec_l>=9)
 											begin
@@ -69,7 +70,7 @@ always @ (posedge clk)
 											else
 												sec_l <= sec_l + 1;
 										end
-										else
+										else // sel == 0, adjust minutes
 										begin
 											if(min_l>=9)
 											begin
@@ -84,12 +85,12 @@ always @ (posedge clk)
 										end
 											
 							end
-							/////////////////////////// increase button ends
+							///////////////////////////////// increase button end
 							
-										///////////////////////////////// decrease button begin
+							///////////////////////////////// decrease button begin
 							else if(decrease)
 							begin
-										if(sel)
+										if(sel) // adjust seconds
 										begin
 											if(sec_l<=0)
 											begin
@@ -102,12 +103,12 @@ always @ (posedge clk)
 											else
 												sec_l <= sec_l - 1;
 										end
-										else
+										else // sel == 0, adjust minutes
 										begin
 											if(min_l<=0)
 											begin
 												min_l <= 4'b1001;
-												if(min_h == 5)
+												if(min_h == 0)
 													min_h <= 4'b0101;
 												else
 													min_h <= min_h - 1;
@@ -117,57 +118,92 @@ always @ (posedge clk)
 										end
 											
 							end
-							/////////////////////////// decrease button ends
+							///////////////////////////////// decrease button end
 					end
 					// else if adj_b == 0 update 2hz
-					else
+							///////////////////////////////// update 2 by 2hz begin
+					else if (adj_b == 0)
 					begin
-						//update 2 by 2hz
-									if (clk_1hz)
-									begin
-										if(sec_l>=9)
+							
+									if(sel) // adjust seconds
+									begin //59
+										if( sec_h >= 5 && sec_l >= 9 )
 										begin
-											sec_l <= 4'b0000;
-											if(sec_h == 5)
+											sec_l <= 4'b0001;
+											sec_h <= 4'b0000;
+										end
+										else
+										begin
+											if(clk_2hz)
 											begin
-												sec_h <= 4'b0000;
-												if(min_l == 9)
+												if(sec_l >= 9)
 												begin
-													min_l <= 4'b0000;
+													sec_l <= 0;
+													sec_h <= sec_h + 1;
+												end
+												else
+													sec_l <= sec_l + 2;
+											end
+										end
+									end
+									else
+									begin //59
+										if( min_h >= 5 && min_l >= 9 )
+										begin
+											min_l <= 4'b0001;
+											min_h <= 4'b0000;
+										end
+										else
+										begin
+											if(clk_2hz)
+											begin
+												if(min_l >= 9)
+												begin
+													min_l <= 0;
 													min_h <= min_h + 1;
 												end
 												else
-													min_l <= min_l + 1;
+													min_l <= min_l + 2;
 											end
-											else
-												sec_h <= sec_h + 1;
 										end
-										else
-											sec_l <= sec_l + 2;
-									end // if(ckl_1hz)
-						
+									end		
 					end
+						///////////////////////////////// update 2 by 2hz end
 		end
 		else if (rst)
 		begin
-			sec_l <= 4'b0000;
-			sec_h <= 4'b0000;
-			min_l <= 4'b0000;
-			min_h <= 4'b0000;
+			if( min_h==4'b0101 && min_l==4'b1001 && sec_h==4'b0101 && sec_l==4'b1001 )
+			begin
+				pause <= 1;
+			end
+				sec_l <= 4'b0000;
+				sec_h <= 4'b0000;
+				min_l <= 4'b0000;
+				min_h <= 4'b0000;
 		end
 		// pause
 		else if (pause)
 		begin
-			sec_l <= sec_l;
-			sec_h <= sec_h;
-			min_l <= min_l;
-			min_h <= min_h;
+			if( min_h==4'b0101 && min_l==4'b1001 && sec_h==4'b0101 && sec_l==4'b1001 )
+			begin
+				sec_l <= 4'b0000;
+				sec_h <= 4'b0000;
+				min_l <= 4'b0000;
+				min_h <= 4'b0000;
+				pause <= 0;
+			end
+			else
+			begin
+				sec_l <= sec_l;
+				sec_h <= sec_h;
+				min_l <= min_l;
+				min_h <= min_h;
+			end
 		end
-		// normal count up
+		// normal count down
 		else if (cnt_dn)
 		begin
 					// 00:00
-					
 					if( min_h==4'b0000 && min_l==4'b0000 && sec_h==4'b0000 && sec_l==4'b0000 )
 					begin
 						sec_l <= 4'b0000;
@@ -205,45 +241,45 @@ always @ (posedge clk)
 					end
 					// count down end
 		end
-		else
-		begin
-			// 59:59
-			if( min_h==4'b0101 && min_l==4'b1001 && sec_h==4'b0101 && sec_l==4'b1001 )
-			begin
-				sec_l <= sec_l;
-				sec_h <= sec_h;
-				min_l <= min_l;
-				min_h <= min_h;
-			end
-				
+				////////////////////////////////////////////// Normal mode count up
 			else
 			begin
-			if (clk_1hz)
-			begin
-				if(sec_l==9)
+				// 59:59
+				if( min_h==4'b0101 && min_l==4'b1001 && sec_h==4'b0101 && sec_l==4'b1001 )
 				begin
-					sec_l <= 4'b0000;
-					if(sec_h == 5)
-					begin
-						sec_h <= 4'b0000;
-						if(min_l == 9)
-						begin
-							min_l <= 4'b0000;
-							min_h <= min_h + 1;
-						end
-						else
-							min_l <= min_l + 1;
-					end
-					else
-						sec_h <= sec_h + 1;
+					sec_l <= sec_l;
+					sec_h <= sec_h;
+					min_l <= min_l;
+					min_h <= min_h;
 				end
+					
 				else
-					sec_l <= sec_l + 1;
-			end // if(ckl_1hz)
+				begin
+				if (clk_1hz)
+				begin
+					if(sec_l==9)
+					begin
+										sec_l <= 4'b0000;
+										if(sec_h == 5)
+										begin
+											sec_h <= 4'b0000;
+											if(min_l == 9)
+											begin
+												min_l <= 4'b0000;
+												min_h <= min_h + 1;
+											end
+											else
+												min_l <= min_l + 1;
+										end
+										else
+											sec_h <= sec_h + 1;
+									end
+									else
+										sec_l <= sec_l + 1;
+					end // if(ckl_1hz)
+				end
 			end
-			
-			end
-		//end //if (!adj)
+
 	end
 	
 	assign led_0 = sec_l;

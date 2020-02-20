@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: stopwatch.prj
 
@@ -132,51 +132,37 @@ Elaborating module <stopwatch>.
 Elaborating module <button_debounce>.
 
 Elaborating module <slow_clk>.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\button_debounce.v" Line 46: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\button_debounce.v" Line 49: Result of 32-bit expression is truncated to fit in 27-bit target.
 
 Elaborating module <my_dff_en>.
 
 Elaborating module <clock_divider>.
 
 Elaborating module <counter_0>.
-WARNING:HDLCompiler:1127 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 47: Assignment to clk_sel ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 67: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 70: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 80: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 83: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 100: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 103: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 113: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 116: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 137: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 140: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 143: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 146: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 194: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 197: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 200: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 203: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 232: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 235: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 238: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 241: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 68: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 71: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 81: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 84: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 101: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 104: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 114: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 117: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 142: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 145: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 163: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 166: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 230: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 233: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 236: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 239: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 269: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 272: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 275: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 278: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <led_diaplay>.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 75: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 92: Signal <led_0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 93: Signal <led_1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 94: Signal <led_2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 95: Signal <led_3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 103: Signal <clk_sel> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 104: Signal <clk_sel> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 105: Signal <clk_sel> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 106: Signal <clk_sel> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 107: Signal <clk_sel> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 108: Signal <clk_sel> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 109: Signal <clk_sel> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 110: Signal <clk_sel> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 111: Signal <clk_sel> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 112: Signal <clk_sel> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 58: Result of 26-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 74: Result of 3-bit expression is truncated to fit in 2-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -199,8 +185,8 @@ Synthesizing Unit <slow_clk>.
     Related source file is "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\button_debounce.v".
 WARNING:Xst:647 - Input <btn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 27-bit register for signal <counter>.
-    Found 27-bit adder for signal <counter[26]_GND_3_o_add_2_OUT> created at line 46.
-    Found 27-bit comparator greater for signal <n0000> created at line 43
+    Found 28-bit adder for signal <n0012[27:0]> created at line 49.
+    Found 27-bit comparator greater for signal <n0000> created at line 49
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  27 D-type flip-flop(s).
@@ -220,11 +206,11 @@ Synthesizing Unit <clock_divider>.
     Found 32-bit register for signal <counter_400hz>.
     Found 1-bit register for signal <clk_400hz>.
     Found 32-bit register for signal <counter_1hz>.
-    Found 32-bit adder for signal <counter_1hz[31]_GND_5_o_add_2_OUT> created at line 58.
-    Found 32-bit adder for signal <counter_2hz[31]_GND_5_o_add_8_OUT> created at line 83.
-    Found 32-bit adder for signal <counter_400hz[31]_GND_5_o_add_14_OUT> created at line 100.
-    Found 32-bit comparator greater for signal <n0000> created at line 55
-    Found 32-bit comparator greater for signal <n0006> created at line 80
+    Found 32-bit adder for signal <counter_1hz[31]_GND_5_o_add_2_OUT> created at line 44.
+    Found 32-bit adder for signal <counter_2hz[31]_GND_5_o_add_9_OUT> created at line 54.
+    Found 32-bit adder for signal <counter_400hz[31]_GND_5_o_add_16_OUT> created at line 71.
+    Found 32-bit comparator greater for signal <n0000> created at line 44
+    Found 32-bit comparator greater for signal <n0007> created at line 54
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  97 D-type flip-flop(s).
@@ -233,55 +219,50 @@ Unit <clock_divider> synthesized.
 
 Synthesizing Unit <counter_0>.
     Related source file is "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v".
-WARNING:Xst:647 - Input <clk_2hz> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <sec_l>.
     Found 4-bit register for signal <sec_h>.
     Found 4-bit register for signal <min_l>.
     Found 4-bit register for signal <min_h>.
-    Found 4-bit register for signal <sec_l>.
-    Found 4-bit adder for signal <sec_l[3]_GND_6_o_add_58_OUT> created at line 146.
-    Found 4-bit adder for signal <min_h[3]_GND_6_o_add_106_OUT> created at line 232.
-    Found 4-bit adder for signal <min_l[3]_GND_6_o_add_107_OUT> created at line 235.
-    Found 4-bit adder for signal <sec_h[3]_GND_6_o_add_110_OUT> created at line 238.
-    Found 4-bit adder for signal <sec_l[3]_GND_6_o_add_114_OUT> created at line 241.
-    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_79_OUT<3:0>> created at line 194.
-    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_80_OUT<3:0>> created at line 197.
-    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_83_OUT<3:0>> created at line 200.
-    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_87_OUT<3:0>> created at line 203.
-    Found 4-bit comparator greater for signal <n0001> created at line 74
-    Found 4-bit comparator greater for signal <n0010> created at line 94
-    Found 4-bit comparator greater for signal <n0014> created at line 107
-    Found 4-bit comparator greater for signal <n0032> created at line 128
+    Found 1-bit register for signal <pause>.
+    Found 4-bit adder for signal <sec_l[3]_GND_6_o_add_50_OUT> created at line 145.
+    Found 4-bit adder for signal <min_l[3]_GND_6_o_add_61_OUT> created at line 166.
+    Found 4-bit adder for signal <min_h[3]_GND_6_o_add_127_OUT> created at line 269.
+    Found 4-bit adder for signal <min_l[3]_GND_6_o_add_128_OUT> created at line 272.
+    Found 4-bit adder for signal <sec_h[3]_GND_6_o_add_131_OUT> created at line 275.
+    Found 4-bit adder for signal <sec_l[3]_GND_6_o_add_135_OUT> created at line 278.
+    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_100_OUT<3:0>> created at line 230.
+    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_101_OUT<3:0>> created at line 233.
+    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_104_OUT<3:0>> created at line 236.
+    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_108_OUT<3:0>> created at line 239.
+    Found 4-bit comparator greater for signal <n0012> created at line 95
+    Found 4-bit comparator greater for signal <n0016> created at line 108
+    Found 4-bit comparator lessequal for signal <n0035> created at line 130
+    Found 4-bit comparator greater for signal <n0038> created at line 139
+    Found 4-bit comparator lessequal for signal <n0047> created at line 151
+    Found 4-bit comparator greater for signal <n0050> created at line 160
     Summary:
-	inferred   9 Adder/Subtractor(s).
-	inferred  16 D-type flip-flop(s).
-	inferred   4 Comparator(s).
-	inferred  24 Multiplexer(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  25 Multiplexer(s).
 Unit <counter_0> synthesized.
 
 Synthesizing Unit <led_diaplay>.
     Related source file is "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v".
     Found 2-bit register for signal <led_select>.
     Found 1-bit register for signal <clk_2hz>.
-    Found 32-bit register for signal <counter_2hz>.
-    Found 32-bit adder for signal <counter_2hz[31]_GND_7_o_add_2_OUT> created at line 57.
-    Found 2-bit adder for signal <led_select[1]_GND_7_o_add_13_OUT> created at line 75.
-    Found 4x4-bit Read Only RAM for signal <AN>
-    Found 1-bit 4-to-1 multiplexer for signal <led_data_hex<3>> created at line 102.
-    Found 1-bit 4-to-1 multiplexer for signal <led_data_hex<2>> created at line 102.
-    Found 1-bit 4-to-1 multiplexer for signal <led_data_hex<1>> created at line 102.
-    Found 1-bit 4-to-1 multiplexer for signal <led_data_hex<0>> created at line 102.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_data<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4-bit register for signal <led_data_hex>.
+    Found 7-bit register for signal <seg_data>.
+    Found 4-bit register for signal <AN>.
+    Found 25-bit register for signal <counter_2hz>.
+    Found 25-bit adder for signal <counter_2hz[24]_GND_7_o_add_2_OUT> created at line 58.
+    Found 2-bit adder for signal <led_select[1]_GND_7_o_add_13_OUT> created at line 74.
+    Found 4x4-bit Read Only RAM for signal <led_select[1]_PWR_8_o_wide_mux_32_OUT>
+    Found 4-bit 4-to-1 multiplexer for signal <led_select[1]_led_3[3]_wide_mux_16_OUT> created at line 79.
     Summary:
 	inferred   1 RAM(s).
 	inferred   2 Adder/Subtractor(s).
-	inferred  35 D-type flip-flop(s).
-	inferred   7 Latch(s).
+	inferred  43 D-type flip-flop(s).
 	inferred  14 Multiplexer(s).
 Unit <led_diaplay> synthesized.
 
@@ -291,28 +272,32 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  4x4-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 18
+# Adders/Subtractors                                   : 19
  2-bit adder                                           : 1
- 27-bit adder                                          : 4
- 32-bit adder                                          : 4
- 4-bit adder                                           : 5
+ 25-bit adder                                          : 1
+ 28-bit adder                                          : 4
+ 32-bit adder                                          : 3
+ 4-bit adder                                           : 6
  4-bit subtractor                                      : 4
-# Registers                                            : 24
- 1-bit register                                        : 11
+# Registers                                            : 28
+ 1-bit register                                        : 12
  2-bit register                                        : 1
+ 25-bit register                                       : 1
  27-bit register                                       : 4
- 32-bit register                                       : 4
- 4-bit register                                        : 4
-# Latches                                              : 7
- 1-bit latch                                           : 7
-# Comparators                                          : 10
+ 32-bit register                                       : 3
+ 4-bit register                                        : 6
+ 7-bit register                                        : 1
+# Comparators                                          : 12
  27-bit comparator greater                             : 4
  32-bit comparator greater                             : 2
  4-bit comparator greater                              : 4
-# Multiplexers                                         : 38
- 1-bit 2-to-1 multiplexer                              : 10
- 1-bit 4-to-1 multiplexer                              : 4
- 4-bit 2-to-1 multiplexer                              : 24
+ 4-bit comparator lessequal                            : 2
+# Multiplexers                                         : 39
+ 1-bit 2-to-1 multiplexer                              : 3
+ 25-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 25
+ 4-bit 4-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 9
 
 =========================================================================
 
@@ -323,14 +308,14 @@ Macro Statistics
 
 Synthesizing (advanced) Unit <clock_divider>.
 The following registers are absorbed into counter <counter_2hz>: 1 register on signal <counter_2hz>.
-The following registers are absorbed into counter <counter_1hz>: 1 register on signal <counter_1hz>.
 The following registers are absorbed into counter <counter_400hz>: 1 register on signal <counter_400hz>.
+The following registers are absorbed into counter <counter_1hz>: 1 register on signal <counter_1hz>.
 Unit <clock_divider> synthesized (advanced).
 
 Synthesizing (advanced) Unit <led_diaplay>.
 The following registers are absorbed into counter <counter_2hz>: 1 register on signal <counter_2hz>.
 The following registers are absorbed into counter <led_select>: 1 register on signal <led_select>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_AN> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3231 - The small RAM <Mram_led_select[1]_PWR_8_o_wide_mux_32_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -339,7 +324,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_AN> will be implemented on LUTs eith
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <led_select>    |          |
     |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <AN>            |          |
+    |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
 Unit <led_diaplay> synthesized (advanced).
 
@@ -353,23 +338,26 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  4x4-bit single-port distributed Read Only RAM         : 1
-# Adders/Subtractors                                   : 9
- 4-bit adder                                           : 5
+# Adders/Subtractors                                   : 10
+ 4-bit adder                                           : 6
  4-bit subtractor                                      : 4
 # Counters                                             : 9
  2-bit up counter                                      : 1
+ 25-bit up counter                                     : 1
  27-bit up counter                                     : 4
- 32-bit up counter                                     : 4
-# Registers                                            : 27
- Flip-Flops                                            : 27
-# Comparators                                          : 10
+ 32-bit up counter                                     : 3
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+# Comparators                                          : 12
  27-bit comparator greater                             : 4
  32-bit comparator greater                             : 2
  4-bit comparator greater                              : 4
+ 4-bit comparator lessequal                            : 2
 # Multiplexers                                         : 38
- 1-bit 2-to-1 multiplexer                              : 10
- 1-bit 4-to-1 multiplexer                              : 4
- 4-bit 2-to-1 multiplexer                              : 24
+ 1-bit 2-to-1 multiplexer                              : 3
+ 4-bit 2-to-1 multiplexer                              : 25
+ 4-bit 4-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 9
 
 =========================================================================
 
@@ -384,70 +372,35 @@ Optimizing unit <clock_divider> ...
 Optimizing unit <counter_0> ...
 
 Optimizing unit <led_diaplay> ...
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_31> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_30> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_29> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_28> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_27> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_26> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_25> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_24> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_23> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_22> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_21> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_20> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_19> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_18> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_17> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_16> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_15> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_14> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_13> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_12> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_11> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_10> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_9> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_8> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_7> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_6> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_5> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_4> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_3> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_2> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_1> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:2677 - Node <_clock_divider/counter_2hz_0> of sequential type is unconnected in block <stopwatch>.
-WARNING:Xst:1293 - FF/Latch <_decrease/t1/counter_23> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <_decrease/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_31> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_30> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_29> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_28> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_31> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_27> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_28> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_31> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_30> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_29> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_28> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_27> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_30> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_23> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_27> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_23> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_22> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_17> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_led_display/counter_2hz_31> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_led_display/counter_2hz_29> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_led_display/counter_2hz_28> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_led_display/counter_2hz_30> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_led_display/counter_2hz_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_led_display/counter_2hz_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_led_display/counter_2hz_27> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_31> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_30> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_28> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_27> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_29> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_counter_0/min_h_3> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
@@ -456,7 +409,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_2
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
@@ -465,7 +417,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_2
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
@@ -474,16 +425,17 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counte
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_22> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_0> in Unit <stopwatch> is equivalent to the following 6 FFs/Latches, which will be removed : <_pause/t1/counter_0> <_increase/t1/counter_0> <_decrease/t1/counter_0> <_clock_divider/counter_1hz_0> <_clock_divider/counter_400hz_0> <_led_display/counter_2hz_0> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_1> in Unit <stopwatch> is equivalent to the following 6 FFs/Latches, which will be removed : <_pause/t1/counter_1> <_increase/t1/counter_1> <_decrease/t1/counter_1> <_clock_divider/counter_1hz_1> <_clock_divider/counter_400hz_1> <_led_display/counter_2hz_1> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_2> in Unit <stopwatch> is equivalent to the following 6 FFs/Latches, which will be removed : <_pause/t1/counter_2> <_increase/t1/counter_2> <_decrease/t1/counter_2> <_clock_divider/counter_1hz_2> <_clock_divider/counter_400hz_2> <_led_display/counter_2hz_2> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_3> in Unit <stopwatch> is equivalent to the following 5 FFs/Latches, which will be removed : <_pause/t1/counter_3> <_increase/t1/counter_3> <_decrease/t1/counter_3> <_clock_divider/counter_1hz_3> <_led_display/counter_2hz_3> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_4> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_4> <_increase/t1/counter_4> <_decrease/t1/counter_4> 
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_23> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_0> in Unit <stopwatch> is equivalent to the following 7 FFs/Latches, which will be removed : <_pause/t1/counter_0> <_increase/t1/counter_0> <_decrease/t1/counter_0> <_clock_divider/counter_1hz_0> <_clock_divider/counter_2hz_0> <_clock_divider/counter_400hz_0> <_led_display/counter_2hz_0> 
+INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_1> in Unit <stopwatch> is equivalent to the following 7 FFs/Latches, which will be removed : <_pause/t1/counter_1> <_increase/t1/counter_1> <_decrease/t1/counter_1> <_clock_divider/counter_1hz_1> <_clock_divider/counter_400hz_1> <_clock_divider/counter_2hz_1> <_led_display/counter_2hz_1> 
+INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_2> in Unit <stopwatch> is equivalent to the following 7 FFs/Latches, which will be removed : <_pause/t1/counter_2> <_increase/t1/counter_2> <_decrease/t1/counter_2> <_clock_divider/counter_1hz_2> <_clock_divider/counter_400hz_2> <_clock_divider/counter_2hz_2> <_led_display/counter_2hz_2> 
+INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_3> in Unit <stopwatch> is equivalent to the following 6 FFs/Latches, which will be removed : <_pause/t1/counter_3> <_increase/t1/counter_3> <_decrease/t1/counter_3> <_clock_divider/counter_1hz_3> <_clock_divider/counter_2hz_3> <_led_display/counter_2hz_3> 
+INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_4> in Unit <stopwatch> is equivalent to the following 6 FFs/Latches, which will be removed : <_pause/t1/counter_4> <_increase/t1/counter_4> <_decrease/t1/counter_4> <_clock_divider/counter_1hz_4> <_clock_divider/counter_2hz_4> <_led_display/counter_2hz_4> 
 INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_5> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_5> <_increase/t1/counter_5> <_decrease/t1/counter_5> 
 INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_6> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_6> <_increase/t1/counter_6> <_decrease/t1/counter_6> 
 INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_7> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_7> <_increase/t1/counter_7> <_decrease/t1/counter_7> 
@@ -497,10 +449,13 @@ INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_14> in Unit <stopwatch> is equiv
 INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_15> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_15> <_increase/t1/counter_15> <_decrease/t1/counter_15> 
 INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_16> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_16> <_increase/t1/counter_16> <_decrease/t1/counter_16> 
 INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_17> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_17> <_increase/t1/counter_17> <_decrease/t1/counter_17> 
+INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_18> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_18> <_increase/t1/counter_18> <_decrease/t1/counter_18> 
+INFO:Xst:2261 - The FF/Latch <_clock_divider/counter_1hz_5> in Unit <stopwatch> is equivalent to the following 2 FFs/Latches, which will be removed : <_clock_divider/counter_2hz_5> <_led_display/counter_2hz_5> 
+INFO:Xst:2261 - The FF/Latch <_clock_divider/counter_1hz_6> in Unit <stopwatch> is equivalent to the following FF/Latch, which will be removed : <_clock_divider/counter_2hz_6> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block stopwatch, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block stopwatch, actual ratio is 3.
 
 Final Macro Processing ...
 
@@ -508,8 +463,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 105
- Flip-Flops                                            : 105
+# Registers                                            : 137
+ Flip-Flops                                            : 137
 
 =========================================================================
 
@@ -532,26 +487,25 @@ Top Level Output File Name         : stopwatch.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 415
+# BELS                             : 518
 #      GND                         : 1
-#      INV                         : 6
-#      LUT1                        : 83
-#      LUT2                        : 17
-#      LUT3                        : 14
-#      LUT4                        : 13
-#      LUT5                        : 41
-#      LUT6                        : 65
-#      MUXCY                       : 96
-#      MUXF7                       : 2
+#      INV                         : 10
+#      LUT1                        : 110
+#      LUT2                        : 24
+#      LUT3                        : 15
+#      LUT4                        : 18
+#      LUT5                        : 46
+#      LUT6                        : 70
+#      MUXCY                       : 129
+#      MUXF7                       : 1
 #      VCC                         : 1
-#      XORCY                       : 76
-# FlipFlops/Latches                : 112
-#      FD                          : 7
+#      XORCY                       : 93
+# FlipFlops/Latches                : 137
+#      FD                          : 16
 #      FDC                         : 2
-#      FDE                         : 8
-#      FDR                         : 81
-#      FDRE                        : 7
-#      LD                          : 7
+#      FDE                         : 18
+#      FDR                         : 97
+#      FDRE                        : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 24
@@ -565,21 +519,21 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             105  out of  18224     0%  
- Number of Slice LUTs:                  239  out of   9112     2%  
-    Number used as Logic:               239  out of   9112     2%  
+ Number of Slice Registers:             133  out of  18224     0%  
+ Number of Slice LUTs:                  293  out of   9112     3%  
+    Number used as Logic:               293  out of   9112     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    246
-   Number with an unused Flip Flop:     141  out of    246    57%  
-   Number with an unused LUT:             7  out of    246     2%  
-   Number of fully used LUT-FF pairs:    98  out of    246    39%  
-   Number of unique control sets:        12
+ Number of LUT Flip Flop pairs used:    301
+   Number with an unused Flip Flop:     168  out of    301    55%  
+   Number with an unused LUT:             8  out of    301     2%  
+   Number of fully used LUT-FF pairs:   125  out of    301    41%  
+   Number of unique control sets:        15
 
 IO Utilization: 
  Number of IOs:                          25
  Number of bonded IOBs:                  25  out of    232    10%  
-    IOB Flip Flops/Latches:               7
+    IOB Flip Flops/Latches:               4
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -602,17 +556,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------------------------------------------------------------------+---------------------------------+-------+
-Clock Signal                                                                                   | Clock buffer(FF name)           | Load  |
------------------------------------------------------------------------------------------------+---------------------------------+-------+
-btn_pause(_pause/btn_out1:O)                                                                   | NONE(*)(pause_flag)             | 1     |
-clk                                                                                            | BUFGP                           | 102   |
-_clock_divider/clk_400hz                                                                       | NONE(_led_display/led_select_1) | 2     |
-_led_display/led_data_hex[3]_GND_8_o_Mux_29_o(_led_display/led_data_hex[3]_GND_8_o_Mux_29_o1:O)| NONE(*)(_led_display/seg_data_5)| 7     |
------------------------------------------------------------------------------------------------+---------------------------------+-------+
-(*) These 2 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+-----------------------------------+--------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)          | Load  |
+-----------------------------------+--------------------------------+-------+
+clk                                | BUFGP                          | 135   |
+_clock_divider/clk_400hz           | NONE(_led_display/led_select_1)| 2     |
+-----------------------------------+--------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -623,61 +572,41 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.162ns (Maximum Frequency: 162.294MHz)
-   Minimum input arrival time before clock: 7.186ns
-   Maximum output required time after clock: 4.761ns
-   Maximum combinational path delay: 5.084ns
+   Minimum period: 6.763ns (Maximum Frequency: 147.854MHz)
+   Minimum input arrival time before clock: 7.122ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: 5.070ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'btn_pause'
-  Clock period: 1.650ns (frequency: 606.189MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               1.650ns (Levels of Logic = 0)
-  Source:            pause_flag (FF)
-  Destination:       pause_flag (FF)
-  Source Clock:      btn_pause rising
-  Destination Clock: btn_pause rising
-
-  Data Path: pause_flag to pause_flag
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              7   0.447   0.773  pause_flag (pause_flag)
-     FDR:R                     0.430          pause_flag
-    ----------------------------------------
-    Total                      1.650ns (0.877ns logic, 0.773ns route)
-                                       (53.2% logic, 46.8% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.162ns (frequency: 162.294MHz)
-  Total number of paths / destination ports: 7992 / 200
+  Clock period: 6.763ns (frequency: 147.854MHz)
+  Total number of paths / destination ports: 11374 / 250
 -------------------------------------------------------------------------
-Delay:               6.162ns (Levels of Logic = 5)
-  Source:            _reset/t1/counter_16 (FF)
-  Destination:       _counter_0/min_l_3 (FF)
+Delay:               6.763ns (Levels of Logic = 6)
+  Source:            _clock_divider/counter_1hz_9 (FF)
+  Destination:       _counter_0/sec_l_3 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: _reset/t1/counter_16 to _counter_0/min_l_3
+  Data Path: _clock_divider/counter_1hz_9 to _counter_0/sec_l_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.447   1.015  _reset/t1/counter_16 (_reset/t1/counter_16)
-     LUT6:I0->O           11   0.203   1.111  _reset/t1/slow_clk_en<26>1 (_decrease/t1/slow_clk_en<26>)
-     LUT6:I3->O           11   0.205   0.883  _counter_0/Mmux_min_l[3]_min_l[3]_mux_141_OUT221 (_counter_0/Mmux_min_l[3]_min_l[3]_mux_141_OUT22)
-     LUT6:I5->O            3   0.205   0.651  _counter_0/_n0555_inv141 (_counter_0/_n0555_inv14)
-     LUT4:I3->O            4   0.205   0.931  _counter_0/Reset_OR_DriverANDClockEnable101 (_counter_0/Reset_OR_DriverANDClockEnable10)
-     LUT4:I0->O            1   0.203   0.000  _counter_0/min_l_3_rstpot (_counter_0/min_l_3_rstpot)
-     FD:D                      0.102          _counter_0/min_l_3
+     FDR:C->Q              4   0.447   1.048  _clock_divider/counter_1hz_9 (_clock_divider/counter_1hz_9)
+     LUT6:I0->O            1   0.203   0.808  _clock_divider/clk_1hz<31>1 (_clock_divider/clk_1hz<31>)
+     LUT6:I3->O            5   0.205   0.715  _clock_divider/clk_1hz<31>7 (clk_1hz)
+     LUT5:I4->O            3   0.205   0.755  _counter_0/_n0718_inv121 (_counter_0/_n0718_inv12)
+     LUT6:I4->O            2   0.203   0.617  _counter_0/_n0608_inv12 (_counter_0/_n0608_inv12)
+     LUT6:I5->O            4   0.205   1.048  _counter_0/Reset_OR_DriverANDClockEnable44 (_counter_0/Reset_OR_DriverANDClockEnable4)
+     LUT6:I0->O            1   0.203   0.000  _counter_0/sec_l_3_rstpot (_counter_0/sec_l_3_rstpot)
+     FD:D                      0.102          _counter_0/sec_l_3
     ----------------------------------------
-    Total                      6.162ns (1.570ns logic, 4.592ns route)
-                                       (25.5% logic, 74.5% route)
+    Total                      6.763ns (1.773ns logic, 4.990ns route)
+                                       (26.2% logic, 73.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock '_clock_divider/clk_400hz'
@@ -703,112 +632,53 @@ Delay:               2.190ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 379 / 38
+  Total number of paths / destination ports: 345 / 38
 -------------------------------------------------------------------------
-Offset:              7.186ns (Levels of Logic = 6)
-  Source:            sw<2> (PAD)
-  Destination:       _counter_0/min_l_3 (FF)
+Offset:              7.122ns (Levels of Logic = 7)
+  Source:            sw<0> (PAD)
+  Destination:       _counter_0/sec_l_3 (FF)
   Destination Clock: clk rising
 
-  Data Path: sw<2> to _counter_0/min_l_3
+  Data Path: sw<0> to _counter_0/sec_l_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            32   1.222   1.396  sw_2_IBUF (Led_2_OBUF)
-     LUT2:I0->O            2   0.203   0.981  _reset/t1/slow_clk_en<26>4_SW0 (N41)
-     LUT6:I0->O           11   0.203   0.883  _counter_0/Mmux_min_l[3]_min_l[3]_mux_141_OUT221 (_counter_0/Mmux_min_l[3]_min_l[3]_mux_141_OUT22)
-     LUT6:I5->O            3   0.205   0.651  _counter_0/_n0555_inv141 (_counter_0/_n0555_inv14)
-     LUT4:I3->O            4   0.205   0.931  _counter_0/Reset_OR_DriverANDClockEnable101 (_counter_0/Reset_OR_DriverANDClockEnable10)
-     LUT4:I0->O            1   0.203   0.000  _counter_0/min_l_3_rstpot (_counter_0/min_l_3_rstpot)
-     FD:D                      0.102          _counter_0/min_l_3
+     IBUF:I->O            13   1.222   1.297  sw_0_IBUF (Led_0_OBUF)
+     LUT6:I0->O            1   0.203   0.684  _counter_0/_n0658_inv12111 (_counter_0/_n0658_inv12111)
+     LUT6:I4->O            1   0.203   0.000  _counter_0/_n0658_inv12114_F (N92)
+     MUXF7:I0->O           7   0.131   1.002  _counter_0/_n0658_inv12114 (_counter_0/_n0658_inv1211)
+     LUT6:I3->O            2   0.205   0.617  _counter_0/_n0608_inv12 (_counter_0/_n0608_inv12)
+     LUT6:I5->O            4   0.205   1.048  _counter_0/Reset_OR_DriverANDClockEnable44 (_counter_0/Reset_OR_DriverANDClockEnable4)
+     LUT6:I0->O            1   0.203   0.000  _counter_0/sec_l_3_rstpot (_counter_0/sec_l_3_rstpot)
+     FD:D                      0.102          _counter_0/sec_l_3
     ----------------------------------------
-    Total                      7.186ns (2.343ns logic, 4.843ns route)
-                                       (32.6% logic, 67.4% route)
+    Total                      7.122ns (2.474ns logic, 4.648ns route)
+                                       (34.7% logic, 65.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock '_led_display/led_data_hex[3]_GND_8_o_Mux_29_o'
-  Total number of paths / destination ports: 14 / 7
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
-Offset:              4.179ns (Levels of Logic = 3)
-  Source:            sw<2> (PAD)
-  Destination:       _led_display/seg_data_2 (LATCH)
-  Destination Clock: _led_display/led_data_hex[3]_GND_8_o_Mux_29_o falling
-
-  Data Path: sw<2> to _led_display/seg_data_2
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            32   1.222   1.396  sw_2_IBUF (Led_2_OBUF)
-     LUT5:I3->O            7   0.203   1.118  _led_display/Mmux_led_data_hex[3]_seg_data[3]_Mux_34_o121 (_led_display/Mmux_led_data_hex[3]_seg_data[3]_Mux_34_o12)
-     LUT5:I0->O            1   0.203   0.000  _led_display/Mmux_led_data_hex[3]_seg_data[2]_Mux_36_o11 (_led_display/led_data_hex[3]_seg_data[2]_Mux_36_o)
-     LD:D                      0.037          _led_display/seg_data_2
-    ----------------------------------------
-    Total                      4.179ns (1.665ns logic, 2.514ns route)
-                                       (39.8% logic, 60.2% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock '_led_display/led_data_hex[3]_GND_8_o_Mux_29_o'
-  Total number of paths / destination ports: 7 / 7
--------------------------------------------------------------------------
-Offset:              3.648ns (Levels of Logic = 1)
-  Source:            _led_display/seg_data_6 (LATCH)
-  Destination:       led_seg<6> (PAD)
-  Source Clock:      _led_display/led_data_hex[3]_GND_8_o_Mux_29_o falling
-
-  Data Path: _led_display/seg_data_6 to led_seg<6>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  _led_display/seg_data_6 (_led_display/seg_data_6)
-     OBUF:I->O                 2.571          led_seg_6_OBUF (led_seg<6>)
-    ----------------------------------------
-    Total                      3.648ns (3.069ns logic, 0.579ns route)
-                                       (84.1% logic, 15.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock '_clock_divider/clk_400hz'
-  Total number of paths / destination ports: 8 / 4
--------------------------------------------------------------------------
-Offset:              4.761ns (Levels of Logic = 2)
-  Source:            _led_display/led_select_1 (FF)
-  Destination:       AN<3> (PAD)
-  Source Clock:      _clock_divider/clk_400hz rising
-
-  Data Path: _led_display/led_select_1 to AN<3>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q             10   0.447   0.961  _led_display/led_select_1 (_led_display/led_select_1)
-     LUT2:I0->O            1   0.203   0.579  _led_display/Mram_AN31 (AN_3_OBUF)
-     OBUF:I->O                 2.571          AN_3_OBUF (AN<3>)
-    ----------------------------------------
-    Total                      4.761ns (3.221ns logic, 1.540ns route)
-                                       (67.7% logic, 32.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'btn_pause'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              3.791ns (Levels of Logic = 1)
+Offset:              3.634ns (Levels of Logic = 1)
   Source:            pause_flag (FF)
   Destination:       led (PAD)
-  Source Clock:      btn_pause rising
+  Source Clock:      clk rising
 
   Data Path: pause_flag to led
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              7   0.447   0.773  pause_flag (pause_flag)
+     FDE:C->Q              2   0.447   0.616  pause_flag (pause_flag)
      OBUF:I->O                 2.571          led_OBUF (led)
     ----------------------------------------
-    Total                      3.791ns (3.018ns logic, 0.773ns route)
-                                       (79.6% logic, 20.4% route)
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Delay:               5.084ns (Levels of Logic = 2)
+Delay:               5.070ns (Levels of Logic = 2)
   Source:            sw<2> (PAD)
   Destination:       Led<2> (PAD)
 
@@ -816,11 +686,11 @@ Delay:               5.084ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            32   1.222   1.291  sw_2_IBUF (Led_2_OBUF)
+     IBUF:I->O            31   1.222   1.277  sw_2_IBUF (Led_2_OBUF)
      OBUF:I->O                 2.571          Led_2_OBUF (Led<2>)
     ----------------------------------------
-    Total                      5.084ns (3.793ns logic, 1.291ns route)
-                                       (74.6% logic, 25.4% route)
+    Total                      5.070ns (3.793ns logic, 1.277ns route)
+                                       (74.8% logic, 25.2% route)
 
 =========================================================================
 
@@ -833,46 +703,29 @@ Clock to Setup on destination clock _clock_divider/clk_400hz
 Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------+---------+---------+---------+---------+
 _clock_divider/clk_400hz|    2.190|         |         |         |
-clk                     |    4.155|         |         |         |
+clk                     |    4.124|         |         |         |
 ------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock _led_display/led_data_hex[3]_GND_8_o_Mux_29_o
+Clock to Setup on destination clock clk
 ------------------------+---------+---------+---------+---------+
                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------+---------+---------+---------+---------+
-_clock_divider/clk_400hz|         |         |    3.257|         |
-clk                     |         |         |    3.234|         |
+_clock_divider/clk_400hz|    2.920|         |         |         |
+clk                     |    6.763|         |         |         |
 ------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock btn_pause
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-btn_pause      |    1.650|         |         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-btn_pause      |    5.941|         |         |         |
-clk            |    6.162|         |         |         |
----------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.21 secs
+Total CPU time to Xst completion: 5.35 secs
  
 --> 
 
-Total memory usage is 260220 kilobytes
+Total memory usage is 259580 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  146 (   0 filtered)
-Number of infos    :   20 (   0 filtered)
+Number of warnings :   88 (   0 filtered)
+Number of infos    :   23 (   0 filtered)
 

@@ -1,16 +1,8 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Feb 18 13:56:13 2020
+Wed Feb 19 16:41:56 2020
 
 drc -z stopwatch.ncd stopwatch.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   _led_display/led_data_hex[3]_GND_8_o_Mux_29_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net btn_pause is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-DRC detected 0 errors and 2 warnings.  Please see the previously displayed
-individual error or warning messages for more details.
+DRC detected 0 errors and 0 warnings.

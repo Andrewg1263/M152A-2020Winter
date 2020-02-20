@@ -26,14 +26,55 @@ module clock_divider(
     output clk_400hz
     );
 	 
-	 wire clk_1hz = 0;
-    wire clk_2hz = 0;
-    reg clk_400hz = 0;
+	 wire clk_1hz = 0; // one pulse per second
+    wire clk_2hz = 0; // two pulse per second
+    reg clk_400hz = 0; // 50% duty cycle
 	 
 	 reg[31:0] counter_1hz = 32'd0;
 	 reg[31:0] counter_2hz = 32'd0;
 	 reg[31:0] counter_400hz = 32'd0;
+	
+	
+	 // 1 hz
+	 always @(posedge sclk)
+    begin
+	 if(rst)
+		counter_1hz <= 0;
+	 else
+		counter_1hz <= (counter_1hz>=99999999)?0:counter_1hz+1;
+    end
+	 assign clk_1hz = (counter_1hz == 99999999)?1'b1:1'b0;
 	 
+	 // 2 hz
+	 always @(posedge sclk)
+    begin 
+	 if(rst)
+		counter_2hz <= 0;
+	 else
+		counter_2hz <= (counter_2hz>=49999999)?0:counter_2hz+1;
+    end
+	 assign clk_2hz = (counter_2hz == 49999999)?1'b1:1'b0;
+	 
+	 // 400 hz
+	 always@(posedge sclk)
+	 begin
+		if(rst)
+			counter_400hz <=0;
+		else
+		begin
+			if(counter_400hz == 124999) //100, 000, 000 / 800 = 125, 000
+			begin
+				clk_400hz <= ~clk_400hz;
+				counter_400hz <= 0;
+			end
+			else
+				counter_400hz <= counter_400hz + 1;
+		end
+	 end
+
+
+endmodule
+
 /*	 always@(posedge sclk)
 	 begin
 		if(rst)
@@ -50,15 +91,6 @@ module clock_divider(
 		end
 	 end*/
 	 
-	 always @(posedge sclk)
-    begin
-		if(counter_1hz >= 100000000-1)
-			counter_1hz <= 0;
-		else
-			counter_1hz <= counter_1hz + 1;
-    end
-	 assign clk_1hz = (counter_1hz == 99999999)?1'b1:1'b0;
-	 
 /*	 always@(posedge sclk)
 	 begin
 		if(rst)
@@ -74,32 +106,3 @@ module clock_divider(
 				counter_2hz <= counter_2hz + 1;
 		end
 	 end*/
-	 
-	 always @(posedge sclk)
-    begin
-		if(counter_2hz <= 50000000-1)
-			counter_2hz <= 0;
-		else
-			counter_2hz <= counter_2hz + 1;
-    end
-	 assign clk_2hz = (counter_2hz == 49999999)?1'b1:1'b0;
-	 //
-	 
-	 always@(posedge sclk)
-	 begin
-		if(rst)
-			counter_400hz <=0;
-		else
-		begin
-			if(counter_400hz == 125000-1) //100, 000, 000 / 800 = 125, 000
-			begin
-				clk_400hz <= ~clk_400hz;
-				counter_400hz <= 0;
-			end
-			else
-				counter_400hz <= counter_400hz + 1;
-		end
-	 end
-
-
-endmodule
