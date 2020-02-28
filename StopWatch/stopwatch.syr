@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: stopwatch.prj
 
@@ -132,7 +132,7 @@ Elaborating module <stopwatch>.
 Elaborating module <button_debounce>.
 
 Elaborating module <slow_clk>.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\button_debounce.v" Line 49: Result of 32-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\button_debounce.v" Line 20: Result of 32-bit expression is truncated to fit in 27-bit target.
 
 Elaborating module <my_dff_en>.
 
@@ -151,14 +151,14 @@ WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopW
 WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 145: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 163: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 166: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 230: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 233: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 236: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 239: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 269: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 232: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 235: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 238: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 241: Result of 32-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 272: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 275: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 278: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\counter_0.v" Line 281: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <led_diaplay>.
 WARNING:HDLCompiler:413 - "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\led_diaplay.v" Line 58: Result of 26-bit expression is truncated to fit in 25-bit target.
@@ -185,8 +185,8 @@ Synthesizing Unit <slow_clk>.
     Related source file is "\\mac\home\BackUp\UCLA\152A-ee\M152A-2020Winter\StopWatch\button_debounce.v".
 WARNING:Xst:647 - Input <btn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 27-bit register for signal <counter>.
-    Found 28-bit adder for signal <n0012[27:0]> created at line 49.
-    Found 27-bit comparator greater for signal <n0000> created at line 49
+    Found 28-bit adder for signal <n0012[27:0]> created at line 20.
+    Found 27-bit comparator greater for signal <n0000> created at line 20
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  27 D-type flip-flop(s).
@@ -206,11 +206,11 @@ Synthesizing Unit <clock_divider>.
     Found 32-bit register for signal <counter_400hz>.
     Found 1-bit register for signal <clk_400hz>.
     Found 32-bit register for signal <counter_1hz>.
-    Found 32-bit adder for signal <counter_1hz[31]_GND_5_o_add_2_OUT> created at line 44.
-    Found 32-bit adder for signal <counter_2hz[31]_GND_5_o_add_9_OUT> created at line 54.
-    Found 32-bit adder for signal <counter_400hz[31]_GND_5_o_add_16_OUT> created at line 71.
-    Found 32-bit comparator greater for signal <n0000> created at line 44
-    Found 32-bit comparator greater for signal <n0007> created at line 54
+    Found 32-bit adder for signal <counter_1hz[31]_GND_5_o_add_2_OUT> created at line 45.
+    Found 32-bit adder for signal <counter_2hz[31]_GND_5_o_add_9_OUT> created at line 57.
+    Found 32-bit adder for signal <counter_400hz[31]_GND_5_o_add_16_OUT> created at line 75.
+    Found 32-bit comparator greater for signal <n0000> created at line 45
+    Found 32-bit comparator greater for signal <n0007> created at line 57
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  97 D-type flip-flop(s).
@@ -226,14 +226,14 @@ Synthesizing Unit <counter_0>.
     Found 1-bit register for signal <pause>.
     Found 4-bit adder for signal <sec_l[3]_GND_6_o_add_50_OUT> created at line 145.
     Found 4-bit adder for signal <min_l[3]_GND_6_o_add_61_OUT> created at line 166.
-    Found 4-bit adder for signal <min_h[3]_GND_6_o_add_127_OUT> created at line 269.
-    Found 4-bit adder for signal <min_l[3]_GND_6_o_add_128_OUT> created at line 272.
-    Found 4-bit adder for signal <sec_h[3]_GND_6_o_add_131_OUT> created at line 275.
-    Found 4-bit adder for signal <sec_l[3]_GND_6_o_add_135_OUT> created at line 278.
-    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_100_OUT<3:0>> created at line 230.
-    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_101_OUT<3:0>> created at line 233.
-    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_104_OUT<3:0>> created at line 236.
-    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_108_OUT<3:0>> created at line 239.
+    Found 4-bit adder for signal <min_h[3]_GND_6_o_add_135_OUT> created at line 272.
+    Found 4-bit adder for signal <min_l[3]_GND_6_o_add_136_OUT> created at line 275.
+    Found 4-bit adder for signal <sec_h[3]_GND_6_o_add_139_OUT> created at line 278.
+    Found 4-bit adder for signal <sec_l[3]_GND_6_o_add_143_OUT> created at line 281.
+    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_104_OUT<3:0>> created at line 232.
+    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_105_OUT<3:0>> created at line 235.
+    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_108_OUT<3:0>> created at line 238.
+    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_112_OUT<3:0>> created at line 241.
     Found 4-bit comparator greater for signal <n0012> created at line 95
     Found 4-bit comparator greater for signal <n0016> created at line 108
     Found 4-bit comparator lessequal for signal <n0035> created at line 130
@@ -244,7 +244,7 @@ Synthesizing Unit <counter_0>.
 	inferred  10 Adder/Subtractor(s).
 	inferred  17 D-type flip-flop(s).
 	inferred   6 Comparator(s).
-	inferred  25 Multiplexer(s).
+	inferred  27 Multiplexer(s).
 Unit <counter_0> synthesized.
 
 Synthesizing Unit <led_diaplay>.
@@ -292,8 +292,8 @@ Macro Statistics
  32-bit comparator greater                             : 2
  4-bit comparator greater                              : 4
  4-bit comparator lessequal                            : 2
-# Multiplexers                                         : 39
- 1-bit 2-to-1 multiplexer                              : 3
+# Multiplexers                                         : 41
+ 1-bit 2-to-1 multiplexer                              : 5
  25-bit 2-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 25
  4-bit 4-to-1 multiplexer                              : 1
@@ -353,8 +353,8 @@ Macro Statistics
  32-bit comparator greater                             : 2
  4-bit comparator greater                              : 4
  4-bit comparator lessequal                            : 2
-# Multiplexers                                         : 38
- 1-bit 2-to-1 multiplexer                              : 3
+# Multiplexers                                         : 40
+ 1-bit 2-to-1 multiplexer                              : 5
  4-bit 2-to-1 multiplexer                              : 25
  4-bit 4-to-1 multiplexer                              : 1
  7-bit 2-to-1 multiplexer                              : 9
@@ -372,17 +372,68 @@ Optimizing unit <clock_divider> ...
 Optimizing unit <counter_0> ...
 
 Optimizing unit <led_diaplay> ...
-WARNING:Xst:1293 - FF/Latch <_decrease/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <_clock_divider/counter_1hz_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_17> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_15> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_14> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_16> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_12> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_11> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_13> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_10> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_9> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_8> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_7> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_5> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_4> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_31> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_29> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_28> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_30> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_22> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_23> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_30> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_29> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_31> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_27> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_28> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_31> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_29> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_28> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_30> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_23> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_1hz_22> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_22> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_17> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_15> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_14> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_16> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_13> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_12> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_11> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_10> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_8> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_7> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_9> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_5> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_4> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_3> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_counter_0/min_h_3> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_counter_0/sec_h_3> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_400hz_27> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
@@ -400,24 +451,51 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/coun
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_27> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_29> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_counter_0/min_h_3> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_23> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_clock_divider/counter_2hz_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_4> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_5> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_7> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_8> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_9> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_10> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_11> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_12> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_13> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_14> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_15> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_16> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_17> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_4> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_5> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_7> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_8> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_9> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_10> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_11> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_12> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_13> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_14> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_15> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_16> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_17> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_22> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_23> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_reset/t1/counter_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_22> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_23> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_22> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
@@ -425,37 +503,51 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counte
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_20> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_21> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_22> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_23> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_0> in Unit <stopwatch> is equivalent to the following 7 FFs/Latches, which will be removed : <_pause/t1/counter_0> <_increase/t1/counter_0> <_decrease/t1/counter_0> <_clock_divider/counter_1hz_0> <_clock_divider/counter_2hz_0> <_clock_divider/counter_400hz_0> <_led_display/counter_2hz_0> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_1> in Unit <stopwatch> is equivalent to the following 7 FFs/Latches, which will be removed : <_pause/t1/counter_1> <_increase/t1/counter_1> <_decrease/t1/counter_1> <_clock_divider/counter_1hz_1> <_clock_divider/counter_400hz_1> <_clock_divider/counter_2hz_1> <_led_display/counter_2hz_1> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_2> in Unit <stopwatch> is equivalent to the following 7 FFs/Latches, which will be removed : <_pause/t1/counter_2> <_increase/t1/counter_2> <_decrease/t1/counter_2> <_clock_divider/counter_1hz_2> <_clock_divider/counter_400hz_2> <_clock_divider/counter_2hz_2> <_led_display/counter_2hz_2> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_3> in Unit <stopwatch> is equivalent to the following 6 FFs/Latches, which will be removed : <_pause/t1/counter_3> <_increase/t1/counter_3> <_decrease/t1/counter_3> <_clock_divider/counter_1hz_3> <_clock_divider/counter_2hz_3> <_led_display/counter_2hz_3> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_4> in Unit <stopwatch> is equivalent to the following 6 FFs/Latches, which will be removed : <_pause/t1/counter_4> <_increase/t1/counter_4> <_decrease/t1/counter_4> <_clock_divider/counter_1hz_4> <_clock_divider/counter_2hz_4> <_led_display/counter_2hz_4> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_5> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_5> <_increase/t1/counter_5> <_decrease/t1/counter_5> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_6> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_6> <_increase/t1/counter_6> <_decrease/t1/counter_6> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_7> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_7> <_increase/t1/counter_7> <_decrease/t1/counter_7> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_8> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_8> <_increase/t1/counter_8> <_decrease/t1/counter_8> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_9> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_9> <_increase/t1/counter_9> <_decrease/t1/counter_9> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_10> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_10> <_increase/t1/counter_10> <_decrease/t1/counter_10> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_11> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_11> <_increase/t1/counter_11> <_decrease/t1/counter_11> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_12> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_12> <_increase/t1/counter_12> <_decrease/t1/counter_12> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_13> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_13> <_increase/t1/counter_13> <_decrease/t1/counter_13> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_14> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_14> <_increase/t1/counter_14> <_decrease/t1/counter_14> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_15> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_15> <_increase/t1/counter_15> <_decrease/t1/counter_15> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_16> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_16> <_increase/t1/counter_16> <_decrease/t1/counter_16> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_17> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_17> <_increase/t1/counter_17> <_decrease/t1/counter_17> 
-INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_18> in Unit <stopwatch> is equivalent to the following 3 FFs/Latches, which will be removed : <_pause/t1/counter_18> <_increase/t1/counter_18> <_decrease/t1/counter_18> 
-INFO:Xst:2261 - The FF/Latch <_clock_divider/counter_1hz_5> in Unit <stopwatch> is equivalent to the following 2 FFs/Latches, which will be removed : <_clock_divider/counter_2hz_5> <_led_display/counter_2hz_5> 
-INFO:Xst:2261 - The FF/Latch <_clock_divider/counter_1hz_6> in Unit <stopwatch> is equivalent to the following FF/Latch, which will be removed : <_clock_divider/counter_2hz_6> 
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_4> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_5> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_7> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_8> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_9> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_10> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_11> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_12> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_13> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_14> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_15> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_16> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_decrease/t1/counter_17> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_22> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_23> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_24> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_25> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_pause/t1/counter_26> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_4> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_5> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_7> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_8> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_9> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_10> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_11> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_12> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_13> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_14> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_15> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_16> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_17> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_18> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_increase/t1/counter_19> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_0> in Unit <stopwatch> is equivalent to the following 6 FFs/Latches, which will be removed : <_pause/t1/counter_0> <_increase/t1/counter_0> <_decrease/t1/counter_0> <_clock_divider/counter_1hz_0> <_clock_divider/counter_400hz_0> <_led_display/counter_2hz_0> 
+INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_1> in Unit <stopwatch> is equivalent to the following 4 FFs/Latches, which will be removed : <_pause/t1/counter_1> <_increase/t1/counter_1> <_decrease/t1/counter_1> <_clock_divider/counter_1hz_1> 
+INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_2> in Unit <stopwatch> is equivalent to the following 4 FFs/Latches, which will be removed : <_pause/t1/counter_2> <_increase/t1/counter_2> <_decrease/t1/counter_2> <_clock_divider/counter_1hz_2> 
+INFO:Xst:2261 - The FF/Latch <_reset/t1/counter_3> in Unit <stopwatch> is equivalent to the following 4 FFs/Latches, which will be removed : <_pause/t1/counter_3> <_increase/t1/counter_3> <_decrease/t1/counter_3> <_clock_divider/counter_1hz_3> 
+INFO:Xst:2261 - The FF/Latch <_clock_divider/counter_400hz_1> in Unit <stopwatch> is equivalent to the following FF/Latch, which will be removed : <_led_display/counter_2hz_1> 
+INFO:Xst:2261 - The FF/Latch <_clock_divider/counter_400hz_2> in Unit <stopwatch> is equivalent to the following FF/Latch, which will be removed : <_led_display/counter_2hz_2> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block stopwatch, actual ratio is 3.
+Found area constraint ratio of 100 (+ 5) on block stopwatch, actual ratio is 2.
 
 Final Macro Processing ...
 
@@ -463,8 +555,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 137
- Flip-Flops                                            : 137
+# Registers                                            : 88
+ Flip-Flops                                            : 88
 
 =========================================================================
 
@@ -487,25 +579,24 @@ Top Level Output File Name         : stopwatch.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 518
+# BELS                             : 323
 #      GND                         : 1
-#      INV                         : 10
-#      LUT1                        : 110
-#      LUT2                        : 24
+#      INV                         : 8
+#      LUT1                        : 46
+#      LUT2                        : 21
 #      LUT3                        : 15
-#      LUT4                        : 18
-#      LUT5                        : 46
-#      LUT6                        : 70
-#      MUXCY                       : 129
-#      MUXF7                       : 1
+#      LUT4                        : 23
+#      LUT5                        : 33
+#      LUT6                        : 67
+#      MUXCY                       : 58
+#      MUXF7                       : 5
 #      VCC                         : 1
-#      XORCY                       : 93
-# FlipFlops/Latches                : 137
-#      FD                          : 16
+#      XORCY                       : 45
+# FlipFlops/Latches                : 88
+#      FD                          : 17
 #      FDC                         : 2
 #      FDE                         : 18
-#      FDR                         : 97
-#      FDRE                        : 4
+#      FDR                         : 51
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 24
@@ -519,16 +610,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             133  out of  18224     0%  
- Number of Slice LUTs:                  293  out of   9112     3%  
-    Number used as Logic:               293  out of   9112     3%  
+ Number of Slice Registers:              84  out of  18224     0%  
+ Number of Slice LUTs:                  213  out of   9112     2%  
+    Number used as Logic:               213  out of   9112     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    301
-   Number with an unused Flip Flop:     168  out of    301    55%  
-   Number with an unused LUT:             8  out of    301     2%  
-   Number of fully used LUT-FF pairs:   125  out of    301    41%  
-   Number of unique control sets:        15
+ Number of LUT Flip Flop pairs used:    221
+   Number with an unused Flip Flop:     137  out of    221    61%  
+   Number with an unused LUT:             8  out of    221     3%  
+   Number of fully used LUT-FF pairs:    76  out of    221    34%  
+   Number of unique control sets:        14
 
 IO Utilization: 
  Number of IOs:                          25
@@ -559,7 +650,7 @@ Clock Information:
 -----------------------------------+--------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)          | Load  |
 -----------------------------------+--------------------------------+-------+
-clk                                | BUFGP                          | 135   |
+clk                                | BUFGP                          | 86    |
 _clock_divider/clk_400hz           | NONE(_led_display/led_select_1)| 2     |
 -----------------------------------+--------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -572,10 +663,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.763ns (Maximum Frequency: 147.854MHz)
-   Minimum input arrival time before clock: 7.122ns
+   Minimum period: 5.985ns (Maximum Frequency: 167.086MHz)
+   Minimum input arrival time before clock: 7.110ns
    Maximum output required time after clock: 3.634ns
-   Maximum combinational path delay: 5.070ns
+   Maximum combinational path delay: 5.283ns
 
 Timing Details:
 ---------------
@@ -583,29 +674,28 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.763ns (frequency: 147.854MHz)
-  Total number of paths / destination ports: 11374 / 250
+  Clock period: 5.985ns (frequency: 167.086MHz)
+  Total number of paths / destination ports: 4401 / 147
 -------------------------------------------------------------------------
-Delay:               6.763ns (Levels of Logic = 6)
-  Source:            _clock_divider/counter_1hz_9 (FF)
-  Destination:       _counter_0/sec_l_3 (FF)
+Delay:               5.985ns (Levels of Logic = 5)
+  Source:            _counter_0/min_h_2 (FF)
+  Destination:       _counter_0/sec_l_2 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: _clock_divider/counter_1hz_9 to _counter_0/sec_l_3
+  Data Path: _counter_0/min_h_2 to _counter_0/sec_l_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              4   0.447   1.048  _clock_divider/counter_1hz_9 (_clock_divider/counter_1hz_9)
-     LUT6:I0->O            1   0.203   0.808  _clock_divider/clk_1hz<31>1 (_clock_divider/clk_1hz<31>)
-     LUT6:I3->O            5   0.205   0.715  _clock_divider/clk_1hz<31>7 (clk_1hz)
-     LUT5:I4->O            3   0.205   0.755  _counter_0/_n0718_inv121 (_counter_0/_n0718_inv12)
-     LUT6:I4->O            2   0.203   0.617  _counter_0/_n0608_inv12 (_counter_0/_n0608_inv12)
-     LUT6:I5->O            4   0.205   1.048  _counter_0/Reset_OR_DriverANDClockEnable44 (_counter_0/Reset_OR_DriverANDClockEnable4)
-     LUT6:I0->O            1   0.203   0.000  _counter_0/sec_l_3_rstpot (_counter_0/sec_l_3_rstpot)
-     FD:D                      0.102          _counter_0/sec_l_3
+     FDR:C->Q             13   0.447   1.161  _counter_0/min_h_2 (_counter_0/min_h_2)
+     LUT3:I0->O            2   0.205   0.864  _counter_0/min_h[3]_GND_6_o_equal_129_o<3>1 (_counter_0/min_h[3]_GND_6_o_equal_129_o)
+     LUT6:I2->O            6   0.203   0.745  _counter_0/min_h[3]_sec_l[3]_AND_19_o (_counter_0/min_h[3]_sec_l[3]_AND_19_o)
+     LUT6:I5->O           10   0.205   0.857  _counter_0/_n04871 (_counter_0/_n0487)
+     LUT5:I4->O            4   0.205   0.788  _counter_0/_n0589_inv1 (_counter_0/_n0589_inv1)
+     LUT5:I3->O            1   0.203   0.000  _counter_0/sec_l_1_rstpot (_counter_0/sec_l_1_rstpot)
+     FD:D                      0.102          _counter_0/sec_l_1
     ----------------------------------------
-    Total                      6.763ns (1.773ns logic, 4.990ns route)
+    Total                      5.985ns (1.570ns logic, 4.415ns route)
                                        (26.2% logic, 73.8% route)
 
 =========================================================================
@@ -632,28 +722,27 @@ Delay:               2.190ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 345 / 38
+  Total number of paths / destination ports: 354 / 32
 -------------------------------------------------------------------------
-Offset:              7.122ns (Levels of Logic = 7)
-  Source:            sw<0> (PAD)
-  Destination:       _counter_0/sec_l_3 (FF)
+Offset:              7.110ns (Levels of Logic = 6)
+  Source:            sw<2> (PAD)
+  Destination:       _counter_0/min_l_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: sw<0> to _counter_0/sec_l_3
+  Data Path: sw<2> to _counter_0/min_l_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   1.222   1.297  sw_0_IBUF (Led_0_OBUF)
-     LUT6:I0->O            1   0.203   0.684  _counter_0/_n0658_inv12111 (_counter_0/_n0658_inv12111)
-     LUT6:I4->O            1   0.203   0.000  _counter_0/_n0658_inv12114_F (N92)
-     MUXF7:I0->O           7   0.131   1.002  _counter_0/_n0658_inv12114 (_counter_0/_n0658_inv1211)
-     LUT6:I3->O            2   0.205   0.617  _counter_0/_n0608_inv12 (_counter_0/_n0608_inv12)
-     LUT6:I5->O            4   0.205   1.048  _counter_0/Reset_OR_DriverANDClockEnable44 (_counter_0/Reset_OR_DriverANDClockEnable4)
-     LUT6:I0->O            1   0.203   0.000  _counter_0/sec_l_3_rstpot (_counter_0/sec_l_3_rstpot)
-     FD:D                      0.102          _counter_0/sec_l_3
+     IBUF:I->O            46   1.222   1.835  sw_2_IBUF (Led_2_OBUF)
+     LUT5:I0->O            3   0.203   0.879  _counter_0/Reset_OR_DriverANDClockEnable10211 (_counter_0/Reset_OR_DriverANDClockEnable1021)
+     LUT6:I3->O            2   0.205   0.616  _counter_0/Reset_OR_DriverANDClockEnable102_SW0 (N28)
+     MUXF7:S->O            1   0.148   0.808  _counter_0/Reset_OR_DriverANDClockEnable102_SW2 (N58)
+     LUT6:I3->O            1   0.205   0.684  _counter_0/Reset_OR_DriverANDClockEnable103 (_counter_0/Reset_OR_DriverANDClockEnable10)
+     LUT6:I4->O            1   0.203   0.000  _counter_0/min_l_0_rstpot (_counter_0/min_l_0_rstpot)
+     FD:D                      0.102          _counter_0/min_l_0
     ----------------------------------------
-    Total                      7.122ns (2.474ns logic, 4.648ns route)
-                                       (34.7% logic, 65.3% route)
+    Total                      7.110ns (2.288ns logic, 4.822ns route)
+                                       (32.2% logic, 67.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -678,7 +767,7 @@ Offset:              3.634ns (Levels of Logic = 1)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Delay:               5.070ns (Levels of Logic = 2)
+Delay:               5.283ns (Levels of Logic = 2)
   Source:            sw<2> (PAD)
   Destination:       Led<2> (PAD)
 
@@ -686,11 +775,11 @@ Delay:               5.070ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            31   1.222   1.277  sw_2_IBUF (Led_2_OBUF)
+     IBUF:I->O            46   1.222   1.490  sw_2_IBUF (Led_2_OBUF)
      OBUF:I->O                 2.571          Led_2_OBUF (Led<2>)
     ----------------------------------------
-    Total                      5.070ns (3.793ns logic, 1.277ns route)
-                                       (74.8% logic, 25.2% route)
+    Total                      5.283ns (3.793ns logic, 1.490ns route)
+                                       (71.8% logic, 28.2% route)
 
 =========================================================================
 
@@ -703,7 +792,7 @@ Clock to Setup on destination clock _clock_divider/clk_400hz
 Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------+---------+---------+---------+---------+
 _clock_divider/clk_400hz|    2.190|         |         |         |
-clk                     |    4.124|         |         |         |
+clk                     |    3.193|         |         |         |
 ------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -712,20 +801,20 @@ Clock to Setup on destination clock clk
 Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------+---------+---------+---------+---------+
 _clock_divider/clk_400hz|    2.920|         |         |         |
-clk                     |    6.763|         |         |         |
+clk                     |    5.985|         |         |         |
 ------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.35 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.72 secs
  
 --> 
 
-Total memory usage is 259580 kilobytes
+Total memory usage is 259772 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   88 (   0 filtered)
-Number of infos    :   23 (   0 filtered)
+Number of warnings :  195 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
 

@@ -1,4 +1,0 @@
-verilog work "SRC/Counter.v"
-verilog work "FourLedControl.v"
-verilog work "clock.v"
-verilog work "mode0.v"

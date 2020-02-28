@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/clock_TB_isim_beh.exe" -prj "Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Lab3/clock_TB_beh.prj" "work.clock_TB" "work.glbl" 

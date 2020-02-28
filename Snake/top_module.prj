@@ -1,0 +1,4 @@
+verilog work "vga640x480.v"
+verilog work "src/random_grid.v"
+verilog work "src/clock_divider.v"
+verilog work "src/top_module.v"

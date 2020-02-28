@@ -25,7 +25,7 @@ static const char *ng0 = "//Mac/Home/BackUp/UCLA/152A-ee/M152A-2020Winter/StopWa
 
 
 
-static void Cont_32_0(char *t0)
+static void Cont_11_0(char *t0)
 {
     char t3[8];
     char *t1;
@@ -69,7 +69,7 @@ LAB0:    t1 = (t0 + 3168U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(32, ng0);
+LAB2:    xsi_set_current_line(11, ng0);
     t2 = (t0 + 1848U);
     t4 = *((char **)t2);
     memset(t3, 0, 8);
@@ -138,7 +138,7 @@ LAB9:    t15 = *((unsigned int *)t3);
 
 }
 
-static void Cont_33_1(char *t0)
+static void Cont_12_1(char *t0)
 {
     char t5[8];
     char t38[8];
@@ -230,7 +230,7 @@ LAB0:    t1 = (t0 + 3416U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(33, ng0);
+LAB2:    xsi_set_current_line(12, ng0);
     t2 = (t0 + 1688U);
     t3 = *((char **)t2);
     t2 = (t0 + 2008U);
@@ -353,7 +353,7 @@ LAB7:    t49 = *((unsigned int *)t38);
 
 extern void work_m_00000000002069853813_2462385725_init()
 {
-	static char *pe[] = {(void *)Cont_32_0,(void *)Cont_33_1};
+	static char *pe[] = {(void *)Cont_11_0,(void *)Cont_12_1};
 	xsi_register_didat("work_m_00000000002069853813_2462385725", "isim/DeBounce_tf_isim_beh.exe.sim/work/m_00000000002069853813_2462385725.didat");
 	xsi_register_executes(pe);
 }

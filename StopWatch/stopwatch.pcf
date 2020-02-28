@@ -1,8 +1,9 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Feb 19 16:41:42 2020
+// Written by: Map P.20131013 on Wed Feb 19 16:53:01 2020
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
 COMP "led" LOCATE = SITE "T11" LEVEL 1;
 COMP "rst" LOCATE = SITE "B8" LEVEL 1;
 COMP "AN<0>" LOCATE = SITE "P17" LEVEL 1;
@@ -27,7 +28,6 @@ COMP "led_seg<4>" LOCATE = SITE "U17" LEVEL 1;
 COMP "led_seg<5>" LOCATE = SITE "T18" LEVEL 1;
 COMP "led_seg<6>" LOCATE = SITE "T17" LEVEL 1;
 COMP "increase" LOCATE = SITE "A8" LEVEL 1;
-COMP "clk" LOCATE = SITE "V10" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "pause_flag" BEL "_reset/d2/Q" BEL "_reset/d1/Q" BEL
         "_pause/d2/Q" BEL "_pause/d1/Q" BEL "_increase/d2/Q" BEL
         "_increase/d1/Q" BEL "_decrease/d2/Q" BEL "_decrease/d1/Q" BEL
@@ -77,30 +77,31 @@ TIMEGRP sys_clk_pin = BEL "pause_flag" BEL "_reset/d2/Q" BEL "_reset/d1/Q" BEL
         BEL "_clock_divider/counter_2hz_11" BEL
         "_clock_divider/counter_2hz_10" BEL "_clock_divider/counter_2hz_8" BEL
         "_clock_divider/counter_2hz_7" BEL "_clock_divider/counter_2hz_9" BEL
-        "_clock_divider/clk_400hz" BEL "_counter_0/sec_h_3" BEL
-        "_counter_0/sec_h_2" BEL "_counter_0/sec_h_1" BEL "_counter_0/sec_h_0"
-        BEL "_led_display/counter_2hz_24" BEL "_led_display/counter_2hz_23"
-        BEL "_led_display/counter_2hz_22" BEL "_led_display/counter_2hz_21"
-        BEL "_led_display/counter_2hz_20" BEL "_led_display/counter_2hz_19"
-        BEL "_led_display/counter_2hz_18" BEL "_led_display/counter_2hz_17"
-        BEL "_led_display/counter_2hz_16" BEL "_led_display/counter_2hz_15"
-        BEL "_led_display/counter_2hz_14" BEL "_led_display/counter_2hz_13"
-        BEL "_led_display/counter_2hz_12" BEL "_led_display/counter_2hz_11"
-        BEL "_led_display/counter_2hz_10" BEL "_led_display/counter_2hz_9" BEL
-        "_led_display/counter_2hz_8" BEL "_led_display/counter_2hz_7" BEL
-        "_led_display/counter_2hz_6" BEL "_led_display/seg_data_6" BEL
-        "_led_display/seg_data_5" BEL "_led_display/seg_data_4" BEL
-        "_led_display/seg_data_3" BEL "_led_display/seg_data_2" BEL
-        "_led_display/seg_data_1" BEL "_led_display/seg_data_0" BEL
-        "_led_display/led_data_hex_3" BEL "_led_display/led_data_hex_2" BEL
-        "_led_display/led_data_hex_1" BEL "_led_display/led_data_hex_0" BEL
-        "_led_display/AN_3" BEL "_led_display/AN_2" BEL "_led_display/AN_1"
-        BEL "_led_display/AN_0" BEL "_led_display/clk_2hz" BEL
-        "_counter_0/pause" BEL "_counter_0/min_h_2" BEL "_counter_0/min_h_0"
-        BEL "_counter_0/min_l_3" BEL "_counter_0/min_l_2" BEL
-        "_counter_0/min_l_0" BEL "_counter_0/min_h_1" BEL "_counter_0/min_l_1"
-        BEL "_counter_0/sec_l_3" BEL "_counter_0/sec_l_2" BEL
-        "_counter_0/sec_l_1" BEL "_counter_0/sec_l_0" BEL "clk_BUFGP/BUFG";
+        "_clock_divider/clk_400hz" BEL "_counter_0/min_l_3" BEL
+        "_counter_0/sec_l_3" BEL "_counter_0/sec_h_2" BEL "_counter_0/sec_h_1"
+        BEL "_counter_0/sec_h_0" BEL "_led_display/counter_2hz_24" BEL
+        "_led_display/counter_2hz_23" BEL "_led_display/counter_2hz_22" BEL
+        "_led_display/counter_2hz_21" BEL "_led_display/counter_2hz_20" BEL
+        "_led_display/counter_2hz_19" BEL "_led_display/counter_2hz_18" BEL
+        "_led_display/counter_2hz_17" BEL "_led_display/counter_2hz_16" BEL
+        "_led_display/counter_2hz_15" BEL "_led_display/counter_2hz_14" BEL
+        "_led_display/counter_2hz_13" BEL "_led_display/counter_2hz_12" BEL
+        "_led_display/counter_2hz_11" BEL "_led_display/counter_2hz_10" BEL
+        "_led_display/counter_2hz_9" BEL "_led_display/counter_2hz_8" BEL
+        "_led_display/counter_2hz_7" BEL "_led_display/counter_2hz_6" BEL
+        "_led_display/seg_data_6" BEL "_led_display/seg_data_5" BEL
+        "_led_display/seg_data_4" BEL "_led_display/seg_data_3" BEL
+        "_led_display/seg_data_2" BEL "_led_display/seg_data_1" BEL
+        "_led_display/seg_data_0" BEL "_led_display/led_data_hex_3" BEL
+        "_led_display/led_data_hex_2" BEL "_led_display/led_data_hex_1" BEL
+        "_led_display/led_data_hex_0" BEL "_led_display/AN_3" BEL
+        "_led_display/AN_2" BEL "_led_display/AN_1" BEL "_led_display/AN_0"
+        BEL "_led_display/clk_2hz" BEL "_counter_0/pause" BEL
+        "_counter_0/min_l_0" BEL "_counter_0/sec_l_0" BEL "_counter_0/min_l_2"
+        BEL "_counter_0/min_l_1" BEL "_counter_0/sec_l_2" BEL
+        "_counter_0/sec_l_1" BEL "_counter_0/min_h_0" BEL "_counter_0/min_h_2"
+        BEL "_counter_0/min_h_1" BEL "_counter_0/sec_l_2_1" BEL
+        "_counter_0/sec_l_1_1" BEL "clk_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 

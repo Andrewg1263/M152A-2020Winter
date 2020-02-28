@@ -26,7 +26,7 @@ static int ng1[] = {1, 0};
 
 
 
-static void Always_55_0(char *t0)
+static void Always_29_0(char *t0)
 {
     char t6[8];
     char *t1;
@@ -65,7 +65,7 @@ LAB0:    t1 = (t0 + 2688U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(55, ng0);
+LAB2:    xsi_set_current_line(29, ng0);
     t2 = (t0 + 3008);
     *((int *)t2) = 1;
     t3 = (t0 + 2720);
@@ -73,9 +73,9 @@ LAB2:    xsi_set_current_line(55, ng0);
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(55, ng0);
+LAB4:    xsi_set_current_line(29, ng0);
 
-LAB5:    xsi_set_current_line(56, ng0);
+LAB5:    xsi_set_current_line(30, ng0);
     t4 = (t0 + 1208U);
     t5 = *((char **)t4);
     t4 = ((char*)((ng1)));
@@ -119,7 +119,7 @@ LAB8:    t21 = (t6 + 4);
     *((unsigned int *)t21) = 1;
     goto LAB9;
 
-LAB10:    xsi_set_current_line(57, ng0);
+LAB10:    xsi_set_current_line(31, ng0);
     t28 = (t0 + 1368U);
     t29 = *((char **)t28);
     t28 = (t0 + 1768);
@@ -131,7 +131,7 @@ LAB10:    xsi_set_current_line(57, ng0);
 
 extern void work_m_00000000000131021771_0691478019_init()
 {
-	static char *pe[] = {(void *)Always_55_0};
+	static char *pe[] = {(void *)Always_29_0};
 	xsi_register_didat("work_m_00000000000131021771_0691478019", "isim/DeBounce_tf_isim_beh.exe.sim/work/m_00000000000131021771_0691478019.didat");
 	xsi_register_executes(pe);
 }
