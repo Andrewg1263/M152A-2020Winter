@@ -1,9 +1,68 @@
 `timescale 1ns / 1ps
-module random_grid(input clk,
-						 output wire [9:0] x, 
-						 output wire [8:0] y);
+module random_box(
+	input clk,
+	input rst,
+	input create_new_box,
+	input [9:0] x_pos,
+	input [8:0] y_pos,
+	output wire [9:0] x_box, 
+	output wire [8:0] y_box,
+	output wire box_vga);
 
-reg [9:0] rand_x = 0;
+	// generate random numbers, store in rand_num
+	reg [8:0]rand_num;
+	always@(posedge clk or posedge rst)
+	begin
+		if(rst)
+		begin
+			rand_num <= 9'd359;
+		end
+		else 
+		begin
+			rand_num[0] <= rand_num[8];
+			rand_num[1] <= rand_num[0];
+			rand_num[2] <= rand_num[1];
+			rand_num[3] <= rand_num[2];
+			rand_num[4] <= rand_num[3]^rand_num[8];
+			rand_num[5] <= rand_num[4]^rand_num[8];
+			rand_num[6] <= rand_num[5]^rand_num[8];
+			rand_num[7] <= rand_num[6];
+			rand_num[8] <= rand_num[7];
+		end
+	end
+	
+	//
+	reg [9:0] rand_x;
+	reg [8:0] rand_y;
+	
+	//x and y generat in two cycles
+	reg flag;
+	always@(posedge clk or posedge rst)
+	begin
+		if(rst) 
+		begin
+			rand_x <= 9'd300;
+			rand_y <= 8'd300;
+			flag <= 1'b0;
+		end
+		else if(create_new_box)
+		begin
+			flag <= 1'b1; 
+			rand_x <= rand_num; 
+		end
+		else if(flag == 1'b1)
+		begin
+			rand_y <= rand_num;
+			flag <= 1'b0;
+		end
+	end
+	
+	assign x_box = rand_x;
+	assign y_box = rand_y;
+	
+	assign box_vga  = ( x_pos >= rand_x && y_pos >= rand_y && x_pos <= (rand_x+7) && y_pos <= (rand_y+7) );
+	
+/*reg [9:0] rand_x = 0;
 reg [8:0] rand_y = 0;
 reg[5:0] pointX = 0; 
 reg [5:0] pointY = 0;
@@ -50,47 +109,7 @@ begin
 		rand_y <= (pointY * 10);
 end
 
-assign x = rand_x;
-assign y = rand_y;
+assign x_box = rand_x;
+assign y_box = rand_y;*/
 
 endmodule
-/*module random_grid(input clk,
-						 output wire [9:0] x, 
-						 output wire [8:0] y);
-
-reg [9:0] foodx = 0;
-reg [8:0] foody = 0;
-
-reg [31:0] counter = 0;
-reg clk_1s;						 
-always@(posedge clk)
-	if(counter == 100000000-1)
-	begin
-		counter <= 0;
-		clk_1s <= 1;
-	end
-	else
-		begin
-		counter <= counter + 1;
-		clk_1s <= 0;
-		end
-begin
-	
-end
-
-always@(posedge clk)
-begin
-	if(clk_1s)
-	begin
-		foodx =  $urandom_range(0,635);
-		foody =  $urandom_range(5,480);
-		//foodx = foodx + 10;
-		//foody = foody + 10;
-	end
-end
-
-assign x = foodx;
-assign y = foody;
-    
-endmodule
-*/

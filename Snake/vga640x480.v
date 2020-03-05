@@ -77,10 +77,10 @@ module vga640x480(
             if (h_count == LINE)  // end of line
             begin
                 h_count <= 0;
-                v_count <= v_count + 1;
+                v_count <= v_count + 10'd1;
             end
             else 
-                h_count <= h_count + 1;
+                h_count <= h_count + 10'd1;
 
             if (v_count == SCREEN)  // end of screen
                 v_count <= 0;

@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Thu Feb 27 13:33:56 2020">
+<application name="pn" timeStamp="Thu Mar 05 12:04:52 2020">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="97B3FDC010E04DB99F4F9B79445F06F7" type="project"/>
-<property name="ProjectIteration" value="37" type="project"/>
+<property name="ProjectIteration" value="47" type="project"/>
 <property name="ProjectFile" value="Y:/BackUp/UCLA/152A-ee/M152A-2020Winter/Snake/Snake.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2020-02-20T23:05:13" type="project"/>
 </section>
@@ -25,7 +25,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2020-02-20T23:05:13" type="design"/>
 <property name="PROP_intWbtProjectID" value="97B3FDC010E04DB99F4F9B79445F06F7" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="37" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="47" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.random_grid_tb" type="process"/>
@@ -39,7 +39,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
 <property name="FILE_UCF" value="1" type="source"/>
-<property name="FILE_VERILOG" value="8" type="source"/>
+<property name="FILE_VERILOG" value="9" type="source"/>
 </section>
 </application>
 </document>
