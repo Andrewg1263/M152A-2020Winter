@@ -41,8 +41,8 @@ module random_box(
 	begin
 		if(rst) 
 		begin
-			rand_x <= 9'd300;
-			rand_y <= 8'd300;
+			rand_x <= 10'd300;
+			rand_y <= 9'd300;
 			flag <= 1'b0;
 		end
 		else if(create_new_box)
@@ -57,59 +57,10 @@ module random_box(
 		end
 	end
 	
-	assign x_box = rand_x;
-	assign y_box = rand_y;
+	assign x_box = 10'd300;
+	assign y_box = 9'd300;
 	
-	assign box_vga  = ( x_pos >= rand_x && y_pos >= rand_y && x_pos <= (rand_x+7) && y_pos <= (rand_y+7) );
+	//assign box_vga  = ( x_pos > rand_x && y_pos > rand_y && x_pos < (rand_x+10) && y_pos < (rand_y+10) );
+	assign box_vga  = ( x_pos > 300 && y_pos > 300 && x_pos < 310 && y_pos < 310 );
 	
-/*reg [9:0] rand_x = 0;
-reg [8:0] rand_y = 0;
-reg[5:0] pointX = 0; 
-reg [5:0] pointY = 0;
-
-// 1s counter
-reg [31:0] counter = 0;
-reg clk_1s;						 
-always@(posedge clk)
-begin
-	if(counter == 100000000-1)
-	begin
-		counter <= 0;
-		clk_1s <= 1;
-	end
-	else
-		begin
-		counter <= counter + 1;
-		clk_1s <= 0;
-		end
-end
-
-always@(posedge clk_1s)
-	pointX <= pointX + 3;
-always@(posedge clk_1s)
-	pointY <= pointY + 1;
-
-always@(posedge clk_1s)
-begin
-	if(pointX>=63)
-		rand_x <= 620;
-	else if(pointX < 2)
-		rand_x <= 20;
-	else
-		rand_x <= (pointX * 10);
-end
-
-always@(posedge clk_1s)
-begin
-	if(pointY>=47)
-		rand_y <= 460;
-	else if(pointY < 2)
-		rand_y <= 20;
-	else
-		rand_y <= (pointY * 10);
-end
-
-assign x_box = rand_x;
-assign y_box = rand_y;*/
-
 endmodule

@@ -7,6 +7,7 @@ module top_module(
 	input btn_down,
 	input btn_left,
 	input btn_right,
+	output led,
 	output wire Hsync,       // horizontal sync output
 	output wire Vsync,       // vertical sync output
 	output wire [2:0] vgaRed,     // 3-bit VGA red output
@@ -56,6 +57,7 @@ module top_module(
 								  .box_vga(box_vga));
 	wire signal;
 	assign signal = ( x_counter >= 100 && y_counter >= 100 && x_counter <= (100+7) && y_counter <= (100+7) );
+	assign led = (btn_right | btn_left | btn_up | btn_down);
 	
 	assign vgaRed = (snake_vga)?3'b111 : 3'b000;
 	assign vgaGreen = (box_vga)?3'b111 : 3'b000;
