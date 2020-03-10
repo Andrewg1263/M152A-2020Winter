@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Mar 05 13:20:50 2020
+// Written by: Map P.20131013 on Tue Mar 10 12:45:34 2020
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -9,12 +9,23 @@ COMP "vgaGreen<0>" LOCATE = SITE "P8" LEVEL 1;
 COMP "vgaGreen<1>" LOCATE = SITE "T6" LEVEL 1;
 COMP "vgaGreen<2>" LOCATE = SITE "V6" LEVEL 1;
 COMP "rst" LOCATE = SITE "M8" LEVEL 1;
+COMP "AN<0>" LOCATE = SITE "P17" LEVEL 1;
+COMP "AN<1>" LOCATE = SITE "P18" LEVEL 1;
+COMP "AN<2>" LOCATE = SITE "N15" LEVEL 1;
+COMP "AN<3>" LOCATE = SITE "N16" LEVEL 1;
 COMP "Hsync" LOCATE = SITE "N6" LEVEL 1;
 COMP "Vsync" LOCATE = SITE "P7" LEVEL 1;
 COMP "btn_right" LOCATE = SITE "N8" LEVEL 1;
 COMP "vgaRed<0>" LOCATE = SITE "U7" LEVEL 1;
 COMP "vgaRed<1>" LOCATE = SITE "V7" LEVEL 1;
 COMP "vgaRed<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "L14" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "T17" LEVEL 1;
 COMP "btn_left" LOCATE = SITE "U8" LEVEL 1;
 COMP "btn_down" LOCATE = SITE "V8" LEVEL 1;
 COMP "btn_up" LOCATE = SITE "T5" LEVEL 1;
@@ -26,79 +37,157 @@ TIMEGRP sys_clk_pin = BEL "_clock_divider/cnt_15" BEL "_clock_divider/cnt_14"
         "vga_display/h_count_6" BEL "vga_display/h_count_5" BEL
         "vga_display/h_count_4" BEL "vga_display/h_count_3" BEL
         "vga_display/h_count_2" BEL "vga_display/h_count_1" BEL
-        "vga_display/v_count_9" BEL "vga_display/v_count_8" BEL
-        "vga_display/v_count_7" BEL "vga_display/v_count_6" BEL
-        "vga_display/v_count_5" BEL "vga_display/v_count_4" BEL
-        "vga_display/v_count_3" BEL "vga_display/v_count_2" BEL
-        "vga_display/v_count_1" BEL "_snake_body/length_0" BEL
-        "_snake_body/length_2" BEL "_snake_body/length_1" BEL
-        "_snake_body/direction_FSM_FFd1" BEL "_snake_body/direction_FSM_FFd2"
-        BEL "_snake_body/snake_y_5_1" BEL "_snake_body/snake_x_5_1" BEL
-        "_snake_body/snake_y_4_1" BEL "_snake_body/snake_x_4_1" BEL
-        "_snake_body/snake_y_3_1" BEL "_snake_body/snake_x_3_1" BEL
-        "_snake_body/snake_y_2_1" BEL "_snake_body/snake_x_2_1" BEL
-        "_snake_body/snake_y_5_2" BEL "_snake_body/snake_y_5_3" BEL
-        "_snake_body/snake_y_5_4" BEL "_snake_body/snake_y_5_5" BEL
-        "_snake_body/snake_y_5_6" BEL "_snake_body/snake_y_5_8" BEL
-        "_snake_body/snake_y_5_7" BEL "_snake_body/snake_y_1_1" BEL
-        "_snake_body/snake_x_5_2" BEL "_snake_body/snake_x_5_3" BEL
-        "_snake_body/snake_x_5_4" BEL "_snake_body/snake_x_5_5" BEL
-        "_snake_body/snake_x_5_6" BEL "_snake_body/snake_x_5_8" BEL
-        "_snake_body/snake_x_5_9" BEL "_snake_body/snake_x_5_7" BEL
-        "_snake_body/snake_x_1_1" BEL "_snake_body/snake_y<0>_1" BEL
-        "_snake_body/snake_x<0>_1" BEL "_snake_body/snake_y_4_2" BEL
-        "_snake_body/snake_y_4_3" BEL "_snake_body/snake_y_4_4" BEL
-        "_snake_body/snake_y_4_5" BEL "_snake_body/snake_y_4_6" BEL
-        "_snake_body/snake_y_4_7" BEL "_snake_body/snake_y_4_8" BEL
-        "_snake_body/snake_x_4_2" BEL "_snake_body/snake_x_4_3" BEL
-        "_snake_body/snake_x_4_5" BEL "_snake_body/snake_x_4_6" BEL
-        "_snake_body/snake_x_4_4" BEL "_snake_body/snake_x_4_7" BEL
+        "vga_display/h_count_0" BEL "vga_display/v_count_9" BEL
+        "vga_display/v_count_8" BEL "vga_display/v_count_7" BEL
+        "vga_display/v_count_6" BEL "vga_display/v_count_5" BEL
+        "vga_display/v_count_4" BEL "vga_display/v_count_3" BEL
+        "vga_display/v_count_2" BEL "vga_display/v_count_1" BEL
+        "vga_display/v_count_0" BEL "_snake_body/counter_23" BEL
+        "_snake_body/counter_22" BEL "_snake_body/counter_24" BEL
+        "_snake_body/counter_21" BEL "_snake_body/counter_20" BEL
+        "_snake_body/counter_19" BEL "_snake_body/counter_18" BEL
+        "_snake_body/counter_16" BEL "_snake_body/counter_15" BEL
+        "_snake_body/counter_17" BEL "_snake_body/counter_13" BEL
+        "_snake_body/counter_12" BEL "_snake_body/counter_14" BEL
+        "_snake_body/counter_10" BEL "_snake_body/counter_9" BEL
+        "_snake_body/counter_11" BEL "_snake_body/counter_8" BEL
+        "_snake_body/counter_7" BEL "_snake_body/counter_6" BEL
+        "_snake_body/counter_5" BEL "_snake_body/counter_3" BEL
+        "_snake_body/counter_2" BEL "_snake_body/counter_4" BEL
+        "_snake_body/counter_0" BEL "_snake_body/counter_1" BEL
+        "_snake_body/direction_FSM_FFd2" BEL "_snake_body/direction_FSM_FFd1"
+        BEL "_snake_body/snake_y_11_1" BEL "_snake_body/snake_x_11_1" BEL
+        "_snake_body/snake_y_10_1" BEL "_snake_body/snake_x_10_1" BEL
+        "_snake_body/snake_y_9_1" BEL "_snake_body/snake_x_9_1" BEL
+        "_snake_body/snake_y_8_1" BEL "_snake_body/snake_x_8_1" BEL
+        "_snake_body/snake_y_11_2" BEL "_snake_body/snake_y_11_3" BEL
+        "_snake_body/snake_y_11_4" BEL "_snake_body/snake_y_11_5" BEL
+        "_snake_body/snake_y_11_6" BEL "_snake_body/snake_y_11_8" BEL
+        "_snake_body/snake_y_11_7" BEL "_snake_body/snake_y_7_1" BEL
+        "_snake_body/snake_x_11_2" BEL "_snake_body/snake_x_11_4" BEL
+        "_snake_body/snake_x_11_5" BEL "_snake_body/snake_x_11_3" BEL
+        "_snake_body/snake_x_11_6" BEL "_snake_body/snake_x_11_7" BEL
+        "_snake_body/snake_x_11_8" BEL "_snake_body/snake_x_11_9" BEL
+        "_snake_body/snake_x_7_1" BEL "_snake_body/snake_y_10_2" BEL
+        "_snake_body/snake_y_10_3" BEL "_snake_body/snake_y_10_5" BEL
+        "_snake_body/snake_y_10_6" BEL "_snake_body/snake_y_10_4" BEL
+        "_snake_body/snake_y_10_7" BEL "_snake_body/snake_y_10_8" BEL
+        "_snake_body/snake_y_6_1" BEL "_snake_body/snake_x_10_2" BEL
+        "_snake_body/snake_x_10_4" BEL "_snake_body/snake_x_10_5" BEL
+        "_snake_body/snake_x_10_3" BEL "_snake_body/snake_x_10_7" BEL
+        "_snake_body/snake_x_10_8" BEL "_snake_body/snake_x_10_6" BEL
+        "_snake_body/snake_x_10_9" BEL "_snake_body/snake_x_6_1" BEL
+        "_snake_body/snake_y_9_3" BEL "_snake_body/snake_y_9_4" BEL
+        "_snake_body/snake_y_9_2" BEL "_snake_body/snake_y_9_6" BEL
+        "_snake_body/snake_y_9_7" BEL "_snake_body/snake_y_9_5" BEL
+        "_snake_body/snake_y_9_8" BEL "_snake_body/snake_y_5_1" BEL
+        "_snake_body/snake_x_9_2" BEL "_snake_body/snake_x_9_4" BEL
+        "_snake_body/snake_x_9_5" BEL "_snake_body/snake_x_9_3" BEL
+        "_snake_body/snake_x_9_7" BEL "_snake_body/snake_x_9_8" BEL
+        "_snake_body/snake_x_9_6" BEL "_snake_body/snake_x_9_9" BEL
+        "_snake_body/snake_x_5_1" BEL "_snake_body/snake_y_8_2" BEL
+        "_snake_body/snake_y_8_3" BEL "_snake_body/snake_y_8_4" BEL
+        "_snake_body/snake_y_8_5" BEL "_snake_body/snake_y_8_7" BEL
+        "_snake_body/snake_y_8_8" BEL "_snake_body/snake_y_8_6" BEL
+        "_snake_body/snake_y_4_1" BEL "_snake_body/snake_x_8_2" BEL
+        "_snake_body/snake_x_8_3" BEL "_snake_body/snake_x_8_4" BEL
+        "_snake_body/snake_x_8_5" BEL "_snake_body/snake_x_8_7" BEL
+        "_snake_body/snake_x_8_8" BEL "_snake_body/snake_x_8_6" BEL
+        "_snake_body/snake_x_8_9" BEL "_snake_body/snake_x_4_1" BEL
+        "_snake_body/snake_y_7_2" BEL "_snake_body/snake_y_7_4" BEL
+        "_snake_body/snake_y_7_5" BEL "_snake_body/snake_y_7_3" BEL
+        "_snake_body/snake_y_7_7" BEL "_snake_body/snake_y_7_8" BEL
+        "_snake_body/snake_y_7_6" BEL "_snake_body/snake_y_3_1" BEL
+        "_snake_body/snake_x_7_3" BEL "_snake_body/snake_x_7_4" BEL
+        "_snake_body/snake_x_7_2" BEL "_snake_body/snake_x_7_6" BEL
+        "_snake_body/snake_x_7_7" BEL "_snake_body/snake_x_7_5" BEL
+        "_snake_body/snake_x_7_9" BEL "_snake_body/snake_x_7_8" BEL
+        "_snake_body/snake_x_3_1" BEL "_snake_body/body_collision" BEL
+        "_snake_body/snake_y_6_2" BEL "_snake_body/snake_y_6_4" BEL
+        "_snake_body/snake_y_6_5" BEL "_snake_body/snake_y_6_3" BEL
+        "_snake_body/snake_y_6_7" BEL "_snake_body/snake_y_6_8" BEL
+        "_snake_body/snake_y_6_6" BEL "_snake_body/snake_y_2_1" BEL
+        "_snake_body/snake_x_6_2" BEL "_snake_body/snake_x_6_3" BEL
+        "_snake_body/snake_x_6_5" BEL "_snake_body/snake_x_6_6" BEL
+        "_snake_body/snake_x_6_4" BEL "_snake_body/snake_x_6_7" BEL
+        "_snake_body/snake_x_6_8" BEL "_snake_body/snake_x_6_9" BEL
+        "_snake_body/snake_x_2_1" BEL "_snake_body/snake_y_5_2" BEL
+        "_snake_body/snake_y_5_3" BEL "_snake_body/snake_y_5_5" BEL
+        "_snake_body/snake_y_5_6" BEL "_snake_body/snake_y_5_4" BEL
+        "_snake_body/snake_y_5_8" BEL "_snake_body/snake_y_5_7" BEL
+        "_snake_body/snake_y_1_1" BEL "_snake_body/snake_x_5_2" BEL
+        "_snake_body/snake_x_5_3" BEL "_snake_body/snake_x_5_5" BEL
+        "_snake_body/snake_x_5_6" BEL "_snake_body/snake_x_5_4" BEL
+        "_snake_body/snake_x_5_8" BEL "_snake_body/snake_x_5_9" BEL
+        "_snake_body/snake_x_5_7" BEL "_snake_body/snake_x_1_1" BEL
+        "_snake_body/snake_y<0>_1" BEL "_snake_body/snake_x<0>_1" BEL
+        "_snake_body/snake_y_4_2" BEL "_snake_body/snake_y_4_3" BEL
+        "_snake_body/snake_y_4_4" BEL "_snake_body/snake_y_4_5" BEL
+        "_snake_body/snake_y_4_6" BEL "_snake_body/snake_y_4_7" BEL
+        "_snake_body/snake_y_4_8" BEL "_snake_body/snake_x_4_2" BEL
+        "_snake_body/snake_x_4_3" BEL "_snake_body/snake_x_4_5" BEL
+        "_snake_body/snake_x_4_6" BEL "_snake_body/snake_x_4_4" BEL
         "_snake_body/snake_x_4_8" BEL "_snake_body/snake_x_4_9" BEL
-        "_snake_body/snake_y_3_2" BEL "_snake_body/snake_y_3_3" BEL
-        "_snake_body/snake_y_3_5" BEL "_snake_body/snake_y_3_6" BEL
-        "_snake_body/snake_y_3_4" BEL "_snake_body/snake_y_3_7" BEL
-        "_snake_body/snake_y_3_8" BEL "_snake_body/snake_x_3_2" BEL
-        "_snake_body/snake_x_3_3" BEL "_snake_body/snake_x_3_4" BEL
-        "_snake_body/snake_x_3_5" BEL "_snake_body/snake_x_3_6" BEL
-        "_snake_body/snake_x_3_7" BEL "_snake_body/snake_x_3_8" BEL
-        "_snake_body/snake_x_3_9" BEL "_snake_body/snake_y_2_2" BEL
-        "_snake_body/snake_y_2_3" BEL "_snake_body/snake_y_2_4" BEL
-        "_snake_body/snake_y_2_5" BEL "_snake_body/snake_y_2_6" BEL
+        "_snake_body/snake_x_4_7" BEL "_snake_body/snake_y_3_3" BEL
+        "_snake_body/snake_y_3_4" BEL "_snake_body/snake_y_3_2" BEL
+        "_snake_body/snake_y_3_6" BEL "_snake_body/snake_y_3_7" BEL
+        "_snake_body/snake_y_3_5" BEL "_snake_body/snake_y_3_8" BEL
+        "_snake_body/snake_x_3_2" BEL "_snake_body/snake_x_3_3" BEL
+        "_snake_body/snake_x_3_4" BEL "_snake_body/snake_x_3_5" BEL
+        "_snake_body/snake_x_3_6" BEL "_snake_body/snake_x_3_8" BEL
+        "_snake_body/snake_x_3_9" BEL "_snake_body/snake_x_3_7" BEL
+        "_snake_body/snake_y_2_2" BEL "_snake_body/snake_y_2_4" BEL
+        "_snake_body/snake_y_2_5" BEL "_snake_body/snake_y_2_3" BEL
         "_snake_body/snake_y_2_7" BEL "_snake_body/snake_y_2_8" BEL
-        "_snake_body/snake_x_2_2" BEL "_snake_body/snake_x_2_3" BEL
+        "_snake_body/snake_y_2_6" BEL "_snake_body/snake_x_2_2" BEL
         "_snake_body/snake_x_2_4" BEL "_snake_body/snake_x_2_5" BEL
+        "_snake_body/snake_x_2_3" BEL "_snake_body/snake_x_2_6" BEL
         "_snake_body/snake_x_2_7" BEL "_snake_body/snake_x_2_8" BEL
-        "_snake_body/snake_x_2_6" BEL "_snake_body/snake_x_2_9" BEL
-        "_snake_body/snake_y_1_2" BEL "_snake_body/snake_y_1_3" BEL
+        "_snake_body/snake_x_2_9" BEL "_snake_body/snake_y_1_2" BEL
         "_snake_body/snake_y_1_4" BEL "_snake_body/snake_y_1_5" BEL
-        "_snake_body/snake_y_1_6" BEL "_snake_body/snake_y_1_7" BEL
-        "_snake_body/snake_y_1_8" BEL "_snake_body/snake_x_1_2" BEL
-        "_snake_body/snake_x_1_3" BEL "_snake_body/snake_x_1_4" BEL
-        "_snake_body/snake_x_1_5" BEL "_snake_body/snake_x_1_6" BEL
+        "_snake_body/snake_y_1_3" BEL "_snake_body/snake_y_1_7" BEL
+        "_snake_body/snake_y_1_8" BEL "_snake_body/snake_y_1_6" BEL
+        "_snake_body/snake_x_1_2" BEL "_snake_body/snake_x_1_4" BEL
+        "_snake_body/snake_x_1_5" BEL "_snake_body/snake_x_1_3" BEL
         "_snake_body/snake_x_1_7" BEL "_snake_body/snake_x_1_8" BEL
-        "_snake_body/snake_x_1_9" BEL "_snake_body/body_collision" BEL
-        "_snake_body/snake_y<0>_4" BEL "_snake_body/snake_y<0>_7" BEL
-        "_snake_body/snake_y<0>_8" BEL "_snake_body/snake_x<0>_4" BEL
-        "_snake_body/snake_x<0>_7" BEL "_snake_body/snake_x<0>_8" BEL
+        "_snake_body/snake_x_1_6" BEL "_snake_body/snake_x_1_9" BEL
+        "_snake_body/snake_y<0>_7" BEL "_snake_body/snake_y<0>_8" BEL
+        "_snake_body/snake_y<0>_4" BEL "_snake_body/snake_x<0>_7" BEL
+        "_snake_body/snake_x<0>_8" BEL "_snake_body/snake_x<0>_4" BEL
         "_snake_body/snake_y<0>_2" BEL "_snake_body/snake_y<0>_3" BEL
         "_snake_body/snake_y<0>_5" BEL "_snake_body/snake_y<0>_6" BEL
         "_snake_body/snake_x<0>_2" BEL "_snake_body/snake_x<0>_3" BEL
-        "_snake_body/snake_x<0>_5" BEL "_snake_body/snake_x<0>_6" BEL
-        "_snake_body/snake_x<0>_9" BEL "_snake_body/create_new_box" BEL
-        "vga_display/v_count_0" BEL "vga_display/h_count_0" BEL
-        "_snake_body/counter_0" BEL "_snake_body/counter_24" BEL
-        "_snake_body/counter_23" BEL "_snake_body/counter_22" BEL
-        "_snake_body/counter_21" BEL "_snake_body/counter_20" BEL
-        "_snake_body/counter_18" BEL "_snake_body/counter_17" BEL
-        "_snake_body/counter_19" BEL "_snake_body/counter_16" BEL
-        "_snake_body/counter_15" BEL "_snake_body/counter_14" BEL
-        "_snake_body/counter_13" BEL "_snake_body/counter_12" BEL
-        "_snake_body/counter_11" BEL "_snake_body/counter_9" BEL
-        "_snake_body/counter_8" BEL "_snake_body/counter_10" BEL
-        "_snake_body/counter_7" BEL "_snake_body/counter_6" BEL
-        "_snake_body/counter_5" BEL "_snake_body/counter_4" BEL
-        "_snake_body/counter_3" BEL "_snake_body/counter_2" BEL
-        "_snake_body/counter_1" BEL "clk_BUFGP/BUFG";
+        "_snake_body/snake_x<0>_6" BEL "_snake_body/snake_x<0>_9" BEL
+        "_snake_body/snake_x<0>_5" BEL "_random_box/rand_y_8" BEL
+        "_random_box/rand_y_7" BEL "_random_box/rand_y_6" BEL
+        "_random_box/rand_y_5" BEL "_random_box/rand_y_4" BEL
+        "_random_box/rand_y_3" BEL "_random_box/rand_y_2" BEL
+        "_random_box/rand_y_1" BEL "_random_box/rand_x_8" BEL
+        "_random_box/rand_x_7" BEL "_random_box/rand_x_6" BEL
+        "_random_box/rand_x_5" BEL "_random_box/rand_x_4" BEL
+        "_random_box/rand_x_3" BEL "_random_box/rand_x_2" BEL
+        "_random_box/rand_x_1" BEL "_random_box/rand_num_8" BEL
+        "_random_box/rand_num_7" BEL "_random_box/rand_num_6" BEL
+        "_random_box/rand_num_5" BEL "_random_box/rand_num_4" BEL
+        "_random_box/rand_num_3" BEL "_random_box/rand_num_2" BEL
+        "_random_box/rand_num_1" BEL "_random_box/rand_num_0" BEL
+        "_seg_display/led_3_3" BEL "_seg_display/led_3_2" BEL
+        "_seg_display/led_3_1" BEL "_seg_display/led_3_0" BEL
+        "_seg_display/seg_data_6" BEL "_seg_display/seg_data_5" BEL
+        "_seg_display/seg_data_4" BEL "_seg_display/seg_data_3" BEL
+        "_seg_display/seg_data_2" BEL "_seg_display/seg_data_1" BEL
+        "_seg_display/seg_data_0" BEL "_seg_display/led_data_hex_3" BEL
+        "_seg_display/led_data_hex_2" BEL "_seg_display/led_data_hex_1" BEL
+        "_seg_display/led_data_hex_0" BEL "_seg_display/led_2_3" BEL
+        "_seg_display/led_2_2" BEL "_seg_display/led_2_1" BEL
+        "_seg_display/led_2_0" BEL "_seg_display/led_1_3" BEL
+        "_seg_display/led_1_2" BEL "_seg_display/led_1_1" BEL
+        "_seg_display/led_1_0" BEL "_seg_display/led_0_3" BEL
+        "_seg_display/led_0_2" BEL "_seg_display/led_0_1" BEL
+        "_seg_display/led_0_0" BEL "_snake_body/create_new_box" BEL
+        "_random_box/flag" BEL "_snake_body/length_0" BEL
+        "_snake_body/length_2" BEL "_snake_body/length_1" BEL
+        "_snake_body/length_3" BEL "clk_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 

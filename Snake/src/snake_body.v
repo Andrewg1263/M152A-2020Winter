@@ -80,9 +80,9 @@ module snake_body(
 	//assign clk_halfhz = (counter == 49999999)? 1 : 0;
 	assign clk_halfhz = (counter == 20000000-1 )? 1 : 0;
 	
-	// maximum length of snake = 6
-	reg[9:0] snake_x [0:5];
-	reg[8:0] snake_y [0:5];
+	// maximum length of snake = 12
+	reg[9:0] snake_x [0:11];
+	reg[8:0] snake_y [0:11];
 	always@(posedge clk)
 	begin
 		if(rst)
@@ -99,7 +99,7 @@ module snake_body(
 					case(direction)
 						Right: 
 						begin  
-							if(snake_x[0] == 10'd630)
+							if(snake_x[0] == 10'd640)
 								snake_x[0]  <= 10'd0;
 							else
 								snake_x[0] <= snake_x[0] + 10'd10;
@@ -113,7 +113,7 @@ module snake_body(
 						end
 						Up:
 						begin
-							if(snake_y[0] == 9'd10)
+							if(snake_y[0] == 9'd0)
 								snake_y[0] <= 9'd480;
 							else
 								snake_y[0] <= snake_y[0] - 9'd10;
@@ -145,7 +145,7 @@ module snake_body(
 			snake_y[4] <= 10'd0;
 			snake_x[5] <= 10'd0;
 			snake_y[5] <= 10'd0;
-	/*		snake_x[6] <= 10'd0;
+			snake_x[6] <= 10'd0;
 			snake_y[6] <= 10'd0;
 			snake_x[7] <= 10'd0;
 			snake_y[7] <= 10'd0;
@@ -156,7 +156,7 @@ module snake_body(
 			snake_x[10] <= 10'd0;
 			snake_y[10] <= 10'd0;
 			snake_x[11] <= 10'd0;
-			snake_y[11] <= 10'd0;*/
+			snake_y[11] <= 10'd0;
 		end
 		else if(clk_halfhz)
 		begin
@@ -170,7 +170,7 @@ module snake_body(
 			snake_y[4] <= snake_y[3];
 			snake_x[5] <= snake_x[4];
 			snake_y[5] <= snake_y[4];
-	/*		snake_x[6] <= snake_x[5];
+			snake_x[6] <= snake_x[5];
 			snake_y[6] <= snake_y[5];
 			snake_x[7] <= snake_x[6];
 			snake_y[7] <= snake_y[6];
@@ -181,7 +181,7 @@ module snake_body(
 			snake_x[10] <= snake_x[9];
 			snake_y[10] <= snake_y[9];
 			snake_x[11] <= snake_x[10];
-			snake_y[11] <= snake_y[10];*/
+			snake_y[11] <= snake_y[10];
 		end
 	end
 	
@@ -196,15 +196,17 @@ module snake_body(
 		end
 		else 
 		begin
-		if(clk_halfhz)
+		if(create_new_box) 
+			create_new_box <= 1'd0;
+		else if(clk_halfhz)
 		begin
-			if(create_new_box) create_new_box <= 1'd0;
+			//if(create_new_box) create_new_box <= 1'd0;
 			// box collision
-			else if(snake_x[0] == box_x && snake_y[0] == box_y) 
+			if(snake_x[0] == box_x && snake_y[0] == box_y) 
 			begin
 				create_new_box <= 1'b1;
-				if(length < 4'd6)
-					length <= length + 4'b0001;
+				if(length < 4'd12)
+					length <= length + 4'd1;
 				else 
 					length <= length;
 			end
@@ -220,6 +222,12 @@ module snake_body(
 		else if( snake_x[0]==snake_x[3] && snake_y[0]==snake_y[3] ) body_collision <= 1;
 		else if( snake_x[0]==snake_x[4] && snake_y[0]==snake_y[4] ) body_collision <= 1;
 		else if( snake_x[0]==snake_x[5] && snake_y[0]==snake_y[5] ) body_collision <= 1;
+		else if( snake_x[0]==snake_x[6] && snake_y[0]==snake_y[6] ) body_collision <= 1;
+		else if( snake_x[0]==snake_x[7] && snake_y[0]==snake_y[7] ) body_collision <= 1;
+		else if( snake_x[0]==snake_x[8] && snake_y[0]==snake_y[8] ) body_collision <= 1;
+		else if( snake_x[0]==snake_x[9] && snake_y[0]==snake_y[9] ) body_collision <= 1;
+		else if( snake_x[0]==snake_x[10] && snake_y[0]==snake_y[10] ) body_collision <= 1;
+		else if( snake_x[0]==snake_x[11] && snake_y[0]==snake_y[11] ) body_collision <= 1;
 		else
 			body_collision <= 0;
 	end
@@ -229,6 +237,12 @@ module snake_body(
 							( x_pos > snake_x[2] && y_pos > snake_y[2] && x_pos < (snake_x[2]+10) && y_pos < (snake_y[2]+10) && length > 4'd2)||
 							( x_pos > snake_x[3] && y_pos > snake_y[3] && x_pos < (snake_x[3]+10) && y_pos < (snake_y[3]+10) && length > 4'd3)||
 							( x_pos > snake_x[4] && y_pos > snake_y[4] && x_pos < (snake_x[4]+10) && y_pos < (snake_y[4]+10) && length > 4'd4)||
-							( x_pos > snake_x[5] && y_pos > snake_y[5] && x_pos < (snake_x[5]+10) && y_pos < (snake_y[5]+10) && length > 4'd5);
+							( x_pos > snake_x[5] && y_pos > snake_y[5] && x_pos < (snake_x[5]+10) && y_pos < (snake_y[5]+10) && length > 4'd5)||
+							( x_pos > snake_x[6] && y_pos > snake_y[6] && x_pos < (snake_x[6]+10) && y_pos < (snake_y[6]+10) && length > 4'd6)||
+							( x_pos > snake_x[7] && y_pos > snake_y[7] && x_pos < (snake_x[7]+10) && y_pos < (snake_y[7]+10) && length > 4'd7)||
+							( x_pos > snake_x[8] && y_pos > snake_y[8] && x_pos < (snake_x[8]+10) && y_pos < (snake_y[8]+10) && length > 4'd8)||
+							( x_pos > snake_x[9] && y_pos > snake_y[9] && x_pos < (snake_x[9]+10) && y_pos < (snake_y[9]+10) && length > 4'd9)||
+							( x_pos > snake_x[10] && y_pos > snake_y[10] && x_pos < (snake_x[10]+10) && y_pos < (snake_y[10]+10) && length > 4'd10)||
+							( x_pos > snake_x[11] && y_pos > snake_y[11] && x_pos < (snake_x[11]+10) && y_pos < (snake_y[11]+10) && length > 4'd11);
 
 endmodule

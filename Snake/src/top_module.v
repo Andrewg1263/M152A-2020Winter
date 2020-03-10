@@ -12,7 +12,9 @@ module top_module(
 	output wire Vsync,       // vertical sync output
 	output wire [2:0] vgaRed,     // 3-bit VGA red output
 	output wire [2:0] vgaGreen,   // 3-bit VGA green output
-	output wire [1:0] vgaBlue     // 2-bit VGA blue output
+	output wire [1:0] vgaBlue,    // 2-bit VGA blue output
+	output [6:0] seg,
+   output [3:0] AN
 	);
 
 	wire clk_25mhz;
@@ -55,6 +57,13 @@ module top_module(
 								  .x_box(box_x),
 								  .y_box(box_y),
 								  .box_vga(box_vga));
+	
+	seg_display _seg_display(.clk(clk),
+									 .rst(rst),
+									 .create_new_box(create_new_box),
+									 .seg_data(seg),
+									 .AN(AN));
+	
 	wire signal;
 	assign signal = ( x_counter >= 100 && y_counter >= 100 && x_counter <= (100+7) && y_counter <= (100+7) );
 	assign led = (btn_right | btn_left | btn_up | btn_down);

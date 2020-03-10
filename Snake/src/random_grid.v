@@ -15,7 +15,7 @@ module random_box(
 	begin
 		if(rst)
 		begin
-			rand_num <= 9'd359;
+			rand_num <= 9'd350;
 		end
 		else 
 		begin
@@ -37,7 +37,7 @@ module random_box(
 	
 	//x and y generat in two cycles
 	reg flag;
-	always@(posedge clk or posedge rst)
+	always@(posedge clk)
 	begin
 		if(rst) 
 		begin
@@ -57,10 +57,10 @@ module random_box(
 		end
 	end
 	
-	assign x_box = 10'd300;
-	assign y_box = 9'd300;
+	assign x_box = (rand_x % 640) - (rand_x % 10);
+	assign y_box = (rand_y % 480) - (rand_y % 10);
 	
-	//assign box_vga  = ( x_pos > rand_x && y_pos > rand_y && x_pos < (rand_x+10) && y_pos < (rand_y+10) );
-	assign box_vga  = ( x_pos > 300 && y_pos > 300 && x_pos < 310 && y_pos < 310 );
+	assign box_vga  = ( x_pos > x_box && y_pos > y_box && x_pos < (x_box+10) && y_pos < (y_box+10) );
+	//assign box_vga  = ( x_pos > 300 && y_pos > 300 && x_pos < 310 && y_pos < 310 );
 	
 endmodule
