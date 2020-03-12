@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Y:\Downloads\pmodjstk_demo_verilog 2\PmodJSTK_Demo\PmodJSTK_Demo.ncd
+OUTFILE=Y:\Downloads\pmodjstk_demo_verilog 2\PmodJSTK_Demo\PmodJSTK_Demo.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=Y:\Downloads\pmodjstk_demo_verilog 2\PmodJSTK_Demo
+LICENSE=WebPack
+USER_INFO=211814636_0_0_114

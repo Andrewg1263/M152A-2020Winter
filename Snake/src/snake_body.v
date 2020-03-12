@@ -26,6 +26,8 @@ module snake_body(
 	input btn_left,
 	input btn_up,
 	input btn_down,
+	input [9:0] posData_x,
+	input [9:0] posData_y,
 	// box position for collision detection
 	input [9:0]box_x,
 	input [8:0]box_y,
@@ -44,6 +46,14 @@ module snake_body(
 	localparam Right = 2'b11;
 	reg [1:0] direction;
 	
+	//Joystick
+/* always@(posedge clk)
+	begin
+		if(posData_x <= 437)
+			
+	end
+*/
+	
 	// assign directions, change to corresponding dir if not in reverse dir
 	always@(posedge clk)
 	begin
@@ -59,6 +69,8 @@ module snake_body(
 				direction <= (direction != Down)?   Up : direction;
 			else if(btn_down)
 				direction <= (direction != Up)?     Down : direction;
+			else
+				direction <= direction;
 		end
 	end
 	

@@ -21,7 +21,7 @@
 module clock_divider(
     input clk,
     input rst,
-    output clk_25mhz
+    output clk_25mhz,
     );
 	 
 reg [15:0] cnt = 0;
@@ -36,7 +36,7 @@ begin
 	else
 	{pix_stb, cnt} <= cnt + 16'h4000;  // divide by 4: (2^16)/4 = 0x4000
 end
-	 
+
 assign clk_25mhz = pix_stb;
 	
 endmodule

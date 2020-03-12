@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    12:29:44 03/03/2020 
+// Create Date:    16:27:50 03/11/2020 
 // Design Name: 
-// Module Name:    block_display 
+// Module Name:    clock_divider 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,21 +18,26 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module block_display( 
-	input clk,
-	input [9:0] x,
-	input [9:0] x_counter,
-	input [8:0] y,
-	input [8:0] y_counter,
-	output vga_signal
+module clock_divider(
+    input clk,
+    input rst,
+    output clk_25mhz
     );
 	 
-	 reg turn_on;
-	 always@(posedge clk)
-	 begin
-		turn_on = ( x_counter >= x && y_counter >= y && x_counter <= (x+7)  && y_counter <= (y+7) )? 1 : 0;
-	 end
-	
-	assign vga_signal = turn_on;
-	
+reg [15:0] cnt = 0;
+reg pix_stb = 0; 
+always @(posedge clk)
+begin
+	if(rst)
+	begin
+		pix_stb <= 0;
+		cnt <= 0;
+	end
+	else
+	{pix_stb, cnt} <= cnt + 16'h4000;  // divide by 4: (2^16)/4 = 0x4000
+end
+
+assign clk_25mhz = pix_stb;
+
+
 endmodule
