@@ -1,0 +1,29 @@
+Command line:
+   random_box_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49180
+
+Fri Mar 13 20:45:28 2020
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 667.03 Meg
+
+ Total Signals          : 24
+ Total Nets             : 55
+ Total Signal Drivers   : 13
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 18
+ Total Traceable Variables  : 27
+ Total Scalar Nets and Variables : 186
+Total Line Count : 72
+
+ Total Simulation Time: 0.0936 sec
+
+ Current Memory Usage: 667.03 Meg
+
+Fri Mar 13 20:54:58 2020
+
